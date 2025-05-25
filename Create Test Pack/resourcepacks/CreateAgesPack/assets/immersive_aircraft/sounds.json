@@ -1,0 +1,54 @@
+{
+  "engine_start": {
+    "sounds": [
+      "immersive_aircraft:engine_start"
+    ]
+  },
+  "engine_start_warship": {
+    "sounds": [
+      "immersive_aircraft:engine_start_warship"
+    ]
+  },
+  "warship": {
+    "sounds": [
+      "immersive_aircraft:warship"
+    ]
+  },
+  "propeller": {
+    "sounds": [
+      "immersive_aircraft:propeller"
+    ]
+  },
+  "propeller_small": {
+    "sounds": [
+      "immersive_aircraft:propeller_small"
+    ]
+  },
+  "propeller_tiny": {
+    "sounds": [
+      "immersive_aircraft:propeller_tiny"
+    ]
+  },
+  "woosh": {
+    "sounds": [
+      "immersive_aircraft:woosh"
+    ]
+  },
+  "cannon": {
+    "sounds": [
+      "immersive_aircraft:cannon"
+    ],
+    "subtitle": "immersive_aircraft.subtitles.cannon"
+  },
+  "repair": {
+    "sounds": [
+      "immersive_aircraft:repair_0",
+      "immersive_aircraft:repair_1",
+      "immersive_aircraft:repair_2",
+      "immersive_aircraft:repair_3",
+      "immersive_aircraft:repair_4",
+      "immersive_aircraft:repair_5"
+    ],
+    "subtitle": "immersive_aircraft.subtitles.repair"
+  }
+}

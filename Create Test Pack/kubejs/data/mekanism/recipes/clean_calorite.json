@@ -1,0 +1,12 @@
+{
+    "type":"mekanism:washing","fluidInput":
+    {
+        "amount":5,"tag":"minecraft:water"
+    },"output":
+    {
+        "amount":1,"slurry":"kubejs:clean_calorite"
+    },"slurryInput":
+    {
+        "amount":1,"slurry":"kubejs:dirty_calorite"
+    }
+}

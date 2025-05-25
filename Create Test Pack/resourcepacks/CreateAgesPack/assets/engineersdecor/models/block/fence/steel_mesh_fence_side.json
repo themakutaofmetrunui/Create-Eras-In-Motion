@@ -1,0 +1,21 @@
+{
+	"credit": "Made with Blockbench",
+	"textures": {
+		"wall": "engineersdecor:block/fence/steel_mesh_fence"
+	},
+	"elements": [
+		{
+			"from": [8, 0, 0],
+			"to": [8, 16, 8],
+			"rotation": {"angle": 0, "axis": "y", "origin": [15, 8, 8]},
+			"faces": {
+				"north": {"uv": [0, 0, 0, 15], "texture": "#wall"},
+				"east": {"uv": [0, 0, 8, 16], "texture": "#wall"},
+				"south": {"uv": [0, 0, 0, 15], "texture": "#wall"},
+				"west": {"uv": [0, 0, 8, 16], "texture": "#wall"},
+				"up": {"uv": [0, 0, 0, 8], "texture": "#wall"},
+				"down": {"uv": [0, 0, 0, 8], "texture": "#wall"}
+			}
+		}
+	]
+}
