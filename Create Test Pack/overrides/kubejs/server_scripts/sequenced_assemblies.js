@@ -8,6 +8,8 @@ var tbcon = 'kubejs:incomplete_basic_control_circuit'
 var tacon = 'kubejs:incomplete_advanced_control_circuit'
 var tecon = 'kubejs:incomplete_elite_control_circuit'
 var tucon = 'kubejs:incomplete_ultimate_control_circuit'
+var tgas = 'kubejs:unfinished_gas_burning_generator'
+var tbio = 'kubejs:unfinished_bio_generator'
 ServerEvents.recipes(event => {
     //create dreams and desires
     event.recipes.createSequencedAssembly([ //start the recipe
@@ -114,4 +116,26 @@ ServerEvents.recipes(event => {
       event.recipes.createDeploying(tucon, [tucon, '#forge:wires/high_current']),
       event.recipes.createDeploying(tucon, [tucon, 'createaddition:copper_wire']),
     ]).transitionalItem(tucon).loops(1)
+    //mekaniosm generators
+    event.recipes.createSequencedAssembly([
+      Item.of('mekanismgenerators:gas_burning_generator')
+    ], 'tfmg:engine_base', [
+      event.recipes.createDeploying(tgas, [tgas, 'kubejs:magnetic_spool']),
+      event.recipes.createDeploying(tgas, [tgas, 'tfmg:turbine_blade']),
+      event.recipes.createDeploying(tgas, [tgas, 'tfmg:engine_chamber']),
+      event.recipes.createDeploying(tgas, [tgas, 'tfmg:screw']),
+      event.recipes.createDeploying(tgas, [tgas, 'tfmg:screwdriver']),
+      event.recipes.createFilling(tgas, [tgas, Fluid.of('tfmg:lubrication_oil', 1000)]),
+    ]).transitionalItem(tgas).loops(6)
+
+    event.recipes.createSequencedAssembly([
+      Item.of('mekanismgenerators:bio_generator')
+    ], 'furnace', [
+      event.recipes.createDeploying(tbio, [tbio, 'create_dd:furnace_engine']),
+      event.recipes.createFilling(tgas, [tgas, Fluid.of('tfmg:lubrication_oil', 1000)]),
+      event.recipes.createDeploying(tbio, [tbio, 'tfmg:screw']),
+      event.recipes.createDeploying(tbio, [tbio, 'tfmg:screwdriver']),
+      event.recipes.createDeploying(tbio, [tbio, 'tfmg:engine_chamber']),
+      event.recipes.createDeploying(tbio, [tbio, 'mekanism:basic_control_circuit']),
+    ]).transitionalItem(tbio).loops(1)
 })

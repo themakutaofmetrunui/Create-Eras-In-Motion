@@ -343,7 +343,7 @@ ServerEvents.recipes(event => {
         }
     )
     event.shaped(
-        Item.of('createaddition:spool', 1),
+        Item.of('createaddition:spool', 14),
         [
             'A',
             'A'
@@ -1324,6 +1324,21 @@ ServerEvents.recipes(event => {
     blastsmelt('tfmg:lithium_ingot', 'kubejs:crushed_raw_lithium')
     blastsmelt('createloveandwar:tungsten', 'kubejs:crushed_raw_tungsten')
     //mekanism generators
+    event.replaceInput(
+        {id: 'mekanismgenerators:generator/solar'},
+        'iron_ingot',
+        'tfmg:steel_ingot'
+    )
+    event.replaceInput(
+        {id: 'mekanismgenerators:fission_reactor/casing'},
+        'mekanism:steel_casing',
+        'tfmg:heavy_machinery_casing'
+    )
+    event.replaceInput(
+        {id: 'mekanismgenerators:reactor/frame'},
+        'mekanism:steel_casing',
+        'tfmg:heavy_machinery_casing'
+    )
     event.shaped(
         Item.of('mekanismgenerators:solar_panel', 1),
         [
@@ -1332,6 +1347,43 @@ ServerEvents.recipes(event => {
         ],
         {
             A: 'ad_astra:photovoltaic_etrium_cell'
+        }
+    )
+    event.shaped(
+        Item.of('mekanismgenerators:turbine_rotor', 1),
+        [
+            'A',
+            'A'
+        ],
+        {
+            A: 'tfmg:rebar'
+        }
+    )
+    event.shaped(
+        Item.of('mekanismgenerators:rotational_complex', 1),
+        [
+            'ABA',
+            'CDC',
+            'ABA'
+        ],
+        {
+            A: 'tfmg:steel_ingot',
+            B: 'mekanism:alloy_infused',
+            C: 'mekanism:advanced_control_circuit',
+            D: 'create:mechanical_bearing'
+        }
+    )
+    event.shaped(
+        Item.of('mekanismgenerators:electromagnetic_coil', 1),
+        [
+            'ABA',
+            'BCB',
+            'ABA'
+        ],
+        {
+            A: 'tfmg:steel_ingot',
+            B: '#createaddition:spools/high_current',
+            C: 'kubejs:magnetic_spool'
         }
     )
     //ad astra 

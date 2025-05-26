@@ -14,6 +14,8 @@ StartupEvents.registry('item', event =>{
     event.create('incomplete_advanced_control_circuit', 'create:sequenced_assembly').displayName('Incomplete Advanced Control Circuit')
     event.create('incomplete_elite_control_circuit', 'create:sequenced_assembly').displayName('Incomplete Elite Control Circuit')
     event.create('incomplete_ultimate_control_circuit', 'create:sequenced_assembly').displayName('Incomplete Ultimate Control Circuit')
+    event.create('unfinished_gas_burning_generator', 'create:sequenced_assembly').displayName('Unfinished Gas-Burning Generator')
+    event.create('unfinished_bio_generator', 'create:sequenced_assembly').displayName('Unfinished Bio Generator')
     const mat = ['calorite', 'desh', 'nickel', 'ostrum', 'tungsten', 'zinc', 'ice_shard']
     const matname = ['Calorite', 'Desh', 'Nickel', 'Ostrum', 'Tungsten', 'Zinc', 'Ice Shard']
     for (let i = 0; i < mat.length; i++) {

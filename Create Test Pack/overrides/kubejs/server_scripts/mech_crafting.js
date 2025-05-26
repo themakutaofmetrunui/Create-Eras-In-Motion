@@ -102,4 +102,33 @@ ServerEvents.recipes(event => {
         D: 'mekanism:energy_tablet',
         E: 'tfmg:rebar'
     })
+    //mekanismgenerators
+    event.recipes.createMechanicalCrafting('mekanismgenerators:advanced_solar_generator', [
+        'ABA',
+        'ABA',
+        ' C ',
+        ' C ',
+        ' C ',
+        'DDD',
+    ], {
+        A: 'mekanismgenerators:solar_generator',
+        B: 'mekanism:alloy_infused',
+        C: 'tfmg:steel_ingot',
+        D: 'vintageimprovements:osmium_sheet'
+    })
+    event.recipes.createMechanicalCrafting('mekanismgenerators:wind_generator', [
+        ' A ',
+        ' B ',
+        ' C ',
+        ' C ',
+        ' D ',
+        'EFE',
+    ], {
+        A: 'immersive_aircraft:propeller',
+        B: 'kubejs:magnetic_spool',
+        C: 'mekanism:ingot_osmium',
+        D: 'mekanism:alloy_infused',
+        E: 'mekanism:energy_tablet',
+        F: 'mekanism:basic_control_circuit'
+    })
 })
