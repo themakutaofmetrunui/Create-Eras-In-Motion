@@ -1387,6 +1387,26 @@ ServerEvents.recipes(event => {
         }
     )
     //ad astra 
+    event.replaceInput(
+        {input: '#ad_astra:steel_ingots'},
+        '#ad_astra:steel_ingots',
+        'tfmg:steel_ingot'
+    )
+    event.replaceInput(
+        {input: '#ad_astra:steel_blocks'},
+        '#ad_astra:steel_blocks',
+        'tfmg:steel_block'
+    )
+    event.replaceInput(
+        {input: '#ad_astra:steel_plates'},
+        '#ad_astra:steel_plates',
+        'tfmg:heavy_plate'
+    )
+    event.replaceInput(
+        {input: '#ad_astra:steel_rods'},
+        '#ad_astra:steel_rods',
+        'tfmg:rebar'
+    )
     surround('kubejs:magnetic_spool', 'kubejs:magnetic_wire', 'createaddition:spool')
     event.shaped(
         Item.of('ad_astra:coal_generator', 1),
@@ -1428,6 +1448,22 @@ ServerEvents.recipes(event => {
             B: 'vintageimprovements:helve_hammer',
             C: 'mekanism:basic_control_circuit',
             D: 'tfmg:electric_casing'
+        }
+    )
+    event.shaped(
+        Item.of('ad_astra:fuel_refinery', 1),
+        [
+            'ABA',
+            'CDC',
+            'EFE'
+        ],
+        {
+            A: 'vintageimprovements:vacuum_chamber',
+            B: 'tfmg:heavy_plate',
+            C: 'create:fluid_tank',
+            D: 'tfmg:electric_casing',
+            E: 'mekanism:basic_control_circuit',
+            F: 'create:filter'
         }
     )
 })
