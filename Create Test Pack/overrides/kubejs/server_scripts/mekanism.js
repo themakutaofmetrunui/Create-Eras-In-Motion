@@ -423,4 +423,5 @@ ServerEvents.recipes(event => {
         dissolution(2, 1, 'forge:storage_blocks/raw_' + mat[i], 6000, 'kubejs:dirty_' + mat[i])
         crystallize('kubejs:clean_' + mat[i], 'kubejs:crystal_' + mat[i])
     }
+    //centrifuge
 })

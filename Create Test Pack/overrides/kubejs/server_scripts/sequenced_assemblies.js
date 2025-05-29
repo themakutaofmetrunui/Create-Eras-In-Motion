@@ -67,7 +67,7 @@ ServerEvents.recipes(event => {
     event.recipes.createSequencedAssembly([
       Item.of('ad_astra:photovoltaic_etrium_cell')
     ], 'kubejs:polysilicate_sheet', [
-      event.recipes.createDeploying(tphoto, [tphoto, 'mekanism:alloy_infused']),
+      event.recipes.createDeploying(tphoto, [tphoto, '#forge:wires/high_current']),
       event.recipes.createDeploying(tphoto, [tphoto, '#forge:wires/high_current']),
       event.recipes.createPressing(tphoto, tphoto),
     ]).transitionalItem(tphoto).loops(1)

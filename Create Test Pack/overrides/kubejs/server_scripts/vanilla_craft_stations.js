@@ -585,7 +585,7 @@ ServerEvents.recipes(event => {
     event.replaceInput(
         {id: 'mekanism:metallurgic_infusing/alloy/infused'},
         'iron_ingot',
-        'mekanism:ingot_osmium'
+        'ad_astra:desh_ingot'
     )
     event.replaceInput(
         {id: 'mekanism:crusher'},
@@ -606,6 +606,26 @@ ServerEvents.recipes(event => {
         {input: 'mekanism:dust_sulfur'},
         'mekanism:dust_sulfur',
         'tfmg:sulfur_dust'
+    )
+    event.replaceInput(
+        {id: 'mekanism:electrolytic_core'},
+        'mekanism:alloy_infused',
+        'vintageimprovements:osmium_sheet'
+    )
+    event.replaceInput(
+        {id: 'mekanism:pressure_disperser'},
+        'mekanism:alloy_infused',
+        'vintageimprovements:osmium_sheet'
+    )
+    event.replaceInput(
+        {id: 'mekanism:electrolytic_separator'},
+        'mekanism:alloy_infused',
+        'vintageimprovements:osmium_sheet'
+    )
+    event.replaceInput(
+        {id: 'mekanismgenerators:generator/solar'},
+        'mekanism:alloy_infused',
+        'vintageimprovements:osmium_sheet'
     )
     event.replaceOutput(
         {output: 'mekanism:dust_sulfur'},
@@ -1308,6 +1328,22 @@ ServerEvents.recipes(event => {
             E: 'ad_astra:steel_engine'
         }
     )
+    event.shaped(
+        Item.of('mekanism:rotary_condensentrator', 1),
+        [
+            'ABA',
+            'CDC',
+            'EFE'
+        ],
+        {
+            A: 'ad_astra:gas_tank',
+            B: 'vintageimprovements:vacuum_chamber',
+            C: 'mekanism:advanced_control_circuit',
+            D: 'tfmg:electric_casing',
+            E: 'tfmg:heavy_plate',
+            F: 'moreburners:copper_coil'
+        }
+    )
     event.shapeless(
         Item.of('mekanism:block_raw_lead', 1),
         [
@@ -1464,6 +1500,23 @@ ServerEvents.recipes(event => {
             D: 'tfmg:electric_casing',
             E: 'mekanism:basic_control_circuit',
             F: 'create:filter'
+        }
+    )
+    event.shaped(
+        Item.of('ad_astra:oxygen_loader', 1),
+        [
+            'ABC',
+            'DED',
+            'FGF'
+        ],
+        {
+            A: 'mekanism:electrolytic_core',
+            B: 'create:fluid_pipe',
+            C: 'create:spout',
+            D: 'ad_astra:gas_tank',
+            E: 'tfmg:electric_casing',
+            F: 'tfmg:heavy_plate',
+            G: 'mekanism:basic_control_circuit'
         }
     )
 })

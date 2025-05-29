@@ -131,4 +131,16 @@ ServerEvents.recipes(event => {
         E: 'mekanism:energy_tablet',
         F: 'mekanism:basic_control_circuit'
     })
+    //ad astra
+    event.recipes.createMechanicalCrafting('ad_astra:nasa_workbench', [
+        'ABCBA',
+        ' DED ',
+        ' DCD '
+    ], {
+        A: 'create:mechanical_arm',
+        B: 'mekanism:advanced_control_circuit',
+        C: 'ad_astra:desh_plate',
+        D: 'tfmg:heavy_plate',
+        E: 'tfmg:electric_casing'
+    })
 })
