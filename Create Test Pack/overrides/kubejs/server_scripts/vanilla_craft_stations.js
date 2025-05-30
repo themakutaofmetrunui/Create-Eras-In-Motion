@@ -618,11 +618,6 @@ ServerEvents.recipes(event => {
         'vintageimprovements:osmium_sheet'
     )
     event.replaceInput(
-        {id: 'mekanism:electrolytic_separator'},
-        'mekanism:alloy_infused',
-        'vintageimprovements:osmium_sheet'
-    )
-    event.replaceInput(
         {id: 'mekanismgenerators:generator/solar'},
         'mekanism:alloy_infused',
         'vintageimprovements:osmium_sheet'
@@ -662,6 +657,26 @@ ServerEvents.recipes(event => {
         'mekanism:steel_casing',
         'tfmg:electric_casing'
     )
+    event.replaceInput(
+        {id: 'mekanismgenerators:fission_reactor/port'},
+        'mekanism:elite_control_circuit',
+        'mekanism:advanced_control_circuit'
+    )
+    event.replaceInput(
+        {id: 'mekanismgenerators:fission_reactor/control_rod_assembly'},
+        'mekanism:elite_control_circuit',
+        'mekanism:advanced_control_circuit'
+    )
+    event.replaceInput(
+        {id: 'mekanism:security_desk'},
+        'mekanism:teleportation_core',
+        '#refinedstorage:wireless_transmitter'
+    )
+    event.replaceInput(
+        {id: 'mekanismgenerators:reactor/port'},
+        'mekanism:ultimate_control_circuit',
+        'mekanism:elite_control_circuit'
+    )
     event.replaceOutput(
         {output: 'mekanism:raw_lead'},
         'mekanism:raw_lead',
@@ -680,8 +695,8 @@ ServerEvents.recipes(event => {
             'ABA'
         ],
         {
-            A: 'mekanism:alloy_reinforced',
-            B: 'mekanism:elite_control_circuit',
+            A: 'mekanism:alloy_infused',
+            B: 'mekanism:advanced_control_circuit',
             C: 'create:mechanical_mixer',
             D: 'tfmg:electric_casing',
             E: 'create:deployer'
@@ -899,7 +914,7 @@ ServerEvents.recipes(event => {
             'DED'
         ],
         {
-            A: 'mekanism:alloy_infused',
+            A: 'tfmg:heavy_plate',
             B: 'redstone',
             C: 'tfmg:electric_casing',
             D: 'mekanism:basic_control_circuit',
@@ -1026,9 +1041,9 @@ ServerEvents.recipes(event => {
             'AEA'
         ],
         {
-            A: 'mekanism:alloy_reinforced',
+            A: 'mekanism:alloinfused',
             B: 'create:mechanical_mixer',
-            C: 'mekanism:elite_control_circuit',
+            C: 'mekanism:advanced_control_circuit',
             D: 'tfmg:electric_casing',
             E: 'mekanism:hdpe_rod'
         }
@@ -1114,7 +1129,7 @@ ServerEvents.recipes(event => {
         {
             A: 'mekanism:ingot_refined_obsidian',
             B: 'mekanism:basic_chemical_tank',
-            C: 'mekanism:ultimate_control_circuit',
+            C: 'mekanism:advanced_control_circuit',
             D: 'tfmg:electric_casing'
         }
     )
@@ -1173,7 +1188,7 @@ ServerEvents.recipes(event => {
         {
             A: 'tfmg:lead_ingot',
             B: 'mekanism:basic_chemical_tank',
-            C: 'mekanism:ultimate_control_circuit',
+            C: 'mekanism:advanced_control_circuit',
             D: 'vintageimprovements:centrifuge'
         }
     )
@@ -1187,7 +1202,7 @@ ServerEvents.recipes(event => {
         {
             A: 'tfmg:steel_fluid_tank',
             B: 'mekanism:electrolytic_core',
-            C: 'mekanism:alloy_infused',
+            C: 'tfmg:heavy_plate',
             D: 'tfmg:electric_casing',
             E: 'tfmg:steel_ingot',
             F: 'redstone'
@@ -1344,6 +1359,18 @@ ServerEvents.recipes(event => {
             F: 'moreburners:copper_coil'
         }
     )
+    event.shaped(
+        Item.of('mekanism:chargepad', 1),
+        [
+            'AAA',
+            'BCB'
+        ],
+        {
+            A: 'kubejs:magnetic_plate',
+            B: 'mekanism:alloy_reinforced',
+            C: 'mekanism:energy_tablet'
+        }
+    )
     event.shapeless(
         Item.of('mekanism:block_raw_lead', 1),
         [
@@ -1443,6 +1470,36 @@ ServerEvents.recipes(event => {
         '#ad_astra:steel_rods',
         'tfmg:rebar'
     )
+    event.replaceInput(
+        {id: 'ad_astra:oxygen_distributor'},
+        'ad_astra:fan',
+        'create:propeller'
+    )
+    event.replaceInput(
+        {id: 'ad_astra:oxygen_distributor'},
+        'ad_astra:desh_plate',
+        'mekanism:alloy_infused'
+    )
+    event.replaceInput(
+        {id: 'ad_astra:oxygen_sensor'},
+        'ad_astra:fan',
+        'create:propeller'
+    )
+    event.replaceInput(
+        {id: 'ad_astra:oxygen_sensor'},
+        'redstone_block',
+        'create:content_observer'
+    )
+    event.replaceInput(
+        {id: 'ad_astra:gravity_normalizer'},
+        'ad_astra:desh_plate',
+        'ad_astra:ostrum_plate'
+    )
+    event.replaceInput(
+        {id: 'ad_astra:gravity_normalizer'},
+        'diamond_block',
+        'nether_star'
+    )
     surround('kubejs:magnetic_spool', 'kubejs:magnetic_wire', 'createaddition:spool')
     event.shaped(
         Item.of('ad_astra:coal_generator', 1),
@@ -1517,6 +1574,50 @@ ServerEvents.recipes(event => {
             E: 'tfmg:electric_casing',
             F: 'tfmg:heavy_plate',
             G: 'mekanism:basic_control_circuit'
+        }
+    )
+    event.shaped(
+        Item.of('ad_astra:etrionic_capacitor', 1),
+        [
+            ' A ',
+            'BCB',
+            ' A '
+        ],
+        {
+            A: 'tfmg:heavy_plate',
+            B: 'mekanism:enriched_diamond',
+            C: 'tfmg:capacitor_'
+        }
+    )
+    event.shaped(
+        Item.of('ad_astra:energizer', 1),
+        [
+            'ABA',
+            'CDC',
+            'EFE'
+        ],
+        {
+            A: 'ad_astra:etrionic_capacitor',
+            B: 'kubejs:magnetic_plate',
+            C: 'mekanism:alloy_infused',
+            D: 'tfmg:electric_casing',
+            E: 'ad_astra:desh_plate',
+            F: 'mekanism:energy_tablet'
+        }
+    )
+    event.shaped(
+        Item.of('ad_astra:cryo_freezer', 1),
+        [
+            ' A ',
+            'BCD',
+            'EEE'
+        ],
+        {
+            A: 'mekanism:rotary_condensentrator',
+            B: 'mekanism:electrolytic_separator',
+            C: 'mekanism:alloy_atomic',
+            D: 'ad_astra:fuel_refinery',
+            E: 'ad_astra:calorite_plate'
         }
     )
 })
