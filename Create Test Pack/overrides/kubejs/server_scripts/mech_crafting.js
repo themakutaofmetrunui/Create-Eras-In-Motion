@@ -143,4 +143,82 @@ ServerEvents.recipes(event => {
         D: 'tfmg:heavy_plate',
         E: 'tfmg:electric_casing'
     })
+    event.recipes.createMechanicalCrafting('ad_astra:tier_1_rocket', [
+        '  A  ',
+        ' BBB ',
+        ' BCB ',
+        ' BDB ',
+        ' BEB ',
+        'FGBGF',
+        'F H F',
+    ], {
+        A: 'ad_astra:rocket_nose_cone',
+        B: 'kubejs:basic_rocket_plating',
+        C: 'mekanism:structural_glass',
+        D: '#create:seats',
+        E: 'mekanism:basic_control_circuit',
+        F: 'ad_astra:rocket_fin',
+        G: 'ad_astra:steel_tank',
+        H: 'ad_astra:steel_engine'
+    })
+    event.recipes.createMechanicalCrafting('ad_astra:tier_2_rocket', [
+        '  A  ',
+        ' BBB ',
+        ' BBB ',
+        ' BCB ',
+        ' BDB ',
+        ' BEB ',
+        'FGBGF',
+        'FH HF',
+    ], {
+        A: 'ad_astra:rocket_nose_cone',
+        B: 'kubejs:advanced_rocket_plating',
+        C: 'mekanism:structural_glass',
+        D: '#create:seats',
+        E: 'mekanism:advanced_control_circuit',
+        F: 'ad_astra:rocket_fin',
+        G: 'ad_astra:desh_tank',
+        H: 'ad_astra:desh_engine'
+    })
+    event.recipes.createMechanicalCrafting('ad_astra:tier_3_rocket', [
+        '  A  ',
+        ' BBB ',
+        ' BBB ',
+        ' BBB ',
+        ' BCB ',
+        ' BDB ',
+        'FBEBF',
+        'GBGBG',
+        'H H H',
+    ], {
+        A: 'ad_astra:rocket_nose_cone',
+        B: 'kubejs:elite_rocket_plating',
+        C: 'mekanism:structural_glass',
+        D: '#create:seats',
+        E: 'mekanism:elite_control_circuit',
+        F: 'ad_astra:rocket_fin',
+        G: 'ad_astra:ostrum_tank',
+        H: 'ad_astra:ostrum_engine'
+    })
+    event.recipes.createMechanicalCrafting('ad_astra:tier_4_rocket', [
+        '   A   ',
+        '  BBB  ',
+        '  BBB  ',
+        '  BCB  ',
+        'D BEB D',
+        'BFBGBFB',
+        'HFBBBFH',
+        'I BHB I',
+        '   I   ',
+    ], {
+        A: 'ad_astra:rocket_nose_cone',
+        B: 'kubejs:ultimate_rocket_plating',
+        C: 'mekanism:structural_glass',
+        D: 'ad_astra:rocket_fin',
+        E: '#create:seats',
+        F: 'kubejs:basic_rocket_plating',
+        G: 'mekanism:ultimate_control_circuit',
+        H: 'ad_astra:calorite_tank',
+        I: 'ad_astra:calorite_engine'
+    })
 })

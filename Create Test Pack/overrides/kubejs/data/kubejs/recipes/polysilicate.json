@@ -1,0 +1,21 @@
+{
+  "type": "tfmg:industrial_blasting",
+  "ingredients": [
+    {
+      "count": 1,
+      "item": "kubejs:polysilicate_blasting_mixture"
+    }
+  ],
+  "processingTime": 200,
+  "results": [
+    {
+      "fluid": "kubejs:molten_polysilicate",
+      "amount": 112
+    },
+    {
+      "fluid": "tfmg:molten_slag",
+      "amount": 75
+    }
+
+  ]
+}

@@ -13,3 +13,11 @@ ServerEvents.tags('block', event => {
     event.add('forge:storage_blocks', 'kubejs:block_raw_lithium')
     event.add('forge:storage_blocks', 'createloveandwar:raw_tungsten_block')
 })
+ServerEvents.tags('fluid', event => {
+    event.add('forge:crude_oil', 'ad_astra:oil')
+    event.removeAll('ad_astra:fuel')
+    event.removeAll('ad_astra:tier_1_rover_fuel')
+    event.add('ad_astra:fuel', 'ad_astra:cryo_fuel')
+    event.add('ad_astra:fuel', 'ad_astra:fuel')
+    event.add('ad_astra:tier_1_rover_fuel', 'tfmg:gasoline')
+})

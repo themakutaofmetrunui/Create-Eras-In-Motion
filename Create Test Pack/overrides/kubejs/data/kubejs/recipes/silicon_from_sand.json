@@ -1,0 +1,21 @@
+{
+  "type": "tfmg:industrial_blasting",
+  "ingredients": [
+    {
+      "count": 1,
+      "item": "mekanism:dust_quartz"
+    }
+  ],
+  "processingTime": 200,
+  "results": [
+    {
+      "fluid": "kubejs:molten_silicon",
+      "amount": 112
+    },
+    {
+      "fluid": "tfmg:molten_slag",
+      "amount": 75
+    }
+
+  ]
+}

@@ -126,16 +126,76 @@ ServerEvents.recipes(event => {
       event.recipes.createDeploying(tgas, [tgas, 'tfmg:screw']),
       event.recipes.createDeploying(tgas, [tgas, 'tfmg:screwdriver']),
       event.recipes.createFilling(tgas, [tgas, Fluid.of('tfmg:lubrication_oil', 1000)]),
-    ]).transitionalItem(tgas).loops(6)
+    ]).transitionalItem(tgas).loops(5)
 
     event.recipes.createSequencedAssembly([
       Item.of('mekanismgenerators:bio_generator')
     ], 'furnace', [
       event.recipes.createDeploying(tbio, [tbio, 'create_dd:furnace_engine']),
-      event.recipes.createFilling(tgas, [tgas, Fluid.of('tfmg:lubrication_oil', 1000)]),
+      event.recipes.createFilling(tgas, [tbio, Fluid.of('tfmg:lubrication_oil', 1000)]),
       event.recipes.createDeploying(tbio, [tbio, 'tfmg:screw']),
       event.recipes.createDeploying(tbio, [tbio, 'tfmg:screwdriver']),
       event.recipes.createDeploying(tbio, [tbio, 'tfmg:engine_chamber']),
       event.recipes.createDeploying(tbio, [tbio, 'mekanism:basic_control_circuit']),
-    ]).transitionalItem(tbio).loops(1)
+    ]).transitionalItem(tbio).loops(2)
+
+    //ad astra
+    event.recipes.createSequencedAssembly([
+      Item.of('ad_astra:steel_engine')
+    ], 'tfmg:engine_base', [
+      event.recipes.createDeploying('kubejs:unfinished_steel_engine', ['kubejs:unfinished_steel_engine', 'tfmg:engine_chamber']),
+      event.recipes.createDeploying('kubejs:unfinished_steel_engine', ['kubejs:unfinished_steel_engine', 'tfmg:spark_plug']),
+      event.recipes.createDeploying('kubejs:unfinished_steel_engine', ['kubejs:unfinished_steel_engine', 'tfmg:screw']),
+      event.recipes.createDeploying('kubejs:unfinished_steel_engine', ['kubejs:unfinished_steel_engine', 'tfmg:screwdriver']),
+      event.recipes.createFilling('kubejs:unfinished_steel_engine', ['kubejs:unfinished_steel_engine', Fluid.of('tfmg:lubrication_oil', 1000)]),
+      event.recipes.createDeploying('kubejs:unfinished_steel_engine', ['kubejs:unfinished_steel_engine', 'tfmg:heavy_plate']),
+      event.recipes.createPressing('kubejs:unfinished_steel_engine', 'kubejs:unfinished_steel_engine'),
+      event.recipes.createDeploying('kubejs:unfinished_steel_engine', ['kubejs:unfinished_steel_engine', 'tfmg:heavy_plate']),
+      event.recipes.createPressing('kubejs:unfinished_steel_engine', 'kubejs:unfinished_steel_engine'),
+    ]).transitionalItem('kubejs:unfinished_steel_engine').loops(3)
+
+    event.recipes.createSequencedAssembly([
+      Item.of('ad_astra:desh_engine')
+    ], 'tfmg:engine_base', [
+      event.recipes.createDeploying('kubejs:unfinished_desh_engine', ['kubejs:unfinished_desh_engine', 'mekanism:alloy_infused']),
+      event.recipes.createDeploying('kubejs:unfinished_desh_engine', ['kubejs:unfinished_desh_engine', 'tfmg:engine_chamber']),
+      event.recipes.createDeploying('kubejs:unfinished_desh_engine', ['kubejs:unfinished_desh_engine', 'tfmg:spark_plug']),
+      event.recipes.createDeploying('kubejs:unfinished_desh_engine', ['kubejs:unfinished_desh_engine', 'tfmg:screw']),
+      event.recipes.createDeploying('kubejs:unfinished_desh_engine', ['kubejs:unfinished_desh_engine', 'tfmg:screwdriver']),
+      event.recipes.createFilling('kubejs:unfinished_desh_engine', ['kubejs:unfinished_desh_engine', Fluid.of('tfmg:lubrication_oil', 1000)]),
+      event.recipes.createDeploying('kubejs:unfinished_desh_engine', ['kubejs:unfinished_desh_engine', 'ad_astra:desh_plate']),
+      event.recipes.createPressing('kubejs:unfinished_desh_engine', 'kubejs:unfinished_desh_engine'),
+      event.recipes.createDeploying('kubejs:unfinished_desh_engine', ['kubejs:unfinished_desh_engine', 'ad_astra:desh_plate']),
+      event.recipes.createPressing('kubejs:unfinished_desh_engine', 'kubejs:unfinished_desh_engine'),
+    ]).transitionalItem('kubejs:unfinished_desh_engine').loops(3)
+
+    event.recipes.createSequencedAssembly([
+      Item.of('ad_astra:ostrum_engine')
+    ], 'tfmg:engine_base', [
+      event.recipes.createDeploying('kubejs:unfinished_ostrum_engine', ['kubejs:unfinished_ostrum_engine', 'mekanism:alloy_reinforced']),
+      event.recipes.createDeploying('kubejs:unfinished_ostrum_engine', ['kubejs:unfinished_ostrum_engine', 'tfmg:engine_chamber']),
+      event.recipes.createDeploying('kubejs:unfinished_ostrum_engine', ['kubejs:unfinished_ostrum_engine', 'tfmg:spark_plug']),
+      event.recipes.createDeploying('kubejs:unfinished_ostrum_engine', ['kubejs:unfinished_ostrum_engine', 'tfmg:screw']),
+      event.recipes.createDeploying('kubejs:unfinished_ostrum_engine', ['kubejs:unfinished_ostrum_engine', 'tfmg:screwdriver']),
+      event.recipes.createFilling('kubejs:unfinished_ostrum_engine', ['kubejs:unfinished_ostrum_engine', Fluid.of('tfmg:lubrication_oil', 1000)]),
+      event.recipes.createDeploying('kubejs:unfinished_ostrum_engine', ['kubejs:unfinished_ostrum_engine', 'ad_astra:ostrum_plate']),
+      event.recipes.createPressing('kubejs:unfinished_ostrum_engine', 'kubejs:unfinished_ostrum_engine'),
+      event.recipes.createDeploying('kubejs:unfinished_ostrum_engine', ['kubejs:unfinished_ostrum_engine', 'ad_astra:ostrum_plate']),
+      event.recipes.createPressing('kubejs:unfinished_ostrum_engine', 'kubejs:unfinished_ostrum_engine'),
+    ]).transitionalItem('kubejs:unfinished_ostrum_engine').loops(3)
+
+    event.recipes.createSequencedAssembly([
+      Item.of('ad_astra:calorite_engine')
+    ], 'tfmg:engine_base', [
+      event.recipes.createDeploying('kubejs:unfinished_calorite_engine', ['kubejs:unfinished_calorite_engine', 'mekanism:alloy_atomic']),
+      event.recipes.createDeploying('kubejs:unfinished_calorite_engine', ['kubejs:unfinished_calorite_engine', 'tfmg:engine_chamber']),
+      event.recipes.createDeploying('kubejs:unfinished_calorite_engine', ['kubejs:unfinished_calorite_engine', 'tfmg:spark_plug']),
+      event.recipes.createDeploying('kubejs:unfinished_calorite_engine', ['kubejs:unfinished_calorite_engine', 'tfmg:screw']),
+      event.recipes.createDeploying('kubejs:unfinished_calorite_engine', ['kubejs:unfinished_calorite_engine', 'tfmg:screwdriver']),
+      event.recipes.createFilling('kubejs:unfinished_calorite_engine', ['kubejs:unfinished_calorite_engine', Fluid.of('tfmg:lubrication_oil', 1000)]),
+      event.recipes.createDeploying('kubejs:unfinished_calorite_engine', ['kubejs:unfinished_calorite_engine', 'ad_astra:calorite_plate']),
+      event.recipes.createPressing('kubejs:unfinished_calorite_engine', 'kubejs:unfinished_calorite_engine'),
+      event.recipes.createDeploying('kubejs:unfinished_calorite_engine', ['kubejs:unfinished_calorite_engine', 'ad_astra:calorite_plate']),
+      event.recipes.createPressing('kubejs:unfinished_calorite_engine', 'kubejs:unfinished_calorite_engine'),
+    ]).transitionalItem('kubejs:unfinished_calorite_engine').loops(3)
 })

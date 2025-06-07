@@ -289,6 +289,30 @@ ServerEvents.recipes(event => {
         'tfmg:copper_cable',
         'createaddition:copper_spool'
     )
+    event.shaped(
+        Item.of('tfmg:lead_flywheel', 1),
+        [
+            'AAA',
+            'ABA',
+            'AAA'
+        ],
+        {
+            A: 'tfmg:lead_ingot',
+            B: 'create:shaft'
+        }
+    )
+    event.shaped(
+        Item.of('tfmg:nickel_flywheel', 1),
+        [
+            'AAA',
+            'ABA',
+            'AAA'
+        ],
+        {
+            A: 'tfmg:nickel_ingot',
+            B: 'create:shaft'
+        }
+    )
     event.shapeless(
         Item.of('tfmg:steel_ingot', 1),
         [
@@ -677,6 +701,16 @@ ServerEvents.recipes(event => {
         'mekanism:ultimate_control_circuit',
         'mekanism:elite_control_circuit'
     )
+    event.replaceInput(
+        {id: 'mekanismgenerators:reactor/controller'},
+        'mekanism:ultimate_control_circuit',
+        'mekanism:elite_control_circuit'
+    )
+    event.replaceInput(
+        {id: 'mekanism:infusion_conversion/carbon/from_enriched'},
+        '#mekanism:enriched/carbon',
+        'tfmg:coal_coke_dust'
+    )
     event.replaceOutput(
         {output: 'mekanism:raw_lead'},
         'mekanism:raw_lead',
@@ -750,7 +784,7 @@ ServerEvents.recipes(event => {
         ],
         {
             A: 'vintageimprovements:osmium_sheet',
-            B: 'kubejs:magnetic_spool'
+            B: '#createaddition:spools/high_current'
         }
     )
     event.shaped(
@@ -834,7 +868,7 @@ ServerEvents.recipes(event => {
         ],
         {
             A: 'vintageimprovements:osmium_sheet',
-            B: 'tfmg:steel_fluid_tank',
+            B: 'ad_astra:large_gas_tank',
             C: 'createteleporters:quantum_mechanism'
         }
     )
@@ -1339,7 +1373,7 @@ ServerEvents.recipes(event => {
             A: 'tfmg:steel_ingot',
             B: 'mekanism:basic_control_circuit',
             C: 'mekanism:ingot_tin',
-            D: 'mekanism:basic_chemical_tank',
+            D: 'ad_astra:steel_tank',
             E: 'ad_astra:steel_engine'
         }
     )
@@ -1449,7 +1483,22 @@ ServerEvents.recipes(event => {
             C: 'kubejs:magnetic_spool'
         }
     )
-    //ad astra 
+    //ad astra
+    event.replaceInput(
+        {id: 'ad_astra:radio'},
+        '#ad_astra:steel_rods',
+        '#refinedstorage:wireless_transmitter'
+    )
+    event.replaceInput(
+        {id: 'ad_astra:rocket_nose_cone'},
+        '#ad_astra:steel_plates',
+        'kubejs:basic_rocket_plating'
+    )
+    event.replaceInput(
+        {id: 'ad_astra:rocket_fin'},
+        '#ad_astra:steel_plates',
+        'kubejs:basic_rocket_plating'
+    )
     event.replaceInput(
         {input: '#ad_astra:steel_ingots'},
         '#ad_astra:steel_ingots',
@@ -1499,6 +1548,21 @@ ServerEvents.recipes(event => {
         {id: 'ad_astra:gravity_normalizer'},
         'diamond_block',
         'nether_star'
+    )
+    event.replaceInput(
+        {id: 'ad_astra:ti_69'},
+        'redstone',
+        'refinedstorage:advanced_processor'
+    )
+    event.replaceInput(
+        {id: 'ad_astra:wheel'},
+        'black_wool',
+        'create_dd:rubber'
+    )
+    event.replaceInput(
+        {id: 'ad_astra:cable_duct'},
+        'ad_astra:steel_cable',
+        '#createaddition:spools/high_current'
     )
     surround('kubejs:magnetic_spool', 'kubejs:magnetic_wire', 'createaddition:spool')
     event.shaped(
@@ -1620,4 +1684,81 @@ ServerEvents.recipes(event => {
             E: 'ad_astra:calorite_plate'
         }
     )
+    event.shaped(
+        Item.of('ad_astra:etrium_factory_block', 64),
+        [
+            'AAA',
+            'ABA',
+            'AAA'
+        ],
+        {
+            A: 'ad_astra:etrium_plate',
+            B: 'ad_astra:etrium_ingot'
+        }
+    )
+    event.shaped(
+        Item.of('ad_astra:encased_etrium_block', 64),
+        [
+            'AAA',
+            'BBB',
+            'AAA'
+        ],
+        {
+            A: 'ad_astra:etrium_ingot',
+            B: 'ad_astra:etrium_plate'
+        }
+    )
+    event.shaped(
+        Item.of('ad_astra:etrium_panel', 64),
+        [
+            'ABA',
+            'BBB',
+            'ABA'
+        ],
+        {
+            A: 'ad_astra:etrium_plate',
+            B: 'ad_astra:etrium_ingot'
+        }
+    )
+    event.shaped(
+        Item.of('ad_astra:etrium_plateblock', 64),
+        [
+            'AAA',
+            'ABA',
+            'AAA'
+        ],
+        {
+            A: 'ad_astra:etrium_plate',
+            B: 'ad_astra:etrium_rod'
+        }
+    )
+    event.shapeless(
+        Item.of('ad_astra:etrium_nugget', 9),
+        [
+            'ad_astra:etrium_ingot'
+        ]
+    )
+    event.shapeless(
+        Item.of('ad_astra:etrium_ingot', 1),
+        [
+            '9x ad_astra:etrium_nugget'
+        ]
+    )
+    event.shapeless(
+        Item.of('ad_astra:etrium_ingot', 9),
+        [
+            'ad_astra:etrium_block'
+        ]
+    )
+    event.shapeless(
+        Item.of('ad_astra:etrium_block', 1),
+        [
+            '9x ad_astra:etrium_ingot'
+        ]
+    )
+    surround('ad_astra:steel_tank', 'vintageimprovements:osmium_sheet', 'ad_astra:large_gas_tank')
+    surround('ad_astra:desh_tank', 'mekanism:alloy_infused', 'ad_astra:large_gas_tank')
+    surround('ad_astra:ostrum_tank', 'mekanism:alloy_reinforced', 'ad_astra:large_gas_tank')
+    surround('ad_astra:calorite_tank', 'mekanism:alloy_atomic', 'ad_astra:large_gas_tank')
+    blastsmelt('ad_astra:etrium_ingot', 'kubejs:dust_etrium')
 })

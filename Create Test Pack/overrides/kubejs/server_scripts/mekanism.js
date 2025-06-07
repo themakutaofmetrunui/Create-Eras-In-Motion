@@ -226,6 +226,8 @@ ServerEvents.recipes(event => {
     event.recipes.mekanism.crushing('2x black_dye', 'ink_sac')
     event.recipes.mekanism.crushing('bone_meal', 'calcite')
     event.recipes.mekanism.crushing('red_sand', 'terracotta')
+    event.recipes.mekanism.crushing('kubejs:dirty_dust_etrium', 'kubejs:clump_etrium')
+    event.recipes.mekanism.crushing('kubejs:dust_etrium', 'ad_astra:etrium_ingot')
     //combining
     const material = ["steel", "brass", "tungsten", "netherite", "sturdy", "resin", "iron", "polymer", "duraplas"]
     event.recipes.mekanism.combining('create:andesite_alloy', 'create:zinc_nugget', 'andesite')
@@ -311,6 +313,7 @@ ServerEvents.recipes(event => {
     for (let i = 0; i < 6; i++) {
         event.recipes.mekanism.enriching('kubejs:dust_' + mat[i], 'kubejs:dirty_dust_' + mat[i])
     }
+    event.recipes.mekanism.enriching('kubejs:dust_etrium', 'kubejs:dirty_dust_etrium')
     //sawing
     const logs = ['oak', 'spruce', 'birch', 'jungle', 'acacia', 'dark_oak', 'mangrove', 'cherry']
     for (let i = 0; i < logs.length; i++) {
@@ -348,6 +351,7 @@ ServerEvents.recipes(event => {
     event.recipes.mekanism.purifying('18x kubejs:clump_lithium', 'kubejs:block_raw_lithium', '2x mekanism:oxygen')
     event.recipes.mekanism.purifying('18x kubejs:clump_nickel', 'kubejs:block_raw_nickel', '2x mekanism:oxygen')
     event.recipes.mekanism.purifying('18x kubejs:clump_tungsten', 'createloveandwar:raw_tungsten_block', '2x mekanism:oxygen')
+    event.recipes.mekanism.purifying('kubejs:clump_etrium', 'kubejs:shard_etrium', '1x mekanism:oxygen')
     //injecting
     for (let i = 0; i < mat.length; i++) {
         event.recipes.mekanism.injecting('kubejs:shard_' + mat[i], 'kubejs:crystal_' + mat[i], '1x mekanism:hydrogen_chloride')
@@ -358,6 +362,7 @@ ServerEvents.recipes(event => {
     event.recipes.mekanism.injecting('24x kubejs:shard_nickel', 'kubejs:block_raw_nickel', '2x mekanism:hydrogen_chloride')
     event.recipes.mekanism.injecting('24x kubejs:shard_lithium', 'kubejs:block_raw_lithium', '2x mekanism:hydrogen_chloride')
     event.recipes.mekanism.injecting('24x kubejs:shard_tungsten', 'createloveandwar:raw_tungsten_block', '2x mekanism:hydrogen_chloride')
+    event.recipes.mekanism.injecting('mekanism:alloy_atomic', 'ad_astra:calorite_ingot', '1x mekanismgenerators:tritium')
     //painting & extraction
     const dye = ['white', 'red', 'orange', 'yellow', 'green', 'lime', 'cyan', 'blue', 'purple', 'magenta', 'pink', 'light_gray', 'gray', 'brown', 'black', 'light_blue']
     const dyed = ['padded_tiled_rubber', 'padded_rubber', 'padded_rubber_stairs', 'padded_rubber_slab', 'padded_mosaic_rubber', 'plastic', 'industrial_lamp', 'industrial_lamp']
@@ -423,5 +428,32 @@ ServerEvents.recipes(event => {
         dissolution(2, 1, 'forge:storage_blocks/raw_' + mat[i], 6000, 'kubejs:dirty_' + mat[i])
         crystallize('kubejs:clean_' + mat[i], 'kubejs:crystal_' + mat[i])
     }
-    //centrifuge
+    //Infusion
+    event.custom({
+        "type":"mekanism:infusion_conversion","input":
+        {
+            "ingredient":
+            {
+                "item":"kubejs:dust_etrium"
+            },
+        },"output":
+            {
+                "amount":10,"infuse_type":"kubejs:etrium"
+            }
+    })
+    event.custom({
+        "type":"mekanism:metallurgic_infusing","chemicalInput":
+        {
+            "amount":20,"infuse_type":"kubejs:etrium"
+        },"itemInput":
+        {
+            "ingredient":
+            {
+                "item":"ad_astra:ostrum_ingot"
+            }
+        },"output":
+        {
+            "item":"mekanism:alloy_reinforced"
+        }
+    })
 })

@@ -1,0 +1,21 @@
+{
+  "type": "tfmg:industrial_blasting",
+  "ingredients": [
+    {
+      "count": 1,
+      "item": "minecraft:sand"
+    }
+  ],
+  "processingTime": 200,
+  "results": [
+    {
+      "fluid": "kubejs:molten_silicon",
+      "amount": 55
+    },
+    {
+      "fluid": "tfmg:molten_slag",
+      "amount": 131
+    }
+
+  ]
+}

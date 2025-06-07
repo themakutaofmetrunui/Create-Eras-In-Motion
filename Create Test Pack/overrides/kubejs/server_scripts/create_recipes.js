@@ -94,16 +94,37 @@ ServerEvents.recipes(event => {
         "count": 2
       }
   })
+  event.custom({
+  "type": "tfmg:coking",
+  "ingredients": [
+    {
+      "count": 1,
+      "item": "tfmg:bitumen"
+    }
+  ],
+  "processingTime": 1000,
+  "results": [
+    {
+      "count": 1,
+      "item": "tfmg:coal_coke"
+    }
+  ,
+    {
+      "fluid": "tfmg:creosote",
+      "amount": 1
+    }
+
+  ]
+})
   //vintage improvements
   event.recipes.vintageimprovements.pressurizing([Fluid.of('mekanism:sulfur_trioxide', 250), 'iron_nugget'], [Fluid.of('mekanism:sulfur_dioxide'), 'iron_nugget']).secondaryFluidOutput(0).superheated().processingTime(400)
   event.recipes.vintageimprovements.pressurizing([Fluid.of('mekanism:sulfur_trioxide', 250), 'vintageimprovements:vanadium_nugget'], [Fluid.of('mekanism:sulfur_dioxide'), 'vintageimprovements:vanadium_nugget']).secondaryFluidOutput(0).heated().processingTime(400)
   event.recipes.vintageimprovements.pressurizing(Fluid.of('mekanism:sulfur_dioxide', 1000), 'tfmg:sulfur_dust').secondaryFluidOutput(0).processingTime(600)
   event.recipes.vintageimprovements.pressurizing(Fluid.of('tfmg:sulfuric_acid', 1000), [Fluid.of('water', 1000), Fluid.of('mekanism:sulfur_trioxide', 1000)]).processingTime(600).secondaryFluidInput(0)
   //RF
+  event.recipes.create.mixing('kubejs:polysilicate_blasting_mixture', [Fluid.of('kubejs:molten_silicon', 112), 'tfmg:limesand']).heated()
+  event.recipes.create.mixing('2x kubejs:quartz_iron_blasting_mixture', ['3x mekanism:dust_iron', 'mekanism:dust_quartz'])
   event.recipes.create.cutting('3x kubejs:polysilicate_sheet', 'kubejs:polysilicate_ingot')
-  event.recipes.vintageimprovements.pressurizing(Fluid.of('kubejs:molten_silicon', 112), ['tfmg:coal_coke_dust', 'mekanism:dust_quartz']).processingTime(1000).superheated()
-  event.recipes.vintageimprovements.pressurizing(Fluid.of('kubejs:molten_polysilicate', 112), ['refinedstorage:silicon', 'tfmg:limesand']).processingTime(1000).superheated()
-  event.recipes.vintageimprovements.pressurizing(Fluid.of('kubejs:molten_quartz_enriched_iron', 112), ['mekanism:dust_iron', 'mekanism:dust_iron', 'mekanism:dust_iron', 'mekanism:dust_quartz']).processingTime(1000).superheated()
   event.custom({
     "type": "tfmg:casting",
     "ingredients": [
@@ -202,7 +223,7 @@ ServerEvents.recipes(event => {
         "item": "kubejs:magnetic_rod",
         "count": 2
       }
-  })
+    })
   event.custom({
     "type":"createaddition:rolling",
     "input": {
@@ -271,8 +292,142 @@ ServerEvents.recipes(event => {
   for (let i = 7; i < mat.length; i++) {
     event.recipes.create.crushing('mekanism:dirty_dust_' + mat[i], 'mekanism:clump_' + mat[i])
   }
+  event.recipes.create.crushing('kubejs:dirty_dust_etrium', 'kubejs:clump_etrium')
+  event.recipes.create.crushing('kubejs:dust_etrium', 'ad_astra:etrium_ingot')
   //ad astra
   event.recipes.vintageimprovementsHammering(Item.of('ad_astra:desh_plate', 1), 'ad_astra:desh_ingot', 3)
   event.recipes.vintageimprovementsHammering(Item.of('ad_astra:ostrum_plate', 1), 'ad_astra:ostrum_ingot', 3)
   event.recipes.vintageimprovementsHammering(Item.of('ad_astra:calorite_plate', 1), 'ad_astra:calorite_ingot', 3)
+  event.recipes.create.mixing(Fluid.of('kubejs:heat_shield_coating', 300), ['tfmg:coal_coke_dust', 'mekanism:dust_quartz', 'magma_cream']).superheated()
+  event.recipes.create.filling('kubejs:basic_rocket_plating', [Fluid.of('kubejs:heat_shield_coating', 100), 'tfmg:heavy_plate'])
+  event.recipes.create.splashing(Item.of('kubejs:shard_etrium').withChance(0.05), 'ad_astra:moon_sand')
+  event.recipes.create.splashing(Item.of('kubejs:shard_etrium').withChance(0.05), 'ad_astra:mars_sand')
+  event.custom({
+      "type":"createaddition:rolling",
+      "input": {
+            "item": "ad_astra:etrium_ingot"
+      },
+      "result": {
+        "item": "ad_astra:etrium_rod",
+        "count": 2
+      }
+  })
+  event.recipes.create.pressing('ad_astra:etrium_plate', 'ad_astra:etrium_ingot')
+  //refining
+  event.custom({
+  "type": "tfmg:distillation",
+  "ingredients": [
+
+    {
+      "fluid": "tfmg:propane",
+      "nbt": {},
+      "amount": 240
+    }
+  ],
+  "results": [
+    {
+      "amount": 80,
+      "fluid": "tfmg:propylene"
+    },
+    {
+      "amount": 60,
+      "fluid": "tfmg:ethylene"
+    },
+    {
+      "fluid": "ad_astra:hydrogen",
+      "amount": 40
+    }
+  ]})
+  event.custom({
+  "type": "tfmg:distillation",
+  "ingredients": [
+
+    {
+      "fluid": "ad_astra:oil",
+      "nbt": {},
+      "amount": 400
+    }
+  ],
+  "results": [
+    {
+      "fluid": "tfmg:kerosene",
+      "amount": 80
+    },
+    {
+      "fluid": "tfmg:naphtha",
+      "amount": 60
+    },
+    {
+      "fluid": "tfmg:gasoline",
+      "amount": 40
+    },
+    {
+      "fluid": "tfmg:butane",
+      "amount": 40
+    },
+    {
+      "fluid": "tfmg:propane",
+      "amount": 80
+    }
+  ]})
+  event.custom({
+  "type": "tfmg:distillation",
+  "ingredients": [
+
+    {
+      "fluid": "createloveandwar:crude_oil",
+      "nbt": {},
+      "amount": 400
+    }
+  ],
+  "results": [
+    {
+      "fluid": "tfmg:diesel",
+      "amount": 80
+    },
+    {
+      "fluid": "tfmg:kerosene",
+      "amount": 60
+    },
+    {
+      "fluid": "tfmg:naphtha",
+      "amount": 40
+    },
+    {
+      "fluid": "tfmg:gasoline",
+      "amount": 40
+    },
+    {
+      "fluid": "tfmg:lpg",
+      "amount": 80
+    }
+  ]})
+  //liquid burning
+  event.custom({
+	"type":"createaddition:liquid_burning",
+	"input": {
+      	"fluid": "tfmg:butane",
+      	"amount": 1000
+	},
+	"burnTime": 24000,
+	"superheated": true
+  })
+  event.custom({
+	"type":"createaddition:liquid_burning",
+	"input": {
+      	"fluid": "tfmg:propane",
+      	"amount": 1000
+	},
+	"burnTime": 24000,
+	"superheated": true
+  })
+  event.custom({
+	"type":"createaddition:liquid_burning",
+	"input": {
+      	"fluid": "tfmg:kerosene",
+      	"amount": 1000
+	},
+	"burnTime": 36000,
+	"superheated": true
+  })
 })

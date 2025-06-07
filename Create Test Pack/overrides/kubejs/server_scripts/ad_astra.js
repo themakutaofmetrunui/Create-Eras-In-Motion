@@ -127,6 +127,22 @@ ServerEvents.recipes(event => {
           "id": "kubejs:polysilicate_ingot"
         }
     })
+    //mekanism
+    event.custom({
+    "type": "ad_astra:refining",
+    "cookingtime": 1,
+    "energy": 30,
+    "input": {
+      "ingredient": {
+        "fluid": "minecraft:water"
+      },
+      "millibuckets": 100
+    },
+    "result": {
+      "fluid": "mekanism:heavy_water",
+      "millibuckets": 1
+    }
+  })
     //ad astra
     press('create:copper_sheet', 1, 'copper_ingot', 100)
     press('create:copper_sheet', 9, 'copper_block', 800)
@@ -171,4 +187,87 @@ ServerEvents.recipes(event => {
     press('createaddition:zinc_sheet', 1, 'create:zinc_ingot', 100)
     press('createaddition:zinc_sheet', 9, 'create:zinc_block', 800)
     press('createaddition:electrum_sheet', 1, 'create:electrum_ingot', 100)
+    press('ad_astra:etrium_plate', 1, 'ad_astra:etrium_ingot', 100)
+    press('ad_astra:etrium_plate', 9, 'ad_astra:etrium_block', 800)
+    event.custom({
+    "type": "ad_astra:nasa_workbench",
+    "ingredients": [
+      {
+        "item": "ad_astra:rocket_nose_cone"
+      },
+      {
+        "item": "kubejs:basic_rocket_plating"
+      },
+      {
+        "item": "kubejs:basic_rocket_plating"
+      },
+      {
+        "item": "kubejs:basic_rocket_plating"
+      },
+      {
+        "item": "kubejs:basic_rocket_plating"
+      },
+      {
+        "item": "kubejs:basic_rocket_plating"
+      },
+      {
+        "item": "kubejs:basic_rocket_plating"
+      },
+      {
+        "item": "kubejs:advanced_rocket_plating"
+      },
+      {
+        "item": "ad_astra:desh_tank"
+      },
+      {
+        "item": "mekanism:basic_control_circuit"
+      },
+      {
+        "item": "kubejs:advanced_rocket_plating"
+      },
+      {
+        "item": "ad_astra:rocket_fin"
+      },
+      {
+        "item": "ad_astra:steel_engine"
+      },
+      {
+        "item": "ad_astra:rocket_fin"
+      }
+    ],
+    "result": {
+      "count": 1,
+      "id": "ad_astra:tier_1_rocket"
+    }
+    })
+    event.custom({
+    "type": "ad_astra:refining",
+    "cookingtime": 1,
+    "energy": 30,
+    "input": {
+      "ingredient": {
+        "fluid": "tfmg:kerosene"
+      },
+      "millibuckets": 5
+    },
+    "result": {
+      "fluid": "ad_astra:fuel",
+      "millibuckets": 5
+    }
+  })
+  event.custom({
+    "type": "ad_astra:refining",
+    "cookingtime": 1,
+    "energy": 30,
+    "input": {
+      "ingredient": {
+        "fluid": "mekanism:hydrogen"
+      },
+      "millibuckets": 5
+    },
+    "result": {
+      "fluid": "ad_astra:cryo_fuel",
+      "millibuckets": 5
+    }
+  })
 })
