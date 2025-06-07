@@ -1,1 +1,0 @@
-{"ctm":{"ctm_version":1,"type":"CTM","layer":"SOLID","textures":["mekanism:block/thermal_evaporation_controller-ctm"],"extra":{"connect_to":[{"block":"mekanism:reactor_controller"},{"block":"mekanism:reactor_casing"},{"block":"mekanism:reactor_port"},{"block":"mekanism:reactor_logic_adapter"}]}}}
