@@ -11,7 +11,8 @@
   },
   "manifestType": "minecraftModpack",
   "manifestVersion": 1,
-  "name": "Create Test Pack",
+  "name": "Create_Through_The_Ages",
+  "version": "v0.1_BETA",
   "author": "",
   "files": [
     {
@@ -125,13 +126,13 @@
       "required": true
     },
     {
-      "projectID": 326652,
-      "fileID": 5470032,
+      "projectID": 988278,
+      "fileID": 5196705,
       "required": true
     },
     {
-      "projectID": 988278,
-      "fileID": 5196705,
+      "projectID": 326652,
+      "fileID": 5470032,
       "required": true
     },
     {
@@ -210,13 +211,13 @@
       "required": true
     },
     {
-      "projectID": 433760,
-      "fileID": 6356205,
+      "projectID": 324717,
+      "fileID": 6271651,
       "required": true
     },
     {
-      "projectID": 324717,
-      "fileID": 6271651,
+      "projectID": 433760,
+      "fileID": 6356205,
       "required": true
     },
     {
@@ -235,13 +236,13 @@
       "required": true
     },
     {
-      "projectID": 510089,
-      "fileID": 5271360,
+      "projectID": 378609,
+      "fileID": 6418133,
       "required": true
     },
     {
-      "projectID": 378609,
-      "fileID": 6418133,
+      "projectID": 510089,
+      "fileID": 5271360,
       "required": true
     },
     {
@@ -270,13 +271,13 @@
       "required": true
     },
     {
-      "projectID": 267602,
-      "fileID": 5983309,
+      "projectID": 1180649,
+      "fileID": 6223615,
       "required": true
     },
     {
-      "projectID": 1180649,
-      "fileID": 6223615,
+      "projectID": 267602,
+      "fileID": 5983309,
       "required": true
     },
     {
