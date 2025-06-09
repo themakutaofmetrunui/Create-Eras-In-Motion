@@ -258,6 +258,7 @@ ServerEvents.recipes(event => {
     event.remove({id: 'ad_astra:wrench'})
     event.remove({id: 'ad_astra:fan'})
     event.remove({id: 'ad_astra:engine_frame'})
+    event.remove({id: 'ad_astra:tier_1_rover'})
     event.remove({ id: 'create:pressing/desh_ingot'})
     event.remove({ id: 'create:pressing/ostrum_ingot'})
     event.remove({ id: 'create:pressing/calorite_ingot'})

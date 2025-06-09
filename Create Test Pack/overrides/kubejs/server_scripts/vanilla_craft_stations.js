@@ -839,7 +839,7 @@ ServerEvents.recipes(event => {
             'ABA'
         ],
         {
-            A: 'vintageimprovements:osmium_sheet',
+            A: 'kubejs:magnetic_plate',
             B: 'mekanism:energy_tablet',
             C: 'createteleporters:redstone_pearl',
             D: 'createteleporters:quantum_mechanism'
@@ -1357,7 +1357,7 @@ ServerEvents.recipes(event => {
         {
             A: 'tfmg:steel_ingot',
             B: 'mekanism:energy_tablet',
-            C: 'mekanism:ultimate_control_circuit',
+            C: 'mekanism:elite_control_circuit',
             D: 'mekanism:alloy_atomic',
             E: '#mekanism:personal_storage'
         }

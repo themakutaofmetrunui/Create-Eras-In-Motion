@@ -221,4 +221,16 @@ ServerEvents.recipes(event => {
         H: 'ad_astra:calorite_tank',
         I: 'ad_astra:calorite_engine'
     })
+    event.recipes.createMechanicalCrafting('ad_astra:tier_1_rover', [
+        'ABCDE',
+        'FGFGF',
+    ], {
+        A: 'tfmg:gasoline_engine',
+        B: 'ad_astra:steel_tank',
+        C: '#create:seats',
+        D: 'ad_astra:radio',
+        E: 'chest',
+        F: 'ad_astra:desh_plate',
+        G: 'ad_astra:wheel'
+    })
 })
