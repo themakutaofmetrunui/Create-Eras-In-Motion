@@ -1,0 +1,368 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "the_andesite_era"
+	group: ""
+	id: "1F97C4C9A590FB83"
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			description: [""]
+			id: "7EE708F394D0777A"
+			shape: "gear"
+			subtitle: "Obtain Andesite Alloy, the base material for your ventures into technology."
+			tasks: [{
+				id: "4D5A3FAA30A42257"
+				item: "create:andesite_alloy"
+				type: "item"
+			}]
+			title: "The First Alloy of Many"
+			x: -0.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["7EE708F394D0777A"]
+			dependency_requirement: "one_started"
+			id: "032462F6C5B77432"
+			subtitle: "The First Casing"
+			tasks: [{
+				advancement: "create:andesite_casing"
+				criterion: ""
+				icon: "create:andesite_casing"
+				id: "6EEA23F7256F94EB"
+				type: "advancement"
+			}]
+			title: "Andesite Casing"
+			x: -0.5d
+			y: -6.5d
+		}
+		{
+			dependencies: ["7EE708F394D0777A"]
+			dependency_requirement: "one_started"
+			id: "5EF6CAED40C5E243"
+			subtitle: "Use the Water Wheel to generate rotational force"
+			tasks: [{
+				advancement: "create:water_wheel"
+				criterion: ""
+				id: "1C2FA4909AB21AD5"
+				type: "advancement"
+			}]
+			title: "Water Power"
+			x: -1.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["7EE708F394D0777A"]
+			dependency_requirement: "one_started"
+			id: "03E20BFAF4FF72B3"
+			subtitle: "Make a Windmill to create rotational force"
+			tasks: [{
+				advancement: "create:windmill"
+				criterion: ""
+				icon: "create:windmill_bearing"
+				id: "136997CC0D33CD61"
+				type: "advancement"
+			}]
+			title: "Wind Power"
+			x: 0.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["032462F6C5B77432"]
+			dependency_requirement: "one_started"
+			id: "1809947079FA8D04"
+			subtitle: "Craft a Millstone to grind materials"
+			tasks: [{
+				id: "3895161752955CD0"
+				item: "create:millstone"
+				type: "item"
+			}]
+			title: "Millstone"
+			x: -1.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["032462F6C5B77432"]
+			dependency_requirement: "one_started"
+			id: "07E31DBD50C5332C"
+			subtitle: "Obtain an Encased Fan"
+			tasks: [{
+				id: "224BC3EFD381A379"
+				item: "create:encased_fan"
+				type: "item"
+			}]
+			title: "Encased Fan"
+			x: -2.5d
+			y: -3.5d
+		}
+		{
+			dependencies: ["032462F6C5B77432"]
+			dependency_requirement: "one_started"
+			id: "356C5E0C44C07512"
+			subtitle: "Obtain a Mechanical Mixer"
+			tasks: [{
+				id: "22F7ED925840BE02"
+				item: "create:mechanical_mixer"
+				type: "item"
+			}]
+			title: "Mechanical Mixer"
+			x: -3.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["032462F6C5B77432"]
+			dependency_requirement: "one_started"
+			id: "7BDE710515D0A9E6"
+			subtitle: "Obtain a Mechanical Press"
+			tasks: [{
+				id: "24963B4EA5F1BC55"
+				item: "create:mechanical_press"
+				type: "item"
+			}]
+			title: "Mechanical Press"
+			x: -3.5d
+			y: -5.5d
+		}
+		{
+			dependencies: ["032462F6C5B77432"]
+			dependency_requirement: "one_started"
+			id: "62C0AF39B2AAE591"
+			subtitle: "Craft a Stamping Press and Drawing Press"
+			tasks: [
+				{
+					id: "43BA98F6E0DEA353"
+					item: "createloveandwar:stamping_press"
+					type: "item"
+				}
+				{
+					id: "1788B3DF10CFB280"
+					item: "createloveandwar:drawing_press"
+					type: "item"
+				}
+			]
+			title: "Gun Fabrication Beginnings"
+			x: -4.0d
+			y: -6.5d
+		}
+		{
+			dependencies: ["032462F6C5B77432"]
+			dependency_requirement: "one_started"
+			id: "136852119795C344"
+			subtitle: "Obtain a Bel Grinder"
+			tasks: [{
+				id: "3F06C70B0FC67C5F"
+				item: "vintageimprovements:belt_grinder"
+				type: "item"
+			}]
+			title: "Belt Grinder"
+			x: -3.5d
+			y: -7.5d
+		}
+		{
+			dependencies: ["032462F6C5B77432"]
+			dependency_requirement: "one_started"
+			id: "6B6F8359A6F024BE"
+			subtitle: "Craft a Spring Coiling Machine"
+			tasks: [{
+				id: "2E245AC5F854E69F"
+				item: "vintageimprovements:spring_coiling_machine"
+				type: "item"
+			}]
+			x: -3.0d
+			y: -8.5d
+		}
+		{
+			dependencies: ["032462F6C5B77432"]
+			dependency_requirement: "one_started"
+			id: "7466B7477C43FBA7"
+			subtitle: "Craft a Rolling Mill"
+			tasks: [{
+				id: "47D902DE090F4774"
+				item: "createaddition:rolling_mill"
+				type: "item"
+			}]
+			x: -2.0d
+			y: -9.0d
+		}
+		{
+			dependencies: ["6B6F8359A6F024BE"]
+			dependency_requirement: "one_started"
+			id: "3CD93CDD3258977E"
+			subtitle: "Obtain a Curving Press"
+			tasks: [{
+				id: "3B59E0547DB7D219"
+				item: "vintageimprovements:curving_press"
+				type: "item"
+			}]
+			title: "Curved Bonk!"
+			x: -4.0d
+			y: -9.5d
+		}
+		{
+			dependencies: ["6B6F8359A6F024BE"]
+			dependency_requirement: "one_started"
+			id: "5362062043547528"
+			subtitle: "Obtain a Centrifuge"
+			tasks: [{
+				id: "7A6C7DA5E7A59EA6"
+				item: "vintageimprovements:centrifuge"
+				type: "item"
+			}]
+			title: "Centrifuge"
+			x: -3.0d
+			y: -10.0d
+		}
+		{
+			dependencies: ["6B6F8359A6F024BE"]
+			dependency_requirement: "one_started"
+			id: "44A83FB24CE68788"
+			subtitle: "Obtain a Vibrating Table"
+			tasks: [{
+				id: "3C1C85EC652EF396"
+				item: "vintageimprovements:vibrating_table"
+				type: "item"
+			}]
+			title: "Vibrating Table"
+			x: -4.5d
+			y: -8.5d
+		}
+		{
+			dependencies: ["032462F6C5B77432"]
+			dependency_requirement: "one_started"
+			id: "43282E430D72BA1A"
+			subtitle: "Craft the tools for destroying blocks"
+			tasks: [
+				{
+					id: "23DCD7C2863D3F66"
+					item: "create:mechanical_harvester"
+					type: "item"
+				}
+				{
+					id: "2D77EF2F7D209815"
+					item: "create:mechanical_plough"
+					type: "item"
+				}
+				{
+					id: "6476C742DA6A9035"
+					item: "create:mechanical_drill"
+					type: "item"
+				}
+				{
+					id: "54E3BA83517B488F"
+					item: "create:mechanical_saw"
+					type: "item"
+				}
+			]
+			title: "Mechanical Destruction"
+			x: 2.5d
+			y: -6.5d
+		}
+		{
+			dependencies: ["032462F6C5B77432"]
+			dependency_requirement: "one_started"
+			id: "19F8C3890446ECA0"
+			subtitle: "The tools for moving blocks"
+			tasks: [
+				{
+					id: "6D3077D8778D67B1"
+					item: "create:mechanical_piston"
+					type: "item"
+				}
+				{
+					id: "3FCFF3F7A8ACCDE8"
+					item: "create:rope_pulley"
+					type: "item"
+				}
+				{
+					id: "603CA479B5977408"
+					item: "create:mechanical_bearing"
+					type: "item"
+				}
+				{
+					id: "55E2A279E20BFBAE"
+					item: "create:gantry_carriage"
+					type: "item"
+				}
+				{
+					id: "7B762BB608677868"
+					item: "create:sticker"
+					type: "item"
+				}
+				{
+					id: "4FDD3663049E20C6"
+					item: "create:cart_assembler"
+					type: "item"
+				}
+			]
+			title: "Mechnical Movers"
+			x: 2.0d
+			y: -5.5d
+		}
+		{
+			dependencies: ["7EE708F394D0777A"]
+			dependency_requirement: "one_started"
+			id: "6662DCE63C810E36"
+			subtitle: "Craft a Hand Crank to generate rotational force"
+			tasks: [{
+				id: "29779FD36FD0737F"
+				item: "create:hand_crank"
+				type: "item"
+			}]
+			title: "Crankin' It"
+			x: -0.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["032462F6C5B77432"]
+			dependency_requirement: "one_started"
+			id: "73970F058AAA0D17"
+			subtitle: "Create's Item Movers"
+			tasks: [
+				{
+					id: "46B9F6884029972A"
+					item: "create:weighted_ejector"
+					type: "item"
+				}
+				{
+					id: "3665222888C0CFA3"
+					item: "create:portable_storage_interface"
+					type: "item"
+				}
+				{
+					id: "787FA7123E394FF1"
+					item: "create:andesite_funnel"
+					type: "item"
+				}
+				{
+					id: "28B6B6705B000D8F"
+					item: "create:andesite_tunnel"
+					type: "item"
+				}
+				{
+					id: "6261FC26A08CFFF7"
+					item: "create:belt_connector"
+					type: "item"
+				}
+			]
+			title: "Item Transportation"
+			x: 2.0d
+			y: -7.5d
+		}
+		{
+			dependencies: ["032462F6C5B77432"]
+			dependency_requirement: "one_started"
+			id: "569AD1A5BAE0A585"
+			subtitle: "Craft your first airborne vehicle, the Gryodyne"
+			tasks: [{
+				id: "5CDFEB88950563B2"
+				item: "immersive_aircraft:gyrodyne"
+				type: "item"
+			}]
+			title: "To The Skies"
+			x: -0.5d
+			y: -9.5d
+		}
+	]
+	title: "The Andesite Era"
+}

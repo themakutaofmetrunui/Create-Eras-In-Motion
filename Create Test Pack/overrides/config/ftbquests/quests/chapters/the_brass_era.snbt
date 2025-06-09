@@ -1,0 +1,313 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "the_brass_era"
+	group: ""
+	id: "0B9C89EE77A57CB1"
+	order_index: 2
+	quest_links: [ ]
+	quests: [
+		{
+			id: "4DDF38AC8771A820"
+			subtitle: "Capture a Blaze in a Blaze Burner"
+			tasks: [{
+				id: "37C7D021C1F672BE"
+				item: "create:blaze_burner"
+				type: "item"
+			}]
+			title: "Heatin' Up"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["4DDF38AC8771A820"]
+			dependency_requirement: "one_started"
+			id: "6D491EACC72EAA91"
+			subtitle: "Mix Copper and Zinc to make Brass"
+			tasks: [{
+				id: "400739E59BF6426B"
+				item: "create:brass_ingot"
+				only_from_crafting: false
+				type: "item"
+			}]
+			title: "A New Alloy"
+			x: 0.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["6D491EACC72EAA91"]
+			dependency_requirement: "one_started"
+			id: "37186F288D1938BA"
+			subtitle: "Create the new Brass Casing"
+			tasks: [{
+				id: "2234407D8B7CF6D8"
+				item: "create:brass_casing"
+				only_from_crafting: false
+				type: "item"
+			}]
+			title: "A New Casing"
+			x: 0.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["7A414B5C9718D6FA"]
+			dependency_requirement: "one_started"
+			id: "4057936C9616C03E"
+			subtitle: "Obtain an Inventory Trim to connect inventories"
+			tasks: [{
+				id: "167454152B998FDF"
+				item: "toms_storage:ts.trim"
+				type: "item"
+			}]
+			x: -2.0d
+			y: -3.5d
+		}
+		{
+			dependencies: ["7A414B5C9718D6FA"]
+			dependency_requirement: "one_started"
+			id: "543C7E3D62199922"
+			subtitle: "Connects more things"
+			tasks: [{
+				id: "68484D77279A3314"
+				item: "toms_storage:ts.inventory_connector"
+				type: "item"
+			}]
+			x: -3.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["7A414B5C9718D6FA"]
+			dependency_requirement: "one_started"
+			id: "1DBD16AF4909BB67"
+			subtitle: "Need I repeat myself?"
+			tasks: [{
+				id: "4DFAAF32BA97328D"
+				item: "create_connected:inventory_bridge"
+				type: "item"
+			}]
+			x: -3.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["7A414B5C9718D6FA"]
+			dependency_requirement: "one_started"
+			id: "61EC18B1F9DAC88D"
+			subtitle: "Access Inventories, what else can I say?"
+			tasks: [{
+				id: "352442716E783845"
+				item: "create_connected:inventory_access_port"
+				type: "item"
+			}]
+			x: -3.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["37186F288D1938BA"]
+			dependency_requirement: "one_started"
+			id: "7A414B5C9718D6FA"
+			subtitle: "Access Inventories with this handy Terminal"
+			tasks: [{
+				id: "33F9E681D47946CB"
+				item: "toms_storage:ts.storage_terminal"
+				type: "item"
+			}]
+			title: "Simple Storage"
+			x: -2.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["7A414B5C9718D6FA"]
+			dependency_requirement: "one_started"
+			id: "46C8F3524987EBA4"
+			subtitle: "Obtain a Crafting Terminal to craft from inventories"
+			tasks: [{
+				id: "2F22962A33409876"
+				item: "toms_storage:ts.crafting_terminal"
+				type: "item"
+			}]
+			x: -2.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["37186F288D1938BA"]
+			dependency_requirement: "one_started"
+			id: "424EB0B555F0860A"
+			subtitle: "It's like crafting, but bigger"
+			tasks: [{
+				id: "08362CCBC2ECCE66"
+				item: "create:mechanical_crafter"
+				type: "item"
+			}]
+			title: "Beeg Crafting"
+			x: 0.0d
+			y: -5.0d
+		}
+		{
+			dependencies: ["376D8FA0A0E10680"]
+			dependency_requirement: "one_started"
+			id: "3B97941BD1E995D2"
+			subtitle: "Use the new Deployer to craft up some mechanisms"
+			tasks: [
+				{
+					id: "0DF237C703B4AE2A"
+					item: "create_dd:kinetic_mechanism"
+					type: "item"
+				}
+				{
+					id: "6153D9BFC3087BF5"
+					item: "create:precision_mechanism"
+					type: "item"
+				}
+			]
+			title: "Mechanisms"
+			x: 2.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["37186F288D1938BA"]
+			dependency_requirement: "one_started"
+			id: "376D8FA0A0E10680"
+			subtitle: "Craft up a Deployer, essential for Sequenced Assemblies"
+			tasks: [{
+				id: "5911EFF99FE17086"
+				item: "create:deployer"
+				type: "item"
+			}]
+			title: "*poke*"
+			x: 1.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["424EB0B555F0860A"]
+			dependency_requirement: "one_started"
+			id: "5B4FF86B3AEB6780"
+			subtitle: "Obtain A Crushing Wheel to grind up materials even harder"
+			tasks: [{
+				id: "3CA3E512AF173BFF"
+				item: "create:crushing_wheel"
+				type: "item"
+			}]
+			title: "Time to Grind"
+			x: 0.0d
+			y: -6.5d
+		}
+		{
+			dependencies: ["424EB0B555F0860A"]
+			dependency_requirement: "one_started"
+			id: "22B87F2D807623F2"
+			subtitle: "Obtain a Lathe so you can finally use that Curving Press"
+			tasks: [{
+				id: "0C115594E3DCD3FD"
+				item: "vintageimprovements:lathe"
+				type: "item"
+			}]
+			title: "Precision Cutting"
+			x: 1.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["424EB0B555F0860A"]
+			dependency_requirement: "one_started"
+			id: "3075D9B60DF6F213"
+			subtitle: "It's like a press but even better"
+			tasks: [{
+				id: "390DFEE8BB1DF115"
+				item: "vintageimprovements:helve_hammer"
+				type: "item"
+			}]
+			title: "Clonk!"
+			x: -1.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["3B97941BD1E995D2"]
+			dependency_requirement: "one_started"
+			id: "2D73278DA46710FF"
+			subtitle: "It does provide unlimited spin, but not that much of it"
+			tasks: [{
+				id: "3DFB2512740153F5"
+				item: "create_dd:kinetic_motor"
+				type: "item"
+			}]
+			title: "Infinite Rotation"
+			x: 2.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["3B97941BD1E995D2"]
+			dependency_requirement: "one_started"
+			id: "2B55AE043E4FA7D9"
+			subtitle: "Obtain a Rotational Speed Controller to adjust RPM"
+			tasks: [{
+				id: "5642154CD165AFBA"
+				item: "create:rotation_speed_controller"
+				type: "item"
+			}]
+			title: "Need For (controlled) Speed"
+			x: 2.0d
+			y: -3.5d
+		}
+		{
+			dependencies: ["3B97941BD1E995D2"]
+			dependency_requirement: "one_started"
+			id: "0A3BE52155608597"
+			subtitle: "Obtain a Mechanical Arm to automate tasks"
+			tasks: [{
+				id: "72AFC787358BFC4D"
+				item: "create:mechanical_arm"
+				type: "item"
+			}]
+			title: "AI Overlords Imminent"
+			x: 3.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["3B97941BD1E995D2"]
+			dependency_requirement: "one_started"
+			id: "7D7FC3590BB61D51"
+			subtitle: "Obtain The Deforestor Saw and Excavation Drill"
+			tasks: [
+				{
+					id: "38AF3F34F1778417"
+					item: {
+						Count: 1
+						id: "create_dd:deforester_saw"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "5224CE431B1F1013"
+					item: {
+						Count: 1
+						id: "create_dd:excavation_drill"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Tools of Destruction"
+			x: 3.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["3B97941BD1E995D2"]
+			dependency_requirement: "one_started"
+			id: "039CD3993F00C0FB"
+			subtitle: "Obtain the Quadrocopter, a perfect tool for building"
+			tasks: [{
+				id: "4321652E96020179"
+				item: "immersive_aircraft:quadrocopter"
+				type: "item"
+			}]
+			title: "Floating Platform"
+			x: 3.5d
+			y: -2.0d
+		}
+	]
+	title: "The Brass Era"
+}

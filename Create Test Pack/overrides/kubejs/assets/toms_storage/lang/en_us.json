@@ -43,7 +43,7 @@
 	"tooltip.toms_storage.wireless_terminal": "Extends your reach for the terminal.\\Reach: %d blocks",
 	"tooltip.toms_storage.paint_kit": "Paint blocks to match\\their surroundings!",
 	"tooltip.toms_storage.open_crate": "Converts the block in front of it\\into an inventory.\\Beware: Creates Item Entities",
-	"tooltip.toms_storage.inventory_connector": "Connects all of the touching inventories into one.\\Use the Storage Terminal to access\\all of your items. Proxies and Bridges can connect gaps.",
+	"tooltip.toms_storage.inventory_connector": "Connects all of the touching inventories into one.\\Use the Storage Terminal to access\\all of your items. Access Ports and Trims can connect gaps.",
 	"tooltip.toms_storage.inventory_proxy": "Extends the face of the block its pointing at. Requries an Inventory Bridge to connect to an Inventory Connector.",
 	"tooltip.toms_storage.inventory_cable": "Connects inventories across\\long distances. Inventory Cable Connectors\\have to be used to attach inventories\\One Inventory Connector must be\\present in the network.",
 	"tooltip.toms_storage.inventory_hopper": "Import or export from your Inventory Network\\Right click an item to set the filter.\\Shift click with an empty hand to clear filter.",

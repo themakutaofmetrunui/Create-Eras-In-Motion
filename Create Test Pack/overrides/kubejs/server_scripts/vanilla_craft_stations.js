@@ -419,9 +419,9 @@ ServerEvents.recipes(event => {
         'refinedstorage:advanced_processor'
     )
     //toms storage
-    surround('toms_storage:ts.inventory_connector', 'create_connected:inventory_access_port', 'redstone')
+    surround('2x toms_storage:ts.inventory_connector', 'create_connected:inventory_access_port', 'redstone')
     event.shaped(
-        Item.of('toms_storage:ts.inventory_proxy', 1),
+        Item.of('toms_storage:ts.trim', 1),
         [
             'A',
             'B'

@@ -1,0 +1,180 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "the_copper_era"
+	group: ""
+	id: "1F7790C8608CDE2A"
+	order_index: 1
+	quest_links: [ ]
+	quests: [
+		{
+			id: "36BC5785AA2D53A6"
+			subtitle: "Obtain the new waterproof casing of this era"
+			tasks: [{
+				advancement: "create:copper_casing"
+				criterion: ""
+				id: "231E0AB0DCA0F30A"
+				type: "advancement"
+			}]
+			title: "A New Era"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["36BC5785AA2D53A6"]
+			dependency_requirement: "one_started"
+			id: "181B7581FEF2084B"
+			subtitle: "Get a Steam Engine to generate rotational force"
+			tasks: [{
+				id: "4DBE0C6F025D6C65"
+				item: "create:steam_engine"
+				type: "item"
+			}]
+			title: "Full Steam Ahead"
+			x: 0.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["36BC5785AA2D53A6"]
+			dependency_requirement: "one_started"
+			id: "584F10B044B38357"
+			subtitle: "Obtain a steam whistle"
+			tasks: [{
+				id: "49B59244F805E6F7"
+				item: "create:steam_whistle"
+				type: "item"
+			}]
+			title: "Toot toot"
+			x: 1.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["36BC5785AA2D53A6"]
+			dependency_requirement: "one_started"
+			id: "33D729251B0A8878"
+			subtitle: "Obtain an Item Drain"
+			tasks: [{
+				id: "048BF4F4C2232E61"
+				item: "create:item_drain"
+				type: "item"
+			}]
+			title: "Down the Drain"
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["36BC5785AA2D53A6"]
+			dependency_requirement: "one_started"
+			id: "6FCBDE50A6E0AEE8"
+			tasks: [{
+				id: "13BE1BC09DB61919"
+				item: "create_dd:hydraulic_casing"
+				type: "item"
+			}]
+			title: "Hydraulics"
+			x: 0.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["36BC5785AA2D53A6"]
+			dependency_requirement: "one_started"
+			id: "4DD5CF4E760926AD"
+			subtitle: "Obtain a Copper Backtank"
+			tasks: [{
+				id: "5F71098ACDA09049"
+				item: {
+					Count: 1
+					id: "create:copper_backtank"
+					tag: { }
+				}
+				type: "item"
+			}]
+			title: "Portable Air"
+			x: -2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["36BC5785AA2D53A6"]
+			dependency_requirement: "one_started"
+			id: "00F655B1831ADB25"
+			subtitle: "Obtain a Hose Pulley"
+			tasks: [{
+				id: "5DA7DB4359774405"
+				item: "create:hose_pulley"
+				type: "item"
+			}]
+			title: "Fluids at a Distance"
+			x: -1.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["36BC5785AA2D53A6"]
+			dependency_requirement: "one_started"
+			id: "2401900DD1EB5F90"
+			subtitle: "Obtain the items for transporting fluids"
+			tasks: [
+				{
+					id: "09403E3A249865CE"
+					item: "create:fluid_pipe"
+					type: "item"
+				}
+				{
+					id: "76906B736F4601A7"
+					item: "create:fluid_valve"
+					type: "item"
+				}
+				{
+					id: "656CD1D1BEAF9C74"
+					item: "create:mechanical_pump"
+					type: "item"
+				}
+			]
+			title: "Pipes Galore"
+			x: 1.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["36BC5785AA2D53A6"]
+			dependency_requirement: "one_started"
+			id: "2CB67935039AA8F5"
+			subtitle: "Obtain a Fluid Tank to hold fluids of all kinds"
+			tasks: [{
+				id: "662A39E12041489D"
+				item: "create:fluid_tank"
+				type: "item"
+			}]
+			title: "Plenty of Space"
+			x: -1.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["6FCBDE50A6E0AEE8"]
+			dependency_requirement: "one_started"
+			id: "7A02D35BD1C595E0"
+			subtitle: "Obtain a Hydraulic Press to press whole stacks"
+			tasks: [{
+				id: "4986770873EDE817"
+				item: "create_dd:hydraulic_press"
+				type: "item"
+			}]
+			title: "Hydraulic Bonk!"
+			x: -1.0d
+			y: 3.5d
+		}
+		{
+			dependencies: ["6FCBDE50A6E0AEE8"]
+			dependency_requirement: "one_started"
+			id: "4C7ACE18A479FCB5"
+			subtitle: "Obtain a Vacuum Chamber"
+			tasks: [{
+				id: "4899DC2639F13333"
+				item: "vintageimprovements:vacuum_chamber"
+				type: "item"
+			}]
+			title: "The Chamber of Suck"
+			x: 1.0d
+			y: 3.5d
+		}
+	]
+	title: "The Copper Era"
+}
