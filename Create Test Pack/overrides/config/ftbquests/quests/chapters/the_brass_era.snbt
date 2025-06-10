@@ -3,6 +3,7 @@
 	default_quest_shape: ""
 	filename: "the_brass_era"
 	group: ""
+	icon: "create:brass_casing"
 	id: "0B9C89EE77A57CB1"
 	order_index: 2
 	quest_links: [ ]
@@ -243,7 +244,7 @@
 				item: "create:rotation_speed_controller"
 				type: "item"
 			}]
-			title: "Need For (controlled) Speed"
+			title: "Need For (Controlled) Speed"
 			x: 2.0d
 			y: -3.5d
 		}

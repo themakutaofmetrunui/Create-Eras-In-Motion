@@ -1,0 +1,224 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "the_transportation_era"
+	group: ""
+	icon: "create:railway_casing"
+	id: "7E85786166FDF91E"
+	order_index: 3
+	quest_links: [ ]
+	quests: [
+		{
+			id: "7858B342D2C8FB90"
+			subtitle: "Are you sure?"
+			tasks: [{
+				id: "2B94A09FF5E1440E"
+				item: "create:sturdy_sheet"
+				type: "item"
+			}]
+			title: "The Invincible Sheet"
+			x: 0.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["7858B342D2C8FB90"]
+			dependency_requirement: "one_started"
+			id: "58E581D3CADD02DA"
+			subtitle: "Craft up some Train Casing to go choo choo"
+			tasks: [{
+				id: "5C030343B6A6C08A"
+				item: "create:railway_casing"
+				only_from_crafting: false
+				type: "item"
+			}]
+			title: "I Like Trains"
+			x: -1.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["58E581D3CADD02DA"]
+			dependency_requirement: "one_started"
+			icon: "create:controls"
+			id: "6F1FA933E8FD3DC8"
+			subtitle: "Assemble a train"
+			tasks: [{
+				advancement: "create:train"
+				criterion: ""
+				id: "79289770FB7C5551"
+				type: "advancement"
+			}]
+			title: "All Aboard!"
+			x: -3.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["7858B342D2C8FB90"]
+			dependency_requirement: "one_started"
+			id: "0A805740E96D1E0E"
+			subtitle: "Obtain a Vehicle Engine for some new rides"
+			tasks: [{
+				id: "5C13AD17C76B4221"
+				item: "immersive_aircraft:engine"
+				type: "item"
+			}]
+			title: "Vroom"
+			x: 1.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["0A805740E96D1E0E"]
+			dependency_requirement: "one_started"
+			id: "2566D86053712EFB"
+			subtitle: "Obtain an Airship to take to the skies"
+			tasks: [{
+				id: "5F051D038D947B0A"
+				item: "immersive_aircraft:airship"
+				type: "item"
+			}]
+			title: "Whatever Floats your Boat (or Ship)"
+			x: 1.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["2566D86053712EFB"]
+			dependency_requirement: "one_started"
+			id: "75CD8130030F5BCE"
+			subtitle: "Obtain a Cargo Airship to hold more items in your Airship"
+			tasks: [{
+				id: "44D2AD4C25E3A7D4"
+				item: "immersive_aircraft:cargo_airship"
+				type: "item"
+			}]
+			title: "Extra Storage Space"
+			x: 1.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["75CD8130030F5BCE"]
+			dependency_requirement: "one_started"
+			id: "70AFB1D7AC7A3642"
+			subtitle: "Obtain a Warship to dominate the skies"
+			tasks: [{
+				id: "06305338904F4703"
+				item: "immersive_aircraft:warship"
+				type: "item"
+			}]
+			title: "A Flying Fortress"
+			x: 1.5d
+			y: -6.0d
+		}
+		{
+			dependencies: ["0A805740E96D1E0E"]
+			dependency_requirement: "one_started"
+			id: "1B2987DC63197332"
+			subtitle: "Obtain the Biplane"
+			tasks: [{
+				id: "0D9B018E2689E667"
+				item: "immersive_aircraft:biplane"
+				type: "item"
+			}]
+			title: "The Wright Way"
+			x: 2.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["0A805740E96D1E0E"]
+			dependency_requirement: "one_started"
+			id: "5DAD76C94F2151C7"
+			subtitle: "Obtain all the Aircraft Weapons"
+			tasks: [
+				{
+					id: "56C93F47F6BED6CC"
+					item: "immersive_aircraft:rotary_cannon"
+					type: "item"
+				}
+				{
+					id: "3E2C1965933FE1CE"
+					item: "immersive_aircraft:heavy_crossbow"
+					type: "item"
+				}
+				{
+					id: "5A7996438EC48C72"
+					item: "immersive_aircraft:bomb_bay"
+					type: "item"
+				}
+				{
+					id: "1D250AB9A394EF2E"
+					item: "immersive_aircraft:telescope"
+					type: "item"
+				}
+			]
+			title: "Advanced Weaponry (and a Telescope)"
+			x: 3.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["0A805740E96D1E0E"]
+			dependency_requirement: "one_started"
+			id: "4058EF8FBC298D97"
+			subtitle: "Obtain all upgrades for your aircraft's engine"
+			tasks: [
+				{
+					id: "78FC038D737B98CB"
+					item: "immersive_aircraft:eco_engine"
+					type: "item"
+				}
+				{
+					id: "01D683C49B391771"
+					item: "immersive_aircraft:nether_engine"
+					type: "item"
+				}
+				{
+					id: "2277E04555A85FA1"
+					item: "immersive_aircraft:steel_boiler"
+					type: "item"
+				}
+				{
+					id: "14DB1EFC4233A6B7"
+					item: "immersive_aircraft:industrial_gears"
+					type: "item"
+				}
+				{
+					id: "032DD840414B8E72"
+					item: "immersive_aircraft:sturdy_pipes"
+					type: "item"
+				}
+			]
+			title: "Upgrades, People, Upgrades"
+			x: 2.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["0A805740E96D1E0E"]
+			dependency_requirement: "one_started"
+			id: "2194E721DF0293BB"
+			subtitle: "Gather the aircraft upgrades for the body"
+			tasks: [
+				{
+					id: "3208B86AEF2CBBB2"
+					item: "immersive_aircraft:enhanced_propeller"
+					type: "item"
+				}
+				{
+					id: "7DB2400A39F26B0E"
+					item: "immersive_aircraft:gyroscope"
+					type: "item"
+				}
+				{
+					id: "5A4FC4959F877938"
+					item: "immersive_aircraft:hull_reinforcement"
+					type: "item"
+				}
+				{
+					id: "4B014AAE86B0204F"
+					item: "immersive_aircraft:improved_landing_gear"
+					type: "item"
+				}
+			]
+			title: "Accessorize"
+			x: 1.5d
+			y: 0.0d
+		}
+	]
+	title: "The Transportation Era"
+}

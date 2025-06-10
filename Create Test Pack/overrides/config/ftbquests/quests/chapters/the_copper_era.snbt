@@ -3,6 +3,7 @@
 	default_quest_shape: ""
 	filename: "the_copper_era"
 	group: ""
+	icon: "create:copper_casing"
 	id: "1F7790C8608CDE2A"
 	order_index: 1
 	quest_links: [ ]

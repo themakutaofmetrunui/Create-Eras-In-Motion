@@ -50,7 +50,11 @@ ServerEvents.recipes(event => {
         }
     )
     //create dreams and desires
-  
+    event.replaceInput(
+        {id: 'create_dd:mechanical_crafting/furnace_engine'},
+        '#forge:dusts/obsidian',
+        'create:sturdy_sheet'
+    )
     //immersive aircraft
     surround('immersive_aircraft:propeller', 'create:iron_sheet', 'create:propeller')
     surround('immersive_aircraft:enhanced_propeller', 'create:brass_sheet', 'create:propeller')

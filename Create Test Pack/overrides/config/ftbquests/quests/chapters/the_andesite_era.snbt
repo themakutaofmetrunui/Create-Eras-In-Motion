@@ -3,6 +3,7 @@
 	default_quest_shape: ""
 	filename: "the_andesite_era"
 	group: ""
+	icon: "create:andesite_casing"
 	id: "1F97C4C9A590FB83"
 	order_index: 0
 	quest_links: [ ]
