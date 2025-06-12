@@ -1765,4 +1765,16 @@ ServerEvents.recipes(event => {
     surround('ad_astra:ostrum_tank', 'mekanism:alloy_reinforced', 'ad_astra:large_gas_tank')
     surround('ad_astra:calorite_tank', 'mekanism:alloy_atomic', 'ad_astra:large_gas_tank')
     blastsmelt('ad_astra:etrium_ingot', 'kubejs:dust_etrium')
+
+    //alexscaves
+    event.replaceInput(
+        { input: "alexscaves:uranium"},
+        'alexscaves:uranium',
+        'mekanism:ingot_uranium'
+    )
+    event.replaceOutput(
+        {output: 'alexscaves:uranium'},
+        'alexscaves:uranium',
+        'mekanism:ingot_uranium'
+    )
 })
