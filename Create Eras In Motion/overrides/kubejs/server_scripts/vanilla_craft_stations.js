@@ -318,6 +318,12 @@ ServerEvents.recipes(event => {
         }
     )
     event.shapeless(
+        Item.of('tfmg:copper_cable', 4),
+        [
+            'createaddition:copper_spool'
+        ]
+    )
+    event.shapeless(
         Item.of('tfmg:steel_ingot', 1),
         [
             '9x mekanism:nugget_steel'
@@ -359,7 +365,7 @@ ServerEvents.recipes(event => {
         'tfmg:capacitor_'
     )
     event.shaped(
-        Item.of('createaddition:capacitor', 1),
+        Item.of('2x createaddition:capacitor', 1),
         [
             'ABA',
             'CBC'
@@ -749,8 +755,8 @@ ServerEvents.recipes(event => {
         ],
         {
             A: 'vintageimprovements:osmium_sheet',
-            B: 'kubejs:magnetic_spool',
-            C: 'tfmg:turbine_blade',
+            B: 'mekanismgenerators:electromagnetic_coil',
+            C: 'create_dd:furnace_engine',
             D: 'immersive_aircraft:nether_engine'
         }
     )
@@ -1578,8 +1584,8 @@ ServerEvents.recipes(event => {
         ],
         {
             A: 'create:iron_sheet',
-            B: 'kubejs:magnetic_spool',
-            C: 'tfmg:turbine_blade',
+            B: 'mekanismgenerators:electromagnetic_coil',
+            C: 'create_dd:furnace_engine',
             D: 'immersive_aircraft:boiler'
         }
     )

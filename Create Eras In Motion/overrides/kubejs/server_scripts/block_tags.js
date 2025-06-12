@@ -20,4 +20,5 @@ ServerEvents.tags('fluid', event => {
     event.add('ad_astra:fuel', 'ad_astra:cryo_fuel')
     event.add('ad_astra:fuel', 'ad_astra:fuel')
     event.add('ad_astra:tier_1_rover_fuel', 'tfmg:gasoline')
+    event.add('tfmg:flammable', 'tfmg:carbon_dioxide')
 })

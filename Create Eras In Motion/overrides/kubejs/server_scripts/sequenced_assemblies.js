@@ -121,6 +121,7 @@ ServerEvents.recipes(event => {
       Item.of('mekanismgenerators:gas_burning_generator')
     ], 'tfmg:engine_base', [
       event.recipes.createDeploying(tgas, [tgas, 'kubejs:magnetic_spool']),
+      event.recipes.createDeploying(tgas, [tgas, '#createaddition:spools/high_current']),
       event.recipes.createDeploying(tgas, [tgas, 'tfmg:turbine_blade']),
       event.recipes.createDeploying(tgas, [tgas, 'tfmg:engine_chamber']),
       event.recipes.createDeploying(tgas, [tgas, 'tfmg:screw']),

@@ -125,7 +125,7 @@ ServerEvents.recipes(event => {
         'EFE',
     ], {
         A: 'immersive_aircraft:propeller',
-        B: 'kubejs:magnetic_spool',
+        B: 'mekanismgenerators:electromagnetic_coil',
         C: 'mekanism:ingot_osmium',
         D: 'mekanism:alloy_infused',
         E: 'mekanism:energy_tablet',
