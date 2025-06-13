@@ -294,6 +294,20 @@ ServerEvents.recipes(event => {
         'createaddition:copper_spool'
     )
     event.shaped(
+        Item.of('tfmg:transistor', 2),
+        [
+            'ABA',
+            'BCB',
+            'ADA'
+        ],
+        {
+            A: 'redstone',
+            B: 'refinedstorage:silicon',
+            C: 'tfmg:electric_casing',
+            D: 'create:industrial_iron_block'
+        }
+    )
+    event.shaped(
         Item.of('tfmg:lead_flywheel', 1),
         [
             'AAA',
@@ -364,6 +378,11 @@ ServerEvents.recipes(event => {
         'createaddition:capacitor',
         'tfmg:capacitor_'
     )
+    event.replaceInput(
+        {id: 'createaddition:crafting/redstone_relay'},
+        'createaddition:connector',
+        'tfmg:cable_connector'
+    )
     event.shaped(
         Item.of('2x createaddition:capacitor', 1),
         [
@@ -427,6 +446,11 @@ ServerEvents.recipes(event => {
         { mod: 'createteleporters'},
         'createteleporters:advanced_part',
         'refinedstorage:advanced_processor'
+    )
+    event.replaceInput(
+        {id: 'createteleporters:pocket_dimension_recipe'},
+        'createteleporters:gravity_stab',
+        'ad_astra:gravity_normalizer'
     )
     //toms storage
     surround('2x toms_storage:ts.inventory_connector', 'create_connected:inventory_access_port', 'redstone')
@@ -682,11 +706,6 @@ ServerEvents.recipes(event => {
         'tfmg:electric_casing'
     )
     event.replaceInput(
-        {id: 'mekanism:formulaic_assemblicator'},
-        'mekanism:steel_casing',
-        'tfmg:electric_casing'
-    )
-    event.replaceInput(
         {id: 'mekanism:antiprotonic_nucleosynthesizer'},
         'mekanism:steel_casing',
         'tfmg:electric_casing'
@@ -720,6 +739,11 @@ ServerEvents.recipes(event => {
         {id: 'mekanism:infusion_conversion/carbon/from_enriched'},
         '#mekanism:enriched/carbon',
         'tfmg:coal_coke_dust'
+    )
+    event.replaceInput(
+        {id: 'mekanism:boiler_valve'},
+        'mekanism:advanced_control_circuit',
+        'mekanism:basic_control_circuit'
     )
     event.replaceOutput(
         {output: 'mekanism:raw_lead'},

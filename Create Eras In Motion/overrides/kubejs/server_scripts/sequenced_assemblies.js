@@ -133,6 +133,7 @@ ServerEvents.recipes(event => {
       Item.of('mekanismgenerators:bio_generator')
     ], 'furnace', [
       event.recipes.createDeploying(tbio, [tbio, 'create_dd:furnace_engine']),
+      event.recipes.createDeploying(tbio, [tbio, 'mekanismgenerators:electromagnetic_coil']),
       event.recipes.createFilling(tgas, [tbio, Fluid.of('tfmg:lubrication_oil', 1000)]),
       event.recipes.createDeploying(tbio, [tbio, 'tfmg:screw']),
       event.recipes.createDeploying(tbio, [tbio, 'tfmg:screwdriver']),
