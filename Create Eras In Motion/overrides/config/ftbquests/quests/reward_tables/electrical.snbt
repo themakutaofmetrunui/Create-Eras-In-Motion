@@ -1,0 +1,11 @@
+{
+	id: "1E7232346E07267D"
+	loot_size: 1
+	order_index: 0
+	rewards: [
+		{ item: "tfmg:capacitor_" }
+		{ item: "createaddition:capacitor" }
+		{ item: "tfmg:resistor_" }
+	]
+	title: "electrical"
+}

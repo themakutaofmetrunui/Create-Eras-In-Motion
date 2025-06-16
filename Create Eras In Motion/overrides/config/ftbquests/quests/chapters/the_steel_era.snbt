@@ -1,6 +1,6 @@
 {
 	default_hide_dependency_lines: false
-	default_quest_shape: ""
+	default_quest_shape: "task"
 	filename: "the_steel_era"
 	group: ""
 	icon: "tfmg:steel_casing"
@@ -9,7 +9,20 @@
 	quest_links: [ ]
 	quests: [
 		{
+			dependency_requirement: "one_started"
 			id: "548E5A3CF885E14B"
+			rewards: [
+				{
+					id: "600B6C6E216A5E0C"
+					item: "tfmg:aluminum_ingot"
+					type: "item"
+				}
+				{
+					id: "784B6EB8710C5C3B"
+					type: "xp_levels"
+					xp_levels: 1
+				}
+			]
 			subtitle: "Obtain a Cast Iron Ingot"
 			tasks: [{
 				id: "6054617837F01454"
@@ -17,12 +30,24 @@
 				type: "item"
 			}]
 			x: 0.0d
-			y: 0.0d
+			y: 0.5d
 		}
 		{
 			dependencies: ["548E5A3CF885E14B"]
 			dependency_requirement: "one_started"
 			id: "3150992AF61F302A"
+			rewards: [
+				{
+					id: "0DA025BD83C9FB20"
+					item: "tfmg:aluminum_ingot"
+					type: "item"
+				}
+				{
+					id: "1FE41458B4F42C2B"
+					type: "xp_levels"
+					xp_levels: 1
+				}
+			]
 			subtitle: "Craft Coal Coke"
 			tasks: [{
 				id: "78224338CEDE7B60"
@@ -32,12 +57,24 @@
 			}]
 			title: "Coal, but better"
 			x: 0.0d
-			y: -1.5d
+			y: -1.0d
 		}
 		{
 			dependencies: ["3150992AF61F302A"]
 			dependency_requirement: "one_started"
 			id: "4877E03FEEF7B3FF"
+			rewards: [
+				{
+					id: "3D9D5205CE0F8EE2"
+					item: "tfmg:aluminum_ingot"
+					type: "item"
+				}
+				{
+					id: "54220093D1E2A049"
+					type: "xp_levels"
+					xp_levels: 1
+				}
+			]
 			subtitle: "Build yourself an Industrial Blast Furnace"
 			tasks: [
 				{
@@ -60,13 +97,25 @@
 			]
 			title: "Big Blasting"
 			x: 0.0d
-			y: -3.0d
+			y: -2.5d
 		}
 		{
 			dependencies: ["4877E03FEEF7B3FF"]
 			dependency_requirement: "one_started"
 			icon: "tfmg:steel_ingot"
 			id: "049A75E4158DB790"
+			rewards: [
+				{
+					id: "7A7769F67CB96070"
+					item: "tfmg:steel_ingot"
+					type: "item"
+				}
+				{
+					id: "79EB03D122E7573F"
+					type: "xp_levels"
+					xp_levels: 1
+				}
+			]
 			subtitle: "Use a Casting Spout, Basin, and Ingot Mold to craft Steel Ingots"
 			tasks: [
 				{
@@ -92,12 +141,26 @@
 			]
 			title: "Breaking the Mold"
 			x: 0.0d
-			y: -4.5d
+			y: -4.0d
 		}
 		{
 			dependencies: ["049A75E4158DB790"]
 			dependency_requirement: "one_started"
 			id: "581461FC55AC019F"
+			rewards: [
+				{
+					count: 5
+					id: "3508AD6293422052"
+					item: "tfmg:steel_ingot"
+					type: "item"
+				}
+				{
+					id: "2C79CA63D94DC419"
+					type: "xp_levels"
+					xp_levels: 2
+				}
+			]
+			shape: "goal"
 			subtitle: "Assemble a Pumpjack"
 			tasks: [
 				{
@@ -111,6 +174,7 @@
 					type: "item"
 				}
 				{
+					count: 5L
 					id: "6C665D670826F2B1"
 					item: "tfmg:pumpjack_hammer_part"
 					type: "item"
@@ -137,11 +201,23 @@
 				}
 			]
 			title: "Pump It"
-			x: 1.5d
-			y: -6.0d
+			x: 0.0d
+			y: -5.5d
 		}
 		{
 			id: "7AEAEF85B7D761C8"
+			rewards: [
+				{
+					id: "3A32CCF91DA42000"
+					item: "tfmg:steel_ingot"
+					type: "item"
+				}
+				{
+					id: "72A92D27C3F9BBE9"
+					type: "xp_levels"
+					xp_levels: 1
+				}
+			]
 			subtitle: "Find an Oil Deposit"
 			tasks: [{
 				icon: "tfmg:oil_deposit"
@@ -153,7 +229,7 @@
 			}]
 			title: "Sticky Fingers"
 			x: -1.5d
-			y: -4.0d
+			y: -5.5d
 		}
 		{
 			dependencies: [
@@ -164,6 +240,21 @@
 			]
 			dependency_requirement: "one_started"
 			id: "321F332194EF77AF"
+			rewards: [
+				{
+					count: 5
+					id: "5944280499A1977B"
+					item: "tfmg:steel_ingot"
+					type: "item"
+				}
+				{
+					id: "691BA83EFB83A612"
+					type: "xp_levels"
+					xp_levels: 2
+				}
+			]
+			shape: "goal"
+			subtitle: "Go assemble yourself a Distillation Tower"
 			tasks: [
 				{
 					id: "31C3E8BBE4054DD7"
@@ -171,16 +262,36 @@
 					type: "item"
 				}
 				{
+					count: 5L
 					id: "0AE8B605C7C6263C"
 					item: "tfmg:steel_distillation_output"
 					type: "item"
 				}
+				{
+					count: 4L
+					id: "1B6231BED3C333CC"
+					item: { Count: 4, id: "tfmg:industrial_pipe" }
+					type: "item"
+				}
 			]
+			title: "The (Distillation) Tower of Babel"
 			x: 0.0d
 			y: -7.0d
 		}
 		{
 			id: "3CF1FF7BC1304188"
+			rewards: [
+				{
+					id: "01E0437E90C2DE11"
+					item: "tfmg:steel_ingot"
+					type: "item"
+				}
+				{
+					id: "5C473155725DAF46"
+					type: "xp_levels"
+					xp_levels: 1
+				}
+			]
 			subtitle: "Collect some Light Oil"
 			tasks: [{
 				id: "7B9B491EB16F6D9A"
@@ -189,10 +300,22 @@
 			}]
 			title: "Oil Spill"
 			x: -1.5d
-			y: -5.0d
+			y: -6.5d
 		}
 		{
 			id: "3E734FDB7795FA83"
+			rewards: [
+				{
+					id: "518C99625A191C95"
+					item: "tfmg:steel_ingot"
+					type: "item"
+				}
+				{
+					id: "3A55094047005530"
+					type: "xp_levels"
+					xp_levels: 1
+				}
+			]
 			subtitle: "Collect some Sweet Oil"
 			tasks: [{
 				id: "66D94553FF5E8A3B"
@@ -201,7 +324,789 @@
 			}]
 			title: "Liquid Gold"
 			x: -1.5d
-			y: -6.0d
+			y: -7.5d
+		}
+		{
+			dependencies: ["321F332194EF77AF"]
+			dependency_requirement: "one_started"
+			description: ["                  Obtain some liquid asphalt"]
+			id: "1E73AE94326A3B8B"
+			rewards: [
+				{
+					id: "701FCA71593073DC"
+					item: "tfmg:steel_ingot"
+					type: "item"
+				}
+				{
+					id: "35B7244D3FCAB32F"
+					type: "xp_levels"
+					xp_levels: 1
+				}
+			]
+			subtitle: "He says, \"a beer please, and one for the road\""
+			tasks: [{
+				id: "224A9DD20D0BDC63"
+				item: "tfmg:liquid_asphalt_bucket"
+				type: "item"
+			}]
+			title: "A Man Walks Into the Bar with a Piece of Asphalt"
+			x: -1.0d
+			y: -8.5d
+		}
+		{
+			id: "12D8C047BC77B4AE"
+			rewards: [
+				{
+					id: "12E59C70399CFD30"
+					item: "tfmg:steel_ingot"
+					type: "item"
+				}
+				{
+					id: "426DA80EAE7C6C65"
+					type: "xp_levels"
+					xp_levels: 1
+				}
+			]
+			subtitle: "Obtain a Bucket of Concrete"
+			tasks: [{
+				id: "4BA823CA9A652872"
+				item: "tfmg:liquid_concrete_bucket"
+				type: "item"
+			}]
+			title: "Concrete Jungle Wet Dream Tomato"
+			x: -2.0d
+			y: -8.5d
+		}
+		{
+			id: "0D1A6F05D008122E"
+			rewards: [
+				{
+					id: "09CCD581D81BC08B"
+					item: "tfmg:steel_ingot"
+					type: "item"
+				}
+				{
+					id: "2657919795A5F5E8"
+					type: "xp_levels"
+					xp_levels: 1
+				}
+			]
+			subtitle: "Obtain Ingots of Nickel, Lithium, Aluminium, Lead, and Tin"
+			tasks: [
+				{
+					id: "7FB376E18D825341"
+					item: "tfmg:nickel_ingot"
+					type: "item"
+				}
+				{
+					id: "21AB18E9CEC0DCBD"
+					item: "tfmg:lithium_ingot"
+					type: "item"
+				}
+				{
+					id: "0CBFCBC462FFE01C"
+					item: "tfmg:aluminum_ingot"
+					type: "item"
+				}
+				{
+					id: "24FAA336A785A409"
+					item: "tfmg:lead_ingot"
+					type: "item"
+				}
+				{
+					id: "6E379CE1D11E212A"
+					item: "mekanism:ingot_tin"
+					type: "item"
+				}
+			]
+			title: "Precious Metals"
+			x: 2.0d
+			y: -8.5d
+		}
+		{
+			dependencies: ["321F332194EF77AF"]
+			dependency_requirement: "one_started"
+			id: "2F11FC7526AF8317"
+			rewards: [
+				{
+					count: 10
+					id: "647D6423080A5A10"
+					item: "tfmg:steel_ingot"
+					type: "item"
+				}
+				{
+					id: "25483BCCF36B6FB9"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+			shape: "challenge"
+			subtitle: "Get A Bucket of every distilled Fluids"
+			tasks: [
+				{
+					id: "3B8DC6B70F03C2BE"
+					item: "tfmg:heavy_oil_bucket"
+					type: "item"
+				}
+				{
+					id: "77927E250A2F21DF"
+					item: "tfmg:diesel_bucket"
+					type: "item"
+				}
+				{
+					id: "7A09061B3590435B"
+					item: "tfmg:kerosene_bucket"
+					type: "item"
+				}
+				{
+					id: "6E7BD5F518934D77"
+					item: "tfmg:naphtha_bucket"
+					type: "item"
+				}
+				{
+					id: "3D45AB9E078884BF"
+					item: "tfmg:gasoline_bucket"
+					type: "item"
+				}
+				{
+					id: "511284BC35937164"
+					item: "tfmg:lpg_bucket"
+					type: "item"
+				}
+				{
+					id: "4DEA28455ED356D0"
+					item: "tfmg:butane_bucket"
+					type: "item"
+				}
+				{
+					id: "72622ECCB0AB265D"
+					item: "tfmg:propane_bucket"
+					type: "item"
+				}
+				{
+					id: "160EAC53C2B7A598"
+					item: "tfmg:lubrication_oil_bucket"
+					type: "item"
+				}
+				{
+					id: "0397558C3E697689"
+					item: "tfmg:propylene_bucket"
+					type: "item"
+				}
+				{
+					id: "231E5880E05FF6E0"
+					item: "tfmg:ethylene_bucket"
+					type: "item"
+				}
+			]
+			title: "Gotta Distill 'Em All"
+			x: 0.0d
+			y: -8.5d
+		}
+		{
+			dependencies: ["321F332194EF77AF"]
+			dependency_requirement: "one_started"
+			id: "71D349CC109FCD0F"
+			rewards: [
+				{
+					id: "725F6D40DB1E2A1B"
+					item: "tfmg:steel_ingot"
+					type: "item"
+				}
+				{
+					id: "3C91DF10FAA9B9BE"
+					type: "xp_levels"
+					xp_levels: 1
+				}
+			]
+			subtitle: "Make some Plastic"
+			tasks: [{
+				id: "6C6171E5C6F4C1AA"
+				item: "tfmg:plastic_sheet"
+				type: "item"
+			}]
+			title: "Life is Plastic"
+			x: 1.0d
+			y: -8.5d
+		}
+		{
+			dependencies: [
+				"0D1A6F05D008122E"
+				"46A4A7710568704A"
+			]
+			dependency_requirement: "one_started"
+			id: "0E39793FFA7264BF"
+			rewards: [
+				{
+					count: 5
+					id: "19B60CDE59D76948"
+					item: "tfmg:steel_ingot"
+					type: "item"
+				}
+				{
+					id: "63E5E474A3CF143C"
+					type: "xp_levels"
+					xp_levels: 2
+				}
+			]
+			shape: "goal"
+			subtitle: "Obtain the three grenades"
+			tasks: [
+				{
+					id: "6607DCB75FF50BDC"
+					item: "tfmg:thermite_grenade"
+					type: "item"
+				}
+				{
+					id: "1F7A4B46CEA78842"
+					item: "tfmg:zinc_grenade"
+					type: "item"
+				}
+				{
+					id: "760B32135D28201C"
+					item: "tfmg:copper_grenade"
+					type: "item"
+				}
+			]
+			title: "KaBOOM!"
+			x: 4.0d
+			y: -10.0d
+		}
+		{
+			id: "46A4A7710568704A"
+			rewards: [
+				{
+					id: "75DB5FC24A173238"
+					item: "tfmg:steel_ingot"
+					type: "item"
+				}
+				{
+					id: "4523C769B2FC82B1"
+					type: "xp_levels"
+					xp_levels: 1
+				}
+			]
+			subtitle: "Obtain some Thermite"
+			tasks: [{
+				id: "598D5CCE2678C361"
+				item: "tfmg:thermite_powder"
+				type: "item"
+			}]
+			title: "Made With Materials Found at Walmart"
+			x: 5.5d
+			y: -10.0d
+		}
+		{
+			dependencies: ["71D349CC109FCD0F"]
+			dependency_requirement: "one_started"
+			id: "07E6D8CAB2BA3DC6"
+			rewards: [
+				{
+					id: "2D5E5881A3255135"
+					item: "tfmg:steel_ingot"
+					type: "item"
+				}
+				{
+					id: "1BB24436C138159F"
+					type: "xp_levels"
+					xp_levels: 1
+				}
+			]
+			subtitle: "Gather Synthetics String, Leather, and Rubber"
+			tasks: [
+				{
+					id: "53740AB69D15831F"
+					item: "tfmg:synthetic_string"
+					type: "item"
+				}
+				{
+					id: "473D6C79D2DCD609"
+					item: "tfmg:synthetic_leather"
+					type: "item"
+				}
+				{
+					id: "579DC29AAB36B3CF"
+					item: "create_dd:rubber"
+					type: "item"
+				}
+			]
+			title: "Synthetics"
+			x: 1.0d
+			y: -10.0d
+		}
+		{
+			dependencies: [
+				"0D1A6F05D008122E"
+				"07E6D8CAB2BA3DC6"
+			]
+			dependency_requirement: "one_started"
+			id: "673C5D041EB652BA"
+			rewards: [
+				{
+					count: 5
+					id: "0EB934F81B71C7C6"
+					item: "tfmg:steel_ingot"
+					type: "item"
+				}
+				{
+					id: "30952465DBB89522"
+					type: "xp_levels"
+					xp_levels: 2
+				}
+			]
+			shape: "goal"
+			subtitle: "Make a Lithium Blade"
+			tasks: [{
+				id: "1866946886475E0D"
+				item: {
+					Count: 1
+					id: "tfmg:lithium_blade"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "Sick Blade"
+			x: 2.5d
+			y: -10.0d
+		}
+		{
+			dependencies: ["1C983A826D515E59"]
+			dependency_requirement: "one_started"
+			id: "23F9E1C517CFE9C4"
+			rewards: [
+				{
+					count: 5
+					id: "0758B601D3B33F0C"
+					item: "tfmg:steel_ingot"
+					type: "item"
+				}
+				{
+					id: "46372D918278FC34"
+					type: "xp_levels"
+					xp_levels: 2
+				}
+			]
+			shape: "goal"
+			subtitle: "Obtain an Advanced and Quad Potato Cannon"
+			tasks: [
+				{
+					id: "2930DB1C1B5D91D9"
+					item: {
+						Count: 1
+						id: "tfmg:advanced_potato_cannon"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "7A11C17DEF4E6DA5"
+					item: {
+						Count: 1
+						id: "tfmg:quad_potato_cannon"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Advanced Potatodynamics"
+			x: 3.5d
+			y: -5.5d
+		}
+		{
+			dependencies: ["147748D7A7092FDA"]
+			dependency_requirement: "one_started"
+			id: "1C983A826D515E59"
+			rewards: [
+				{
+					id: "4F8A1D0497DE1C4D"
+					item: "tfmg:steel_ingot"
+					type: "item"
+				}
+				{
+					id: "180B5F3CB1EA7074"
+					type: "xp_levels"
+					xp_levels: 1
+				}
+			]
+			subtitle: "Obtain a Steel Mechanism"
+			tasks: [{
+				id: "2D0CE4505FFA1E18"
+				item: "tfmg:steel_mechanism"
+				type: "item"
+			}]
+			title: "Shiny Mechanism"
+			x: 2.0d
+			y: -5.5d
+		}
+		{
+			dependencies: ["049A75E4158DB790"]
+			dependency_requirement: "one_started"
+			id: "147748D7A7092FDA"
+			rewards: [
+				{
+					id: "57E83884103C7A1E"
+					item: "tfmg:steel_ingot"
+					type: "item"
+				}
+				{
+					id: "2C63A3254391D87D"
+					type: "xp_levels"
+					xp_levels: 1
+				}
+			]
+			subtitle: "Obtain Screws and a Screwdriver"
+			tasks: [
+				{
+					id: "5914D89D4E0123CC"
+					item: "tfmg:screw"
+					type: "item"
+				}
+				{
+					id: "139390DF74629667"
+					item: {
+						Count: 1
+						id: "tfmg:screwdriver"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Toolbox"
+			x: 2.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["660E4F18859D5387"]
+			dependency_requirement: "one_started"
+			id: "799DBE3CF0BB0182"
+			rewards: [
+				{
+					count: 5
+					id: "08CAF0CB22469D7F"
+					item: "tfmg:steel_ingot"
+					type: "item"
+				}
+				{
+					id: "18DE355F068383B0"
+					type: "xp_levels"
+					xp_levels: 2
+				}
+			]
+			shape: "goal"
+			subtitle: "Obtain the 3 Small Engines"
+			tasks: [
+				{
+					id: "02D2D5782DCB4B7A"
+					item: "tfmg:gasoline_engine"
+					type: "item"
+				}
+				{
+					id: "36C600FAEB3A7946"
+					item: "tfmg:lpg_engine"
+					type: "item"
+				}
+				{
+					id: "1041AC2A0050531B"
+					item: "tfmg:turbine_engine"
+					type: "item"
+				}
+			]
+			title: "Now We Are Cooking With Gas (or LPG or Kerosene)"
+			x: 3.5d
+			y: -7.0d
+		}
+		{
+			dependencies: [
+				"321F332194EF77AF"
+				"1C983A826D515E59"
+				"0D1A6F05D008122E"
+			]
+			dependency_requirement: "one_started"
+			id: "660E4F18859D5387"
+			rewards: [
+				{
+					id: "0D2D9AE408F95C10"
+					item: "tfmg:steel_ingot"
+					type: "item"
+				}
+				{
+					id: "1BD6EE8007E138EB"
+					type: "xp_levels"
+					xp_levels: 1
+				}
+			]
+			subtitle: "Obtain the 2 Compact Engines"
+			tasks: [
+				{
+					id: "057A4E85F29C15B5"
+					item: "tfmg:compact_engine"
+					type: "item"
+				}
+				{
+					id: "3BC2AEDD901DEBEC"
+					item: "tfmg:low_grade_fuel_engine"
+					type: "item"
+				}
+			]
+			title: "Small But Mighty"
+			x: 2.0d
+			y: -7.0d
+		}
+		{
+			dependencies: ["799DBE3CF0BB0182"]
+			dependency_requirement: "one_started"
+			id: "388116A000AD84DD"
+			rewards: [
+				{
+					id: "6B1643FEEF20F9FA"
+					item: "tfmg:steel_ingot"
+					type: "item"
+				}
+				{
+					id: "577B59D19BD5705A"
+					type: "xp_levels"
+					xp_levels: 1
+				}
+			]
+			subtitle: "Obtain the 2 Radial Engines"
+			tasks: [
+				{
+					id: "287B1E8E595F1DC8"
+					item: "tfmg:radial_engine"
+					type: "item"
+				}
+				{
+					id: "0432B712D19C3885"
+					item: "tfmg:large_radial_engine"
+					type: "item"
+				}
+			]
+			title: "Radial Engines"
+			x: 5.0d
+			y: -8.0d
+		}
+		{
+			dependencies: ["799DBE3CF0BB0182"]
+			dependency_requirement: "one_started"
+			id: "6FEC70F8B328AD4E"
+			rewards: [
+				{
+					id: "5F662E0504CB8A47"
+					item: "tfmg:steel_ingot"
+					type: "item"
+				}
+				{
+					id: "12AF37DB323155D5"
+					type: "xp_levels"
+					xp_levels: 1
+				}
+			]
+			subtitle: "Obtain a Diesel Engine"
+			tasks: [{
+				id: "67C0F8A1C9172E19"
+				item: "tfmg:diesel_engine"
+				type: "item"
+			}]
+			title: "Supercharged"
+			x: 5.0d
+			y: -6.5d
+		}
+		{
+			dependencies: ["2F11FC7526AF8317"]
+			dependency_requirement: "one_started"
+			id: "3651BFD6525A842C"
+			rewards: [
+				{
+					id: "3B031F3E9C208EB8"
+					item: "tfmg:steel_ingot"
+					type: "item"
+				}
+				{
+					id: "7DF23C72F4EA6C1B"
+					type: "xp_levels"
+					xp_levels: 1
+				}
+			]
+			subtitle: "Obtain a Bucket of Napalm"
+			tasks: [{
+				id: "1240CA9C69CB9B1B"
+				item: "tfmg:napalm_bucket"
+				type: "item"
+			}]
+			title: "Please Don't Try At Home"
+			x: 0.0d
+			y: -10.0d
+		}
+		{
+			dependencies: ["3651BFD6525A842C"]
+			dependency_requirement: "one_started"
+			id: "6A901E922801F081"
+			rewards: [
+				{
+					id: "49E4BB5B9C0A47AC"
+					item: "tfmg:steel_ingot"
+					type: "item"
+				}
+				{
+					id: "7CD8447E4D4091D6"
+					type: "xp_levels"
+					xp_levels: 1
+				}
+			]
+			subtitle: "Spout some Napalm on a Potato for some odd reason"
+			tasks: [{
+				id: "2C5E758703CDD4EE"
+				item: "tfmg:napalm_potato"
+				type: "item"
+			}]
+			title: "Why Would You Even Do That?"
+			x: 0.0d
+			y: -11.5d
+		}
+		{
+			dependencies: ["3651BFD6525A842C"]
+			dependency_requirement: "one_started"
+			id: "37733828529FC5EA"
+			rewards: [
+				{
+					id: "50810D758D052E35"
+					item: "tfmg:steel_ingot"
+					type: "item"
+				}
+				{
+					id: "059EBFC6F86466FB"
+					type: "xp_levels"
+					xp_levels: 1
+				}
+			]
+			subtitle: "Make a Napalm Bomb"
+			tasks: [{
+				id: "73B02C0363F79E0F"
+				item: "tfmg:napalm_bomb"
+				type: "item"
+			}]
+			title: "*Fortunate Son Intensifies*"
+			x: -1.0d
+			y: -11.5d
+		}
+		{
+			dependencies: ["3651BFD6525A842C"]
+			dependency_requirement: "one_started"
+			id: "3EFE0FF606F80F34"
+			rewards: [
+				{
+					id: "5A385C79F22BA5BF"
+					item: "tfmg:steel_ingot"
+					type: "item"
+				}
+				{
+					id: "5F481B3FF99EE1B2"
+					type: "xp_levels"
+					xp_levels: 1
+				}
+			]
+			subtitle: "Obtain a Flamethrower"
+			tasks: [{
+				id: "30C94A30429D7831"
+				item: {
+					Count: 1
+					id: "tfmg:flamethrower"
+					tag: { }
+				}
+				type: "item"
+			}]
+			title: "Burn It To The Ground"
+			x: 1.0d
+			y: -11.5d
+		}
+		{
+			dependencies: ["12D8C047BC77B4AE"]
+			dependency_requirement: "one_started"
+			id: "7009EF811BE5AB50"
+			rewards: [
+				{
+					id: "66A67645F620871F"
+					item: "tfmg:steel_ingot"
+					type: "item"
+				}
+				{
+					id: "4A27720ECFEBAA79"
+					type: "xp_levels"
+					xp_levels: 1
+				}
+			]
+			subtitle: "Obtain a Cinderblock"
+			tasks: [{
+				id: "51A3D1742D90EB14"
+				item: "tfmg:cinderblock"
+				type: "item"
+			}]
+			title: "Hey Watson, Cinder Block!"
+			x: -2.0d
+			y: -10.0d
+		}
+		{
+			dependencies: ["3150992AF61F302A"]
+			dependency_requirement: "one_started"
+			id: "63FF99A5B9DC92F7"
+			rewards: [
+				{
+					id: "346A4FEAF17E5C03"
+					item: "tfmg:aluminum_ingot"
+					type: "item"
+				}
+				{
+					id: "1AF6970F2EDCE7BE"
+					type: "xp_levels"
+					xp_levels: 1
+				}
+			]
+			subtitle: "Obtain Hardened Planks"
+			tasks: [{
+				id: "410CE79D93981404"
+				item: "tfmg:hardened_planks"
+				type: "item"
+			}]
+			title: "Extra Tough"
+			x: -2.0d
+			y: -1.0d
+		}
+		{
+			dependencies: [
+				"63FF99A5B9DC92F7"
+				"049A75E4158DB790"
+			]
+			dependency_requirement: "one_started"
+			id: "14FE75E550EED0E2"
+			rewards: [
+				{
+					id: "3E8137DE64E5BFA6"
+					item: "tfmg:steel_ingot"
+					type: "item"
+				}
+				{
+					id: "4D732F8359A68367"
+					type: "xp_levels"
+					xp_levels: 1
+				}
+			]
+			subtitle: "Obtain Steel Casing"
+			tasks: [{
+				id: "07F102D7A9CE1359"
+				item: "tfmg:steel_casing"
+				type: "item"
+			}]
+			title: "The Steel Era"
+			x: -2.0d
+			y: -4.0d
 		}
 	]
 	title: "The Steel Era"

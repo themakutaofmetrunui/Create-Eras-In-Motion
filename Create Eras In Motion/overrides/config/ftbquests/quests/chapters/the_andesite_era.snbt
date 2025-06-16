@@ -1,6 +1,6 @@
 {
 	default_hide_dependency_lines: false
-	default_quest_shape: ""
+	default_quest_shape: "task"
 	filename: "the_andesite_era"
 	group: ""
 	icon: "create:andesite_casing"
@@ -11,7 +11,18 @@
 		{
 			description: [""]
 			id: "7EE708F394D0777A"
-			shape: "gear"
+			rewards: [
+				{
+					id: "14FFC5308633F778"
+					item: "create:zinc_ingot"
+					type: "item"
+				}
+				{
+					id: "33F69B25B510408F"
+					type: "xp_levels"
+					xp_levels: 1
+				}
+			]
 			subtitle: "Obtain Andesite Alloy, the base material for your ventures into technology."
 			tasks: [{
 				id: "4D5A3FAA30A42257"
@@ -26,6 +37,18 @@
 			dependencies: ["7EE708F394D0777A"]
 			dependency_requirement: "one_started"
 			id: "032462F6C5B77432"
+			rewards: [
+				{
+					id: "0284472A0C73B939"
+					type: "xp_levels"
+					xp_levels: 1
+				}
+				{
+					id: "3C8424489AC97099"
+					item: "create:andesite_alloy"
+					type: "item"
+				}
+			]
 			subtitle: "The First Casing"
 			tasks: [{
 				advancement: "create:andesite_casing"
@@ -42,6 +65,18 @@
 			dependencies: ["7EE708F394D0777A"]
 			dependency_requirement: "one_started"
 			id: "5EF6CAED40C5E243"
+			rewards: [
+				{
+					id: "02A15D0D1C556F79"
+					item: "create:andesite_alloy"
+					type: "item"
+				}
+				{
+					id: "135CCA7D7EF37657"
+					type: "xp_levels"
+					xp_levels: 1
+				}
+			]
 			subtitle: "Use the Water Wheel to generate rotational force"
 			tasks: [{
 				advancement: "create:water_wheel"
@@ -57,6 +92,18 @@
 			dependencies: ["7EE708F394D0777A"]
 			dependency_requirement: "one_started"
 			id: "03E20BFAF4FF72B3"
+			rewards: [
+				{
+					id: "78ACFEB3CC142205"
+					item: "create:andesite_alloy"
+					type: "item"
+				}
+				{
+					id: "28CF8EED4E73BD49"
+					type: "xp_levels"
+					xp_levels: 1
+				}
+			]
 			subtitle: "Make a Windmill to create rotational force"
 			tasks: [{
 				advancement: "create:windmill"
@@ -73,6 +120,18 @@
 			dependencies: ["032462F6C5B77432"]
 			dependency_requirement: "one_started"
 			id: "1809947079FA8D04"
+			rewards: [
+				{
+					id: "230A2D253D2192F2"
+					item: "create:andesite_alloy"
+					type: "item"
+				}
+				{
+					id: "0D4FF2218F307E76"
+					type: "xp_levels"
+					xp_levels: 1
+				}
+			]
 			subtitle: "Craft a Millstone to grind materials"
 			tasks: [{
 				id: "3895161752955CD0"
@@ -87,6 +146,18 @@
 			dependencies: ["032462F6C5B77432"]
 			dependency_requirement: "one_started"
 			id: "07E31DBD50C5332C"
+			rewards: [
+				{
+					id: "460CDFBCE7BF94C4"
+					item: "create:andesite_alloy"
+					type: "item"
+				}
+				{
+					id: "0C41FFEC022DACCC"
+					type: "xp_levels"
+					xp_levels: 1
+				}
+			]
 			subtitle: "Obtain an Encased Fan"
 			tasks: [{
 				id: "224BC3EFD381A379"
@@ -101,6 +172,18 @@
 			dependencies: ["032462F6C5B77432"]
 			dependency_requirement: "one_started"
 			id: "356C5E0C44C07512"
+			rewards: [
+				{
+					id: "5DD5C7D0B7F99E04"
+					item: "create:andesite_alloy"
+					type: "item"
+				}
+				{
+					id: "25D70BCF252E96E0"
+					type: "xp_levels"
+					xp_levels: 1
+				}
+			]
 			subtitle: "Obtain a Mechanical Mixer"
 			tasks: [{
 				id: "22F7ED925840BE02"
@@ -115,6 +198,18 @@
 			dependencies: ["032462F6C5B77432"]
 			dependency_requirement: "one_started"
 			id: "7BDE710515D0A9E6"
+			rewards: [
+				{
+					id: "38B0EDC52ED2EF08"
+					item: "create:andesite_alloy"
+					type: "item"
+				}
+				{
+					id: "3DC13F7163071404"
+					type: "xp_levels"
+					xp_levels: 1
+				}
+			]
 			subtitle: "Obtain a Mechanical Press"
 			tasks: [{
 				id: "24963B4EA5F1BC55"
@@ -129,6 +224,19 @@
 			dependencies: ["032462F6C5B77432"]
 			dependency_requirement: "one_started"
 			id: "62C0AF39B2AAE591"
+			rewards: [
+				{
+					id: "5CA2121AC0A43AD7"
+					item: "create:andesite_alloy"
+					type: "item"
+				}
+				{
+					id: "1B0280DABD1B410E"
+					type: "xp_levels"
+					xp_levels: 1
+				}
+			]
+			shape: "task"
 			subtitle: "Craft a Stamping Press and Drawing Press"
 			tasks: [
 				{
@@ -150,6 +258,18 @@
 			dependencies: ["032462F6C5B77432"]
 			dependency_requirement: "one_started"
 			id: "136852119795C344"
+			rewards: [
+				{
+					id: "243812A057304443"
+					item: "create:andesite_alloy"
+					type: "item"
+				}
+				{
+					id: "7BE22E692FE661E7"
+					type: "xp_levels"
+					xp_levels: 1
+				}
+			]
 			subtitle: "Obtain a Bel Grinder"
 			tasks: [{
 				id: "3F06C70B0FC67C5F"
@@ -164,6 +284,18 @@
 			dependencies: ["032462F6C5B77432"]
 			dependency_requirement: "one_started"
 			id: "6B6F8359A6F024BE"
+			rewards: [
+				{
+					id: "7C061340D25DE5A8"
+					item: "create:andesite_alloy"
+					type: "item"
+				}
+				{
+					id: "789E564F10B3BC56"
+					type: "xp_levels"
+					xp_levels: 1
+				}
+			]
 			subtitle: "Craft a Spring Coiling Machine"
 			tasks: [{
 				id: "2E245AC5F854E69F"
@@ -177,6 +309,18 @@
 			dependencies: ["032462F6C5B77432"]
 			dependency_requirement: "one_started"
 			id: "7466B7477C43FBA7"
+			rewards: [
+				{
+					id: "356BEE86891AA565"
+					item: "create:andesite_alloy"
+					type: "item"
+				}
+				{
+					id: "751AE0A3FA108877"
+					type: "xp_levels"
+					xp_levels: 1
+				}
+			]
 			subtitle: "Craft a Rolling Mill"
 			tasks: [{
 				id: "47D902DE090F4774"
@@ -190,6 +334,18 @@
 			dependencies: ["6B6F8359A6F024BE"]
 			dependency_requirement: "one_started"
 			id: "3CD93CDD3258977E"
+			rewards: [
+				{
+					id: "50B8169EE91E783E"
+					item: "create:andesite_alloy"
+					type: "item"
+				}
+				{
+					id: "3F5BF3E64434CC02"
+					type: "xp_levels"
+					xp_levels: 1
+				}
+			]
 			subtitle: "Obtain a Curving Press"
 			tasks: [{
 				id: "3B59E0547DB7D219"
@@ -204,6 +360,18 @@
 			dependencies: ["6B6F8359A6F024BE"]
 			dependency_requirement: "one_started"
 			id: "5362062043547528"
+			rewards: [
+				{
+					id: "52289314A37A5901"
+					item: "create:andesite_alloy"
+					type: "item"
+				}
+				{
+					id: "03FCA0D6091FC1B0"
+					type: "xp_levels"
+					xp_levels: 1
+				}
+			]
 			subtitle: "Obtain a Centrifuge"
 			tasks: [{
 				id: "7A6C7DA5E7A59EA6"
@@ -218,6 +386,18 @@
 			dependencies: ["6B6F8359A6F024BE"]
 			dependency_requirement: "one_started"
 			id: "44A83FB24CE68788"
+			rewards: [
+				{
+					id: "333D407F6B440EAE"
+					item: "create:andesite_alloy"
+					type: "item"
+				}
+				{
+					id: "4C344C7258FD9917"
+					type: "xp_levels"
+					xp_levels: 1
+				}
+			]
 			subtitle: "Obtain a Vibrating Table"
 			tasks: [{
 				id: "3C1C85EC652EF396"
@@ -232,6 +412,20 @@
 			dependencies: ["032462F6C5B77432"]
 			dependency_requirement: "one_started"
 			id: "43282E430D72BA1A"
+			rewards: [
+				{
+					count: 5
+					id: "6ABEE993CBF2F9C7"
+					item: "create:andesite_alloy"
+					type: "item"
+				}
+				{
+					id: "488255FE1D331B75"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+			shape: "goal"
 			subtitle: "Craft the tools for destroying blocks"
 			tasks: [
 				{
@@ -263,6 +457,20 @@
 			dependencies: ["032462F6C5B77432"]
 			dependency_requirement: "one_started"
 			id: "19F8C3890446ECA0"
+			rewards: [
+				{
+					count: 5
+					id: "77D9DABDE7E81964"
+					item: "create:andesite_alloy"
+					type: "item"
+				}
+				{
+					id: "3608F13909306505"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+			shape: "goal"
 			subtitle: "The tools for moving blocks"
 			tasks: [
 				{
@@ -304,6 +512,18 @@
 			dependencies: ["7EE708F394D0777A"]
 			dependency_requirement: "one_started"
 			id: "6662DCE63C810E36"
+			rewards: [
+				{
+					id: "59E5D548C37BA87B"
+					item: "create:andesite_alloy"
+					type: "item"
+				}
+				{
+					id: "73FBD4E730126ABC"
+					type: "xp_levels"
+					xp_levels: 1
+				}
+			]
 			subtitle: "Craft a Hand Crank to generate rotational force"
 			tasks: [{
 				id: "29779FD36FD0737F"
@@ -318,6 +538,20 @@
 			dependencies: ["032462F6C5B77432"]
 			dependency_requirement: "one_started"
 			id: "73970F058AAA0D17"
+			rewards: [
+				{
+					count: 5
+					id: "6C1BC1793669BF07"
+					item: "create:andesite_alloy"
+					type: "item"
+				}
+				{
+					id: "34F0A96FA51850FA"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+			shape: "goal"
 			subtitle: "Create's Item Movers"
 			tasks: [
 				{
@@ -354,6 +588,18 @@
 			dependencies: ["032462F6C5B77432"]
 			dependency_requirement: "one_started"
 			id: "569AD1A5BAE0A585"
+			rewards: [
+				{
+					id: "539FF888B779F63C"
+					item: "create:andesite_alloy"
+					type: "item"
+				}
+				{
+					id: "5BED56003FD97E14"
+					type: "xp_levels"
+					xp_levels: 1
+				}
+			]
 			subtitle: "Craft your first airborne vehicle, the Gryodyne"
 			tasks: [{
 				id: "5CDFEB88950563B2"
@@ -365,5 +611,6 @@
 			y: -9.5d
 		}
 	]
+	tags: ["andesite"]
 	title: "The Andesite Era"
 }

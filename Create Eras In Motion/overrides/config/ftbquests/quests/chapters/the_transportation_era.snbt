@@ -1,6 +1,6 @@
 {
 	default_hide_dependency_lines: false
-	default_quest_shape: ""
+	default_quest_shape: "task"
 	filename: "the_transportation_era"
 	group: ""
 	icon: "create:railway_casing"
@@ -10,6 +10,18 @@
 	quests: [
 		{
 			id: "7858B342D2C8FB90"
+			rewards: [
+				{
+					id: "0975CDF40FC08EA6"
+					item: "create:sturdy_sheet"
+					type: "item"
+				}
+				{
+					id: "2C995BBEA806EC4A"
+					type: "xp_levels"
+					xp_levels: 1
+				}
+			]
 			subtitle: "Are you sure?"
 			tasks: [{
 				id: "2B94A09FF5E1440E"
@@ -24,6 +36,18 @@
 			dependencies: ["7858B342D2C8FB90"]
 			dependency_requirement: "one_started"
 			id: "58E581D3CADD02DA"
+			rewards: [
+				{
+					id: "6E2976F883C8B3C8"
+					item: "create:sturdy_sheet"
+					type: "item"
+				}
+				{
+					id: "0B1EE3F3E6945A87"
+					type: "xp_levels"
+					xp_levels: 1
+				}
+			]
 			subtitle: "Craft up some Train Casing to go choo choo"
 			tasks: [{
 				id: "5C030343B6A6C08A"
@@ -40,6 +64,18 @@
 			dependency_requirement: "one_started"
 			icon: "create:controls"
 			id: "6F1FA933E8FD3DC8"
+			rewards: [
+				{
+					id: "7EAC305790020095"
+					item: "create:sturdy_sheet"
+					type: "item"
+				}
+				{
+					id: "6C9BE39377FF3F03"
+					type: "xp_levels"
+					xp_levels: 1
+				}
+			]
 			subtitle: "Assemble a train"
 			tasks: [{
 				advancement: "create:train"
@@ -55,6 +91,18 @@
 			dependencies: ["7858B342D2C8FB90"]
 			dependency_requirement: "one_started"
 			id: "0A805740E96D1E0E"
+			rewards: [
+				{
+					id: "21D3215E43D2B986"
+					item: "create:sturdy_sheet"
+					type: "item"
+				}
+				{
+					id: "23FAD4C20EFAB15E"
+					type: "xp_levels"
+					xp_levels: 1
+				}
+			]
 			subtitle: "Obtain a Vehicle Engine for some new rides"
 			tasks: [{
 				id: "5C13AD17C76B4221"
@@ -69,6 +117,18 @@
 			dependencies: ["0A805740E96D1E0E"]
 			dependency_requirement: "one_started"
 			id: "2566D86053712EFB"
+			rewards: [
+				{
+					id: "03749D519B89F084"
+					item: "create:sturdy_sheet"
+					type: "item"
+				}
+				{
+					id: "6BE9CDE7497AA4B5"
+					type: "xp_levels"
+					xp_levels: 1
+				}
+			]
 			subtitle: "Obtain an Airship to take to the skies"
 			tasks: [{
 				id: "5F051D038D947B0A"
@@ -83,6 +143,18 @@
 			dependencies: ["2566D86053712EFB"]
 			dependency_requirement: "one_started"
 			id: "75CD8130030F5BCE"
+			rewards: [
+				{
+					id: "6D17D9439C5056DD"
+					item: "create:sturdy_sheet"
+					type: "item"
+				}
+				{
+					id: "0C60468C56293848"
+					type: "xp_levels"
+					xp_levels: 1
+				}
+			]
 			subtitle: "Obtain a Cargo Airship to hold more items in your Airship"
 			tasks: [{
 				id: "44D2AD4C25E3A7D4"
@@ -97,6 +169,21 @@
 			dependencies: ["75CD8130030F5BCE"]
 			dependency_requirement: "one_started"
 			id: "70AFB1D7AC7A3642"
+			rewards: [
+				{
+					count: 10
+					id: "1ED7CBE80B254A98"
+					item: "create:sturdy_sheet"
+					type: "item"
+				}
+				{
+					id: "03FC3B4285A3BD4E"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+			shape: "challenge"
+			size: 1.0d
 			subtitle: "Obtain a Warship to dominate the skies"
 			tasks: [{
 				id: "06305338904F4703"
@@ -111,6 +198,18 @@
 			dependencies: ["0A805740E96D1E0E"]
 			dependency_requirement: "one_started"
 			id: "1B2987DC63197332"
+			rewards: [
+				{
+					id: "25ACB0F5FC482CF7"
+					item: "create:sturdy_sheet"
+					type: "item"
+				}
+				{
+					id: "629A3926F2299320"
+					type: "xp_levels"
+					xp_levels: 1
+				}
+			]
 			subtitle: "Obtain the Biplane"
 			tasks: [{
 				id: "0D9B018E2689E667"
@@ -125,6 +224,20 @@
 			dependencies: ["0A805740E96D1E0E"]
 			dependency_requirement: "one_started"
 			id: "5DAD76C94F2151C7"
+			rewards: [
+				{
+					count: 5
+					id: "25F9FF3BE7F5A4B5"
+					item: "create:sturdy_sheet"
+					type: "item"
+				}
+				{
+					id: "4BD58FB0813249F9"
+					type: "xp_levels"
+					xp_levels: 2
+				}
+			]
+			shape: "goal"
 			subtitle: "Obtain all the Aircraft Weapons"
 			tasks: [
 				{
@@ -156,6 +269,20 @@
 			dependencies: ["0A805740E96D1E0E"]
 			dependency_requirement: "one_started"
 			id: "4058EF8FBC298D97"
+			rewards: [
+				{
+					count: 5
+					id: "20C794099B3E82A0"
+					item: "create:sturdy_sheet"
+					type: "item"
+				}
+				{
+					id: "56D5DCD46968A5D7"
+					type: "xp_levels"
+					xp_levels: 2
+				}
+			]
+			shape: "goal"
 			subtitle: "Obtain all upgrades for your aircraft's engine"
 			tasks: [
 				{
@@ -192,6 +319,20 @@
 			dependencies: ["0A805740E96D1E0E"]
 			dependency_requirement: "one_started"
 			id: "2194E721DF0293BB"
+			rewards: [
+				{
+					count: 5
+					id: "00B31CDE195952D0"
+					item: "create:sturdy_sheet"
+					type: "item"
+				}
+				{
+					id: "04CA5FF07A452800"
+					type: "xp_levels"
+					xp_levels: 2
+				}
+			]
+			shape: "goal"
 			subtitle: "Gather the aircraft upgrades for the body"
 			tasks: [
 				{

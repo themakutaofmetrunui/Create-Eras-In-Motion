@@ -571,6 +571,11 @@ ServerEvents.recipes(event => {
     )
     //mekanism
     event.replaceInput(
+        {id: 'mekanismgenerators:reactor/frame'},
+        'mekanism:alloy_atomic',
+        'mekanism:alloy_reinforced'
+    )
+    event.replaceInput(
         {id: 'mekanism:mekasuit_helmet'},
         'netherite_helmet',
         'ad_astra:netherite_space_helmet'
@@ -1300,7 +1305,7 @@ ServerEvents.recipes(event => {
             A: 'mekanism:alloy_reinforced',
             B: 'mekanism:energy_tablet',
             C: 'tfmg:electric_casing',
-            D: 'diamond'
+            D: 'vintageimprovements:laser_item'
         }
     )
     event.shaped(
@@ -1392,7 +1397,7 @@ ServerEvents.recipes(event => {
             A: 'tfmg:steel_ingot',
             B: 'mekanism:energy_tablet',
             C: 'mekanism:elite_control_circuit',
-            D: 'mekanism:alloy_atomic',
+            D: 'mekanism:alloy_reinforced',
             E: '#mekanism:personal_storage'
         }
     )

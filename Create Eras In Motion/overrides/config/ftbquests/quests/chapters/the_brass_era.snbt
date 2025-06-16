@@ -1,6 +1,6 @@
 {
 	default_hide_dependency_lines: false
-	default_quest_shape: ""
+	default_quest_shape: "task"
 	filename: "the_brass_era"
 	group: ""
 	icon: "create:brass_casing"
@@ -10,6 +10,18 @@
 	quests: [
 		{
 			id: "4DDF38AC8771A820"
+			rewards: [
+				{
+					id: "61C29237405453A5"
+					item: "create:zinc_ingot"
+					type: "item"
+				}
+				{
+					id: "7C7FF6307015BC16"
+					type: "xp_levels"
+					xp_levels: 1
+				}
+			]
 			subtitle: "Capture a Blaze in a Blaze Burner"
 			tasks: [{
 				id: "37C7D021C1F672BE"
@@ -24,6 +36,18 @@
 			dependencies: ["4DDF38AC8771A820"]
 			dependency_requirement: "one_started"
 			id: "6D491EACC72EAA91"
+			rewards: [
+				{
+					id: "190BCB70E4FC1BDC"
+					item: "minecraft:copper_ingot"
+					type: "item"
+				}
+				{
+					id: "684A52A280CAF999"
+					type: "xp_levels"
+					xp_levels: 1
+				}
+			]
 			subtitle: "Mix Copper and Zinc to make Brass"
 			tasks: [{
 				id: "400739E59BF6426B"
@@ -39,6 +63,18 @@
 			dependencies: ["6D491EACC72EAA91"]
 			dependency_requirement: "one_started"
 			id: "37186F288D1938BA"
+			rewards: [
+				{
+					id: "6E5E9E11ED6C6A4D"
+					type: "xp_levels"
+					xp_levels: 1
+				}
+				{
+					id: "0059B1A504F05E8E"
+					item: "create:brass_ingot"
+					type: "item"
+				}
+			]
 			subtitle: "Create the new Brass Casing"
 			tasks: [{
 				id: "2234407D8B7CF6D8"
@@ -54,6 +90,18 @@
 			dependencies: ["7A414B5C9718D6FA"]
 			dependency_requirement: "one_started"
 			id: "4057936C9616C03E"
+			rewards: [
+				{
+					id: "3AF027831E0CA75F"
+					type: "xp_levels"
+					xp_levels: 1
+				}
+				{
+					id: "332C1D08B6A41E1F"
+					item: "create:brass_ingot"
+					type: "item"
+				}
+			]
 			subtitle: "Obtain an Inventory Trim to connect inventories"
 			tasks: [{
 				id: "167454152B998FDF"
@@ -67,6 +115,18 @@
 			dependencies: ["7A414B5C9718D6FA"]
 			dependency_requirement: "one_started"
 			id: "543C7E3D62199922"
+			rewards: [
+				{
+					id: "10FDEE036E89459F"
+					type: "xp_levels"
+					xp_levels: 1
+				}
+				{
+					id: "74268685077763A3"
+					item: "create:brass_ingot"
+					type: "item"
+				}
+			]
 			subtitle: "Connects more things"
 			tasks: [{
 				id: "68484D77279A3314"
@@ -80,6 +140,18 @@
 			dependencies: ["7A414B5C9718D6FA"]
 			dependency_requirement: "one_started"
 			id: "1DBD16AF4909BB67"
+			rewards: [
+				{
+					id: "4E4C6E39D4A38073"
+					type: "xp_levels"
+					xp_levels: 1
+				}
+				{
+					id: "459AF354D69F5453"
+					item: "create:brass_ingot"
+					type: "item"
+				}
+			]
 			subtitle: "Need I repeat myself?"
 			tasks: [{
 				id: "4DFAAF32BA97328D"
@@ -93,6 +165,18 @@
 			dependencies: ["7A414B5C9718D6FA"]
 			dependency_requirement: "one_started"
 			id: "61EC18B1F9DAC88D"
+			rewards: [
+				{
+					id: "3C8F8B221422F6ED"
+					type: "xp_levels"
+					xp_levels: 1
+				}
+				{
+					id: "1D27DEAD48C307CC"
+					item: "create:brass_ingot"
+					type: "item"
+				}
+			]
 			subtitle: "Access Inventories, what else can I say?"
 			tasks: [{
 				id: "352442716E783845"
@@ -106,6 +190,18 @@
 			dependencies: ["37186F288D1938BA"]
 			dependency_requirement: "one_started"
 			id: "7A414B5C9718D6FA"
+			rewards: [
+				{
+					id: "6B7D0816AAE76283"
+					type: "xp_levels"
+					xp_levels: 1
+				}
+				{
+					id: "23366774C7B56100"
+					item: "create:brass_ingot"
+					type: "item"
+				}
+			]
 			subtitle: "Access Inventories with this handy Terminal"
 			tasks: [{
 				id: "33F9E681D47946CB"
@@ -120,6 +216,18 @@
 			dependencies: ["7A414B5C9718D6FA"]
 			dependency_requirement: "one_started"
 			id: "46C8F3524987EBA4"
+			rewards: [
+				{
+					id: "04486615F4D0CE88"
+					type: "xp_levels"
+					xp_levels: 1
+				}
+				{
+					id: "5767F74CA07BECD2"
+					item: "create:brass_ingot"
+					type: "item"
+				}
+			]
 			subtitle: "Obtain a Crafting Terminal to craft from inventories"
 			tasks: [{
 				id: "2F22962A33409876"
@@ -133,6 +241,18 @@
 			dependencies: ["37186F288D1938BA"]
 			dependency_requirement: "one_started"
 			id: "424EB0B555F0860A"
+			rewards: [
+				{
+					id: "1DCA5953107B12FD"
+					type: "xp_levels"
+					xp_levels: 1
+				}
+				{
+					id: "17863CB3B7E98836"
+					item: "create:brass_ingot"
+					type: "item"
+				}
+			]
 			subtitle: "It's like crafting, but bigger"
 			tasks: [{
 				id: "08362CCBC2ECCE66"
@@ -147,6 +267,20 @@
 			dependencies: ["376D8FA0A0E10680"]
 			dependency_requirement: "one_started"
 			id: "3B97941BD1E995D2"
+			rewards: [
+				{
+					count: 5
+					id: "3AE9C85FB0EA2A30"
+					item: "create:brass_ingot"
+					type: "item"
+				}
+				{
+					id: "381CEAC91653FCC3"
+					type: "xp_levels"
+					xp_levels: 2
+				}
+			]
+			shape: "goal"
 			subtitle: "Use the new Deployer to craft up some mechanisms"
 			tasks: [
 				{
@@ -168,6 +302,18 @@
 			dependencies: ["37186F288D1938BA"]
 			dependency_requirement: "one_started"
 			id: "376D8FA0A0E10680"
+			rewards: [
+				{
+					id: "2FA12D2C8436579B"
+					type: "xp_levels"
+					xp_levels: 1
+				}
+				{
+					id: "3B815FBCCEF41EFB"
+					item: "create:brass_ingot"
+					type: "item"
+				}
+			]
 			subtitle: "Craft up a Deployer, essential for Sequenced Assemblies"
 			tasks: [{
 				id: "5911EFF99FE17086"
@@ -182,6 +328,18 @@
 			dependencies: ["424EB0B555F0860A"]
 			dependency_requirement: "one_started"
 			id: "5B4FF86B3AEB6780"
+			rewards: [
+				{
+					id: "49C6156DE3AEE1A4"
+					type: "xp_levels"
+					xp_levels: 1
+				}
+				{
+					id: "3B7B47E5FEACFD1A"
+					item: "create:brass_ingot"
+					type: "item"
+				}
+			]
 			subtitle: "Obtain A Crushing Wheel to grind up materials even harder"
 			tasks: [{
 				id: "3CA3E512AF173BFF"
@@ -196,6 +354,18 @@
 			dependencies: ["424EB0B555F0860A"]
 			dependency_requirement: "one_started"
 			id: "22B87F2D807623F2"
+			rewards: [
+				{
+					id: "0059453AE4583661"
+					type: "xp_levels"
+					xp_levels: 1
+				}
+				{
+					id: "0ACD95A7F3A7ACCA"
+					item: "create:brass_ingot"
+					type: "item"
+				}
+			]
 			subtitle: "Obtain a Lathe so you can finally use that Curving Press"
 			tasks: [{
 				id: "0C115594E3DCD3FD"
@@ -210,6 +380,18 @@
 			dependencies: ["424EB0B555F0860A"]
 			dependency_requirement: "one_started"
 			id: "3075D9B60DF6F213"
+			rewards: [
+				{
+					id: "487D3D6BA0301A01"
+					type: "xp_levels"
+					xp_levels: 1
+				}
+				{
+					id: "615224562FFA947A"
+					item: "create:brass_ingot"
+					type: "item"
+				}
+			]
 			subtitle: "It's like a press but even better"
 			tasks: [{
 				id: "390DFEE8BB1DF115"
@@ -224,6 +406,18 @@
 			dependencies: ["3B97941BD1E995D2"]
 			dependency_requirement: "one_started"
 			id: "2D73278DA46710FF"
+			rewards: [
+				{
+					id: "3CA76E438ABD09C6"
+					type: "xp_levels"
+					xp_levels: 1
+				}
+				{
+					id: "484D88A9D5027691"
+					item: "create:brass_ingot"
+					type: "item"
+				}
+			]
 			subtitle: "It does provide unlimited spin, but not that much of it"
 			tasks: [{
 				id: "3DFB2512740153F5"
@@ -238,6 +432,18 @@
 			dependencies: ["3B97941BD1E995D2"]
 			dependency_requirement: "one_started"
 			id: "2B55AE043E4FA7D9"
+			rewards: [
+				{
+					id: "3F253079123EC0A3"
+					type: "xp_levels"
+					xp_levels: 1
+				}
+				{
+					id: "49B91B206CEAB60D"
+					item: "create:brass_ingot"
+					type: "item"
+				}
+			]
 			subtitle: "Obtain a Rotational Speed Controller to adjust RPM"
 			tasks: [{
 				id: "5642154CD165AFBA"
@@ -252,6 +458,18 @@
 			dependencies: ["3B97941BD1E995D2"]
 			dependency_requirement: "one_started"
 			id: "0A3BE52155608597"
+			rewards: [
+				{
+					id: "11CAE386C813C107"
+					type: "xp_levels"
+					xp_levels: 1
+				}
+				{
+					id: "02FA77E9CF2D1F75"
+					item: "create:brass_ingot"
+					type: "item"
+				}
+			]
 			subtitle: "Obtain a Mechanical Arm to automate tasks"
 			tasks: [{
 				id: "72AFC787358BFC4D"
@@ -266,6 +484,20 @@
 			dependencies: ["3B97941BD1E995D2"]
 			dependency_requirement: "one_started"
 			id: "7D7FC3590BB61D51"
+			rewards: [
+				{
+					count: 5
+					id: "0190A4102E4CE912"
+					item: "create:brass_ingot"
+					type: "item"
+				}
+				{
+					id: "288A3DE719F565F7"
+					type: "xp_levels"
+					xp_levels: 2
+				}
+			]
+			shape: "goal"
 			subtitle: "Obtain The Deforestor Saw and Excavation Drill"
 			tasks: [
 				{
@@ -299,6 +531,18 @@
 			dependencies: ["3B97941BD1E995D2"]
 			dependency_requirement: "one_started"
 			id: "039CD3993F00C0FB"
+			rewards: [
+				{
+					id: "443D2B2F3AE5480C"
+					type: "xp_levels"
+					xp_levels: 1
+				}
+				{
+					id: "1B465281A78F31BE"
+					item: "create:brass_ingot"
+					type: "item"
+				}
+			]
 			subtitle: "Obtain the Quadrocopter, a perfect tool for building"
 			tasks: [{
 				id: "4321652E96020179"

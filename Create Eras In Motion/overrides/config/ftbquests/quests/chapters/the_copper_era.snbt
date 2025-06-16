@@ -1,6 +1,6 @@
 {
 	default_hide_dependency_lines: false
-	default_quest_shape: ""
+	default_quest_shape: "task"
 	filename: "the_copper_era"
 	group: ""
 	icon: "create:copper_casing"
@@ -10,6 +10,18 @@
 	quests: [
 		{
 			id: "36BC5785AA2D53A6"
+			rewards: [
+				{
+					id: "4798D3AB94E262F6"
+					item: "minecraft:copper_ingot"
+					type: "item"
+				}
+				{
+					id: "023F18B770A262D8"
+					type: "xp_levels"
+					xp_levels: 1
+				}
+			]
 			subtitle: "Obtain the new waterproof casing of this era"
 			tasks: [{
 				advancement: "create:copper_casing"
@@ -25,6 +37,18 @@
 			dependencies: ["36BC5785AA2D53A6"]
 			dependency_requirement: "one_started"
 			id: "181B7581FEF2084B"
+			rewards: [
+				{
+					id: "11061D46412974A4"
+					item: "minecraft:copper_ingot"
+					type: "item"
+				}
+				{
+					id: "47D2BFF3CDED53FE"
+					type: "xp_levels"
+					xp_levels: 1
+				}
+			]
 			subtitle: "Get a Steam Engine to generate rotational force"
 			tasks: [{
 				id: "4DBE0C6F025D6C65"
@@ -39,6 +63,18 @@
 			dependencies: ["36BC5785AA2D53A6"]
 			dependency_requirement: "one_started"
 			id: "584F10B044B38357"
+			rewards: [
+				{
+					id: "3B3DA5C7272901AB"
+					item: "minecraft:copper_ingot"
+					type: "item"
+				}
+				{
+					id: "6BEAC22D0829EEB1"
+					type: "xp_levels"
+					xp_levels: 1
+				}
+			]
 			subtitle: "Obtain a steam whistle"
 			tasks: [{
 				id: "49B59244F805E6F7"
@@ -53,6 +89,18 @@
 			dependencies: ["36BC5785AA2D53A6"]
 			dependency_requirement: "one_started"
 			id: "33D729251B0A8878"
+			rewards: [
+				{
+					id: "2F77FCDDB5854229"
+					item: "minecraft:copper_ingot"
+					type: "item"
+				}
+				{
+					id: "7C7F48AE2563B286"
+					type: "xp_levels"
+					xp_levels: 1
+				}
+			]
 			subtitle: "Obtain an Item Drain"
 			tasks: [{
 				id: "048BF4F4C2232E61"
@@ -67,6 +115,18 @@
 			dependencies: ["36BC5785AA2D53A6"]
 			dependency_requirement: "one_started"
 			id: "6FCBDE50A6E0AEE8"
+			rewards: [
+				{
+					id: "7F5E58DDF005785B"
+					item: "create:copper_sheet"
+					type: "item"
+				}
+				{
+					id: "65346E1088840E35"
+					type: "xp_levels"
+					xp_levels: 1
+				}
+			]
 			tasks: [{
 				id: "13BE1BC09DB61919"
 				item: "create_dd:hydraulic_casing"
@@ -80,6 +140,18 @@
 			dependencies: ["36BC5785AA2D53A6"]
 			dependency_requirement: "one_started"
 			id: "4DD5CF4E760926AD"
+			rewards: [
+				{
+					id: "64CEE68AD83BFF28"
+					item: "minecraft:copper_ingot"
+					type: "item"
+				}
+				{
+					id: "41CBBA71035C16C8"
+					type: "xp_levels"
+					xp_levels: 1
+				}
+			]
 			subtitle: "Obtain a Copper Backtank"
 			tasks: [{
 				id: "5F71098ACDA09049"
@@ -98,6 +170,18 @@
 			dependencies: ["36BC5785AA2D53A6"]
 			dependency_requirement: "one_started"
 			id: "00F655B1831ADB25"
+			rewards: [
+				{
+					id: "0832DE9B3B93D891"
+					item: "minecraft:copper_ingot"
+					type: "item"
+				}
+				{
+					id: "6716E2A12B802481"
+					type: "xp_levels"
+					xp_levels: 1
+				}
+			]
 			subtitle: "Obtain a Hose Pulley"
 			tasks: [{
 				id: "5DA7DB4359774405"
@@ -112,6 +196,18 @@
 			dependencies: ["36BC5785AA2D53A6"]
 			dependency_requirement: "one_started"
 			id: "2401900DD1EB5F90"
+			rewards: [
+				{
+					id: "56A22B153BB3FFFF"
+					item: "minecraft:copper_ingot"
+					type: "item"
+				}
+				{
+					id: "40ADA31A4C18C242"
+					type: "xp_levels"
+					xp_levels: 1
+				}
+			]
 			subtitle: "Obtain the items for transporting fluids"
 			tasks: [
 				{
@@ -138,6 +234,18 @@
 			dependencies: ["36BC5785AA2D53A6"]
 			dependency_requirement: "one_started"
 			id: "2CB67935039AA8F5"
+			rewards: [
+				{
+					id: "575BF170DAF7012E"
+					item: "minecraft:copper_ingot"
+					type: "item"
+				}
+				{
+					id: "4B51AC931ED9AA10"
+					type: "xp_levels"
+					xp_levels: 1
+				}
+			]
 			subtitle: "Obtain a Fluid Tank to hold fluids of all kinds"
 			tasks: [{
 				id: "662A39E12041489D"
@@ -152,6 +260,18 @@
 			dependencies: ["6FCBDE50A6E0AEE8"]
 			dependency_requirement: "one_started"
 			id: "7A02D35BD1C595E0"
+			rewards: [
+				{
+					id: "0C00AD4F1CDDFC9F"
+					item: "create:copper_sheet"
+					type: "item"
+				}
+				{
+					id: "6E673BFEBBCBA8DE"
+					type: "xp_levels"
+					xp_levels: 1
+				}
+			]
 			subtitle: "Obtain a Hydraulic Press to press whole stacks"
 			tasks: [{
 				id: "4986770873EDE817"
@@ -166,6 +286,18 @@
 			dependencies: ["6FCBDE50A6E0AEE8"]
 			dependency_requirement: "one_started"
 			id: "4C7ACE18A479FCB5"
+			rewards: [
+				{
+					id: "7793EAE333B98489"
+					item: "create:copper_sheet"
+					type: "item"
+				}
+				{
+					id: "4C9D7BB097D0E71F"
+					type: "xp_levels"
+					xp_levels: 1
+				}
+			]
 			subtitle: "Obtain a Vacuum Chamber"
 			tasks: [{
 				id: "4899DC2639F13333"

@@ -1,0 +1,665 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: "task"
+	filename: "the_fusion_era"
+	group: ""
+	icon: "mekanismgenerators:fusion_reactor_frame"
+	id: "4471A0E7AA28A90D"
+	order_index: 10
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: [
+				"4833B1F6AD82A074"
+				"75ECD00D56D4856D"
+			]
+			dependency_requirement: "one_started"
+			id: "0BAE1FBAFD4BCAFB"
+			rewards: [
+				{
+					id: "4CB7DEF78420AD93"
+					item: "mekanism:alloy_reinforced"
+					type: "item"
+				}
+				{
+					id: "521091F65CC16D42"
+					type: "xp_levels"
+					xp_levels: 1
+				}
+			]
+			subtitle: "Craft Reinforced Alloy"
+			tasks: [{
+				id: "64F0BB434F4C1019"
+				item: "mekanism:alloy_reinforced"
+				type: "item"
+			}]
+			title: "The Prettiest Alloy"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			id: "4833B1F6AD82A074"
+			rewards: [
+				{
+					id: "5E7F57A69FD963B3"
+					item: "mekanism:alloy_reinforced"
+					type: "item"
+				}
+				{
+					id: "36A0E673196DC3BC"
+					type: "xp_levels"
+					xp_levels: 1
+				}
+			]
+			subtitle: "Find an Etrium Shard in Moon or Mars Sand"
+			tasks: [{
+				id: "6E609B58362F2E29"
+				item: "kubejs:shard_etrium"
+				type: "item"
+			}]
+			title: "A Hidden Gem"
+			x: 0.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["0BAE1FBAFD4BCAFB"]
+			dependency_requirement: "one_started"
+			id: "75AF505B9D3D8262"
+			rewards: [
+				{
+					id: "448CC2EF094C8D4F"
+					item: "mekanism:alloy_reinforced"
+					type: "item"
+				}
+				{
+					id: "5DE22BB54B2B2EF9"
+					type: "xp_levels"
+					xp_levels: 1
+				}
+			]
+			subtitle: "Craft an Elite Control Circuit"
+			tasks: [{
+				id: "5941307FF95308F2"
+				item: "mekanism:elite_control_circuit"
+				type: "item"
+			}]
+			title: "Moore's Law"
+			x: 0.0d
+			y: -1.5d
+		}
+		{
+			id: "75ECD00D56D4856D"
+			rewards: [
+				{
+					id: "4EA237210C531928"
+					item: "mekanism:alloy_reinforced"
+					type: "item"
+				}
+				{
+					id: "79E3B2DBE3F45367"
+					type: "xp_levels"
+					xp_levels: 1
+				}
+			]
+			subtitle: "Obtain Ostrum"
+			tasks: [{
+				id: "0BA247A8AEB82FC9"
+				item: "ad_astra:ostrum_ingot"
+				type: "item"
+			}]
+			title: "Completely Normal Sized Ingot"
+			x: -0.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["75ECD00D56D4856D"]
+			dependency_requirement: "one_started"
+			id: "3889A624D2C7EC98"
+			rewards: [
+				{
+					id: "149C5DE6263DD118"
+					item: "mekanism:alloy_reinforced"
+					type: "item"
+				}
+				{
+					id: "0D5F4E07BCBE3C1A"
+					type: "xp_levels"
+					xp_levels: 1
+				}
+			]
+			subtitle: "Craft an Oxygen Sensor"
+			tasks: [{
+				id: "5496685A62086E56"
+				item: "ad_astra:oxygen_sensor"
+				type: "item"
+			}]
+			title: "Atmospheric Analysis"
+			x: -1.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["75ECD00D56D4856D"]
+			dependency_requirement: "one_started"
+			id: "35559BA6EC5B9782"
+			rewards: [
+				{
+					id: "3A5B6DCB75276A4F"
+					item: "mekanism:alloy_reinforced"
+					type: "item"
+				}
+				{
+					id: "61EB09D8F9422B25"
+					type: "xp_levels"
+					xp_levels: 1
+				}
+			]
+			subtitle: "Craft a Gravity Normalizer"
+			tasks: [{
+				id: "1787FDF40D9C7688"
+				item: "ad_astra:gravity_normalizer"
+				type: "item"
+			}]
+			title: "Artificial Gravity"
+			x: -0.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["0BAE1FBAFD4BCAFB"]
+			dependency_requirement: "one_started"
+			id: "7409337C31BF4132"
+			rewards: [
+				{
+					id: "349DDC981D6E3933"
+					item: "mekanism:alloy_reinforced"
+					type: "item"
+				}
+				{
+					id: "647BDD7ECE54BCF0"
+					type: "xp_levels"
+					xp_levels: 1
+				}
+			]
+			tasks: [{
+				id: "7AE15138DFDDB5C8"
+				item: "mekanism:security_desk"
+				type: "item"
+			}]
+			title: "The Androids Get a Bit Quirky"
+			x: -1.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["75AF505B9D3D8262"]
+			dependency_requirement: "one_started"
+			id: "0D603067A17B89E0"
+			rewards: [
+				{
+					id: "07DA81EC21EE7174"
+					item: "mekanism:alloy_reinforced"
+					type: "item"
+				}
+				{
+					id: "63388D44A3200632"
+					type: "xp_levels"
+					xp_levels: 1
+				}
+			]
+			subtitle: "Craft a Robit"
+			tasks: [{
+				id: "6A83E9EE0A2C3690"
+				item: "mekanism:robit"
+				type: "item"
+			}]
+			title: "Electronic Companion"
+			x: 0.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["75AF505B9D3D8262"]
+			dependency_requirement: "one_started"
+			id: "1750BAE25FD016AC"
+			rewards: [
+				{
+					id: "6A8038B89314F018"
+					item: "mekanism:alloy_reinforced"
+					type: "item"
+				}
+				{
+					id: "3E299D055E83286B"
+					type: "xp_levels"
+					xp_levels: 1
+				}
+			]
+			subtitle: "Craft a Chemical Injection Chamber"
+			tasks: [{
+				id: "2DAA6E73D34FB982"
+				item: "mekanism:chemical_injection_chamber"
+				type: "item"
+			}]
+			title: "Ore QUADRUPLING?!"
+			x: 1.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["75AF505B9D3D8262"]
+			dependency_requirement: "one_started"
+			id: "4AF1084D7760E4DF"
+			rewards: [
+				{
+					id: "3EF48B3C8D3E0D42"
+					item: "mekanism:alloy_reinforced"
+					type: "item"
+				}
+				{
+					id: "594F16F0F57D2B32"
+					type: "xp_levels"
+					xp_levels: 1
+				}
+			]
+			subtitle: "Craft a Solar Neutron Activator"
+			tasks: [{
+				id: "31AF63DD15DD377C"
+				item: "mekanism:solar_neutron_activator"
+				type: "item"
+			}]
+			title: "Cosmic Rays"
+			x: -1.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["0D603067A17B89E0"]
+			dependency_requirement: "one_started"
+			id: "5B63A14249179AB5"
+			rewards: [
+				{
+					id: "420B2660EFE35A04"
+					item: "mekanism:alloy_reinforced"
+					type: "item"
+				}
+				{
+					id: "0367771A80E3952C"
+					type: "xp_levels"
+					xp_levels: 1
+				}
+			]
+			subtitle: "Craft a Robot Dog"
+			tasks: [{
+				id: "109F0442996A7BE3"
+				item: "createloveandwar:robot_dog_spawn_egg"
+				type: "item"
+			}]
+			title: "(Not So) Furry Friend"
+			x: 0.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["75AF505B9D3D8262"]
+			dependency_requirement: "one_started"
+			id: "0F11EB2FD5DDFF83"
+			rewards: [
+				{
+					id: "705B71F7BA44BBB0"
+					item: "mekanism:alloy_reinforced"
+					type: "item"
+				}
+				{
+					id: "4D9C3C596D0AAA48"
+					type: "xp_levels"
+					xp_levels: 1
+				}
+			]
+			subtitle: "Collect the parts for an Induction Matrix"
+			tasks: [
+				{
+					id: "4FFFEAF4974668C8"
+					item: "mekanism:induction_casing"
+					type: "item"
+				}
+				{
+					id: "44CCE00D797463FE"
+					item: "mekanism:induction_port"
+					type: "item"
+				}
+				{
+					id: "3A65BAAD6D2D87EB"
+					item: "mekanism:basic_induction_cell"
+					type: "item"
+				}
+				{
+					id: "1C3CB1B9F1A25703"
+					item: "mekanism:basic_induction_provider"
+					type: "item"
+				}
+			]
+			title: "The One"
+			x: -1.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["4AF1084D7760E4DF"]
+			dependency_requirement: "one_started"
+			id: "39EDAD0FD4F2A90D"
+			rewards: [
+				{
+					count: 5
+					id: "0805D65B344359D0"
+					item: "mekanism:alloy_reinforced"
+					type: "item"
+				}
+				{
+					id: "4948258677979DF2"
+					type: "xp_levels"
+					xp_levels: 2
+				}
+			]
+			shape: "goal"
+			subtitle: "Craft a Polonium Pellet"
+			tasks: [{
+				id: "525CCF715304C350"
+				item: "mekanism:pellet_polonium"
+				type: "item"
+			}]
+			title: "More Radioactive Substances?"
+			x: -2.0d
+			y: -3.5d
+		}
+		{
+			dependencies: ["0BAE1FBAFD4BCAFB"]
+			dependency_requirement: "one_started"
+			id: "4AE24E362170C667"
+			rewards: [
+				{
+					id: "04F82B7F5C2DD08F"
+					item: "mekanism:alloy_reinforced"
+					type: "item"
+				}
+				{
+					id: "019EBBD5EFADD0EC"
+					type: "xp_levels"
+					xp_levels: 1
+				}
+			]
+			subtitle: "Collect parts necessary for a Laser system"
+			tasks: [
+				{
+					id: "42CA23A1F3F18229"
+					item: "mekanism:laser"
+					type: "item"
+				}
+				{
+					id: "151759BDA8767194"
+					item: "mekanism:laser_amplifier"
+					type: "item"
+				}
+				{
+					id: "2034A288E1B1D177"
+					item: "mekanism:laser_tractor_beam"
+					type: "item"
+				}
+				{
+					id: "483ADD985E473220"
+					item: "mekanismgenerators:laser_focus_matrix"
+					type: "item"
+				}
+			]
+			title: "Beam Me Up"
+			x: 1.0d
+			y: -0.5d
+		}
+		{
+			dependencies: [
+				"4AE24E362170C667"
+				"75AF505B9D3D8262"
+				"3E516A6D57FDC7C5"
+			]
+			dependency_requirement: "one_started"
+			id: "479819B1CE420710"
+			rewards: [
+				{
+					count: 5
+					id: "2722FCD89ED75832"
+					item: "mekanism:alloy_reinforced"
+					type: "item"
+				}
+				{
+					id: "74551989B934D800"
+					type: "xp_levels"
+					xp_levels: 2
+				}
+			]
+			shape: "goal"
+			subtitle: "Assemble a Fusion Reactor"
+			tasks: [
+				{
+					count: 36L
+					id: "3FEA53A2815DB3EA"
+					item: "mekanismgenerators:fusion_reactor_frame"
+					type: "item"
+				}
+				{
+					id: "2AFB8B5B2F25615C"
+					item: "mekanismgenerators:fusion_reactor_controller"
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "468E74155322EC45"
+					item: "mekanismgenerators:fusion_reactor_port"
+					type: "item"
+				}
+				{
+					id: "74D3B5416019B79B"
+					item: "mekanismgenerators:fusion_reactor_logic_adapter"
+					type: "item"
+				}
+			]
+			title: "The Fusion Era"
+			x: 1.5d
+			y: -1.5d
+		}
+		{
+			dependency_requirement: "one_started"
+			id: "3E516A6D57FDC7C5"
+			rewards: [
+				{
+					count: 5
+					id: "76FEC2817E5A5D21"
+					item: "mekanism:alloy_reinforced"
+					type: "item"
+				}
+				{
+					id: "3A580FAF6331DC0D"
+					type: "xp_levels"
+					xp_levels: 2
+				}
+			]
+			shape: "goal"
+			subtitle: "Using a slot within a machine containing D-T Fuel, fill a Hohlraum with D-T Fuel"
+			tasks: [{
+				id: "3FAF1131CCA5498C"
+				item: {
+					Count: 1
+					id: "mekanismgenerators:hohlraum"
+					tag: {
+						mekData: {
+							GasTanks: [{
+								Tank: 0b
+								stored: {
+									amount: 10L
+									gasName: "mekanismgenerators:fusion_fuel"
+								}
+							}]
+						}
+					}
+				}
+				match_nbt: true
+				type: "item"
+			}]
+			title: "\"Empty Space\""
+			x: 3.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["75ECD00D56D4856D"]
+			dependency_requirement: "one_started"
+			id: "6890183BF206B21B"
+			rewards: [
+				{
+					count: 5
+					id: "43D6C1760E882C59"
+					item: "mekanism:alloy_reinforced"
+					type: "item"
+				}
+				{
+					id: "4B18F4DA973A9229"
+					type: "xp_levels"
+					xp_levels: 2
+				}
+			]
+			shape: "goal"
+			subtitle: "Craft a Netherite Space Suit"
+			tasks: [
+				{
+					id: "1975A38FFC96AAF6"
+					item: {
+						Count: 1
+						id: "ad_astra:netherite_space_helmet"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "4C474C3C0CDDDF42"
+					item: {
+						Count: 1
+						id: "ad_astra:netherite_space_suit"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "268CE0D81DDC2695"
+					item: {
+						Count: 1
+						id: "ad_astra:netherite_space_pants"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "2347FD855583BA7D"
+					item: {
+						Count: 1
+						id: "ad_astra:netherite_space_boots"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "New Space Fashion"
+			x: -2.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["6890183BF206B21B"]
+			dependency_requirement: "one_started"
+			id: "71D9F0BB3AFCAC76"
+			rewards: [
+				{
+					count: 5
+					id: "5F86ABA392C81095"
+					item: "mekanism:alloy_reinforced"
+					type: "item"
+				}
+				{
+					id: "095011844A7948E7"
+					type: "xp_levels"
+					xp_levels: 2
+				}
+			]
+			shape: "goal"
+			subtitle: "Craft a Tier 3 Rocket"
+			tasks: [{
+				id: "752A59CCB9EFDDDF"
+				item: {
+					Count: 1
+					id: "ad_astra:tier_3_rocket"
+					tag: { }
+				}
+				type: "item"
+			}]
+			title: "New Horizons"
+			x: -3.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["71D9F0BB3AFCAC76"]
+			dependency_requirement: "one_started"
+			id: "599EC1E22633B461"
+			rewards: [
+				{
+					count: 10
+					id: "32DBDAF370F1D3C3"
+					item: "mekanism:alloy_reinforced"
+					type: "item"
+				}
+				{
+					id: "3BE85EAED1BF4043"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+			shape: "challenge"
+			subtitle: "Travel to Venus"
+			tasks: [{
+				dimension: "ad_astra:venus"
+				icon: "ad_astra:venus_globe"
+				id: "73A1FD1DA0FFDE03"
+				title: "Go to Venus"
+				type: "dimension"
+			}]
+			title: "It's Getting Hot in Here"
+			x: -5.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["71D9F0BB3AFCAC76"]
+			dependency_requirement: "one_started"
+			id: "41EA7189B2B32487"
+			rewards: [
+				{
+					count: 10
+					id: "60CEC20A93C6FFAF"
+					item: "mekanism:alloy_reinforced"
+					type: "item"
+				}
+				{
+					id: "32AD934ED6A2FA1F"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+			shape: "challenge"
+			subtitle: "Travel to Mercury"
+			tasks: [{
+				dimension: "ad_astra:mercury"
+				icon: "ad_astra:mercury_globe"
+				id: "2A2F90C00B250F5D"
+				title: "Go to Mercury"
+				type: "dimension"
+			}]
+			title: "Super Desert"
+			x: -5.0d
+			y: 1.0d
+		}
+	]
+	title: "The Fusion Era"
+}
