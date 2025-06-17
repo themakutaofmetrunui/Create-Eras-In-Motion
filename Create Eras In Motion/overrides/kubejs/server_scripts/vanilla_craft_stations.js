@@ -1800,4 +1800,24 @@ ServerEvents.recipes(event => {
     surround('ad_astra:ostrum_tank', 'mekanism:alloy_reinforced', 'ad_astra:large_gas_tank')
     surround('ad_astra:calorite_tank', 'mekanism:alloy_atomic', 'ad_astra:large_gas_tank')
     blastsmelt('ad_astra:etrium_ingot', 'kubejs:dust_etrium')
+    //confectionary
+    event.campfireCooking('create_confectionery:gingerbread', 'create_confectionery:gingerdough', 0.35, 600)
+    //farmer's delight
+    event.replaceInput(
+        {output: 'farmersdelight:hot_cocoa'},
+        'cocoa_beans',
+        'create_confectionery:cocoa_powder'
+    )
+    //garnished
+    event.replaceInput(
+        {input: 'garnished:crushed_salt'},
+        'garnished:crushed_salt',
+        'mekanism:salt'
+    )
+    //ender
+    event.replaceInput(
+        {input: '#endersdelightenderman_loot'},
+        '#endersdelight:enderman_loot',
+        'garnished:crushed_ender_pearl'
+    )
 })

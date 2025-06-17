@@ -430,4 +430,14 @@ ServerEvents.recipes(event => {
 	"burnTime": 36000,
 	"superheated": true
   })
+  //confectionery
+  event.recipes.create.mixing(Fluid.of('create_confectionery:hot_chocolate', 500), [Fluid.of('milk', 250), Fluid.of('create:chocolate', 250), 'sugar'])
+  //garnished
+  event.recipes.create.milling(['tfmg:limesand', 'mekanism:salt'], 'create:limestone')
+  event.recipes.create.milling('2x endersdelight:sight_fragment', 'endersdelight:enderman_sight')
+  const dyes = ['white', 'red', 'orange', 'yellow', 'green', 'lime', 'light_blue', 'cyan', 'blue', 'purple', 'magenta', 'pink', 'light_gray', 'gray', 'brown', 'black']
+  event.recipes.create.compacting('garnished:mastic_resin', [Fluid.of('kubejs:slime_resin', 250), '3x minecraft:wheat_seeds']).heated()
+  for (let i = 0; i < dyes.length; i++) {
+    event.recipes.create.compacting('garnished:mastic_resin_' + dyes[i], [Fluid.of('kubejs:slime_resin', 250), '3x minecraft:wheat_seeds', dyes[i] + '_dye']).heated()
+  }
 })

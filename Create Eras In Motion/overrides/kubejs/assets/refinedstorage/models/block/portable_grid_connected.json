@@ -1,0 +1,7 @@
+{
+  "parent": "refinedstorage:block/portable_grid_base",
+  "textures": {
+    "1": "refinedstorage:block/portable_grid",
+    "particle": "refinedstorage:block/portable_grid"
+  }
+}
