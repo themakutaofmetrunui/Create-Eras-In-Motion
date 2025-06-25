@@ -45,6 +45,7 @@ StartupEvents.registry('item', event =>{
         event.create('shard_' + mat[i]).displayName(matname[i] + ' Shard')
         event.create('crystal_' + mat[i]).displayName(matname[i] + ' Crystal')
     }
+    event.create('thorium').displayName('Thorium')
 })
 StartupEvents.registry('fluid', event =>{
     event.create('slime_resin').bucketColor('#8cd782').displayName('Slime Resin').thickTexture('#55FF55')
@@ -57,6 +58,9 @@ StartupEvents.registry('fluid', event =>{
 StartupEvents.registry('block', event =>{
     event.create('block_raw_lithium').displayName('Raw Lithium Block')
     event.create('block_raw_nickel').displayName('Raw Nickel Block')
+})
+StartupEvents.registry('mekanism:gas', event =>{
+    event.create('thorium_oxide').displayName('Thorium Oxide').color('0x0086c1')
 })
 StartupEvents.registry('mekanism:slurry', event =>{
     const mat = ['calorite', 'desh', 'nickel', 'ostrum', 'tungsten', 'zinc', 'lithium']

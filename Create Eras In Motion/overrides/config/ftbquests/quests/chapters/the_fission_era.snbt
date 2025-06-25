@@ -202,8 +202,8 @@
 			]
 			subtitle: "Enrich Uranium into Yellow Cake Uranium"
 			tasks: [{
-				id: "30BEF8F4FB1189F4"
-				item: "mekanism:yellow_cake_uranium"
+				id: "5EDFE225790DE5AD"
+				item: "alexscaves:uranium"
 				type: "item"
 			}]
 			title: "Puts the \"Yum\" in Uranium"

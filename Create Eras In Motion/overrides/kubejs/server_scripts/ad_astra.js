@@ -181,7 +181,7 @@ ServerEvents.recipes(event => {
     press('vintageimprovements:tin_sheet', 1, 'mekanism:ingot_tin', 100)
     press('vintageimprovements:tin_sheet', 9, 'mekanism:block_tin', 800)
     press('vintageimprovements:uranium_sheet', 1, 'mekanism:ingot_uranium', 100)
-    press('vintageimprovements:uranium_sheet', 9, 'mekanism:block_uranium', 800)
+    press('vintageimprovements:uranium_sheet', 9, 'alexscaves:block_of_uranium', 800)
     press('vintageimprovements:vanadium_sheet', 1, 'vintageimprovements:vanadium_ingot', 100)
     press('vintageimprovements:vanadium_sheet', 9, 'vintageimprovements:vanadium_block', 800)
     press('createaddition:zinc_sheet', 1, 'create:zinc_ingot', 100)

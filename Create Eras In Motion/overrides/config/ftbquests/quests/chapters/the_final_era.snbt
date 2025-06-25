@@ -132,7 +132,7 @@
 				item: "mekanism:chemical_crystallizer"
 				type: "item"
 			}]
-			title: "Ore. Quintupling."
+			title: "Too Many Ore"
 			x: -1.5d
 			y: -3.0d
 		}

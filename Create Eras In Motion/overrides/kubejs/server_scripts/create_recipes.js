@@ -1,4 +1,37 @@
 ServerEvents.recipes(event => {
+  function freeze(input, output) {
+    event.custom({
+  "type": "create_dd:freezing",
+  "ingredients": [
+    {
+      "item": input
+    }
+  ],
+  "results": [
+    {
+      "item": output
+    }
+  ]
+  })
+  }
+  function freezeextra(input, output, extraput, chance) {
+    event.custom({
+  "type": "create_dd:freezing",
+  "ingredients": [
+    {
+      "item": input
+    }
+  ],
+  "results": [
+    {
+      "item": output
+    },
+    {
+      "chance": chance,
+      "item": extraput
+    }
+  ]
+  })}
   event.recipes.create.crushing('mekanism:dust_iron', 'iron_ingot')
   //moreburners
   event.recipes.create.deploying('moreburners:nickel_coil', ['moreburners:copper_coil', 'tfmg:nickel_ingot'])
@@ -58,6 +91,7 @@ ServerEvents.recipes(event => {
   event.recipes.create.mixing(Fluid.of('kubejs:slime_resin', 250), ['sugar', 'slime_ball']).heated()
   event.recipes.create.mixing(Fluid.of('createloveandwar:duraplas', 250), [Fluid.of('tfmg:liquid_plastic', 250), 'create:powdered_obsidian'])
   event.recipes.create.compacting('createloveandwar:fuel_pellet', Fluid.of('tfmg:diesel'))
+  event.recipes.create.filling('createloveandwar:propellant', [Fluid.of('createaddition:seed_oil', 250), 'gunpowder'])
   //create additions
   function biofuel(number, bio) {
     event.recipes.create.mixing((number + 'x mekanism:bio_fuel'), [bio, Fluid.of('createaddition:seed_oil', 100)]).heated()
@@ -284,7 +318,7 @@ ServerEvents.recipes(event => {
   event.recipes.create.crushing(['9x kubejs:crushed_raw_tungsten', Item.of('create:experience_nugget', 9).withChance(0.75)], 'createloveandwar:raw_tungsten_block')
   event.recipes.create.crushing(['9x create:crushed_raw_nickel', Item.of('create:experience_nugget', 9).withChance(0.75)], 'kubejs:block_raw_nickel')
   event.recipes.create.crushing(['9x kubejs:crushed_raw_lithium', Item.of('create:experience_nugget', 9).withChance(0.75)], 'kubejs:block_raw_lithium')
-  event.recipes.create.crushing(['9x tfmg:sulfur_dust', Item.of('create:experience_nugget', 9).withChance(0.75)], 'createloveandwar:raw_sulphur_block')
+  event.recipes.create.crushing(['9x tfmg:sulfur_dust', Item.of('create:experience_nugget', 9).withChance(0.75)], 'alexscaves:sulfur')
   const mat = ['calorite', 'desh', 'nickel', 'ostrum', 'tungsten', 'zinc', 'lithium', 'copper', 'gold', 'iron', 'tin', 'osmium', 'uranium', 'lead']
   for (let i = 0; i < 7; i++) {
     event.recipes.create.crushing('kubejs:dirty_dust_' + mat[i], 'kubejs:clump_' + mat[i])
@@ -439,5 +473,44 @@ ServerEvents.recipes(event => {
   event.recipes.create.compacting('garnished:mastic_resin', [Fluid.of('kubejs:slime_resin', 250), '3x minecraft:wheat_seeds']).heated()
   for (let i = 0; i < dyes.length; i++) {
     event.recipes.create.compacting('garnished:mastic_resin_' + dyes[i], [Fluid.of('kubejs:slime_resin', 250), '3x minecraft:wheat_seeds', dyes[i] + '_dye']).heated()
+    freezeextra('garnished:mastic_paste_' + dyes[i], dyes[i] + '_dye', dyes[i] + '_dye', 0.25)
   }
+  freeze('blackstone', 'end_stone')
+  freeze('soul_sand', 'soul_soil')
+  freeze('garnished:mastic_resin_blue', 'garnished:icy_mastic_chunk')
+  freeze('magma_block', 'netherrack')
+  freeze('#garnished:kelp_blocks', 'dried_kelp_block')
+  freezeextra('garnished:garnish_powder', 'sugar', 'sugar', 0.25)
+  freeze('apple', 'garnished:chilled_apple')
+  freeze('chorus_plant', 'chorus_flower')
+  freeze('#garnished:kelp', 'minecraft:kelp')
+  freeze('sugar', 'garnished:frost')
+  freeze('create:cinder_flour', 'garnished:brittle_dust')
+  freeze('seagrass', 'garnished:voltaic_sea_grass')
+  freeze('create:scorchia', 'create:scoria')
+  freeze('garnished:volatile_dust', 'garnished:void_dust')
+
+  //alex cave
+  event.recipes.create.filling('alexscaves:caramel_apple', [Fluid.of('create_confectionery:caramel', 250), 'apple'])
+  const frostcut = ['block', 'stairs', 'slab', 'wall', 'door', 'bricks', 'brick_stairs', 'brick_slab', 'brick_wall']
+  for (let i = 0; i < frostcut.length; i++) {
+    freeze('alexscaves:gingerbread_' + frostcut[i], 'alexscaves:frosted_gingerbread_' + frostcut[i])
+    event.recipes.create.deploying('alexscaves:frosted_gingerbread_' + frostcut[i], ['alexscaves:gingerbread_' + frostcut[i], 'garnished:frost'])
+  }
+  event.recipes.create.crushing(['alexscaves:raw_azure_neodymium', Item.of('alexscaves:raw_azure_neodymium').withChance(0.25), Item.of('create:experience_nugget').withChance(0.75), Item.of('alexscaves:galena').withChance(0.12)], 'alexscaves:energized_galena_azure')
+  event.recipes.create.crushing(['alexscaves:raw_scarlet_neodymium', Item.of('alexscaves:raw_scarlet_neodymium').withChance(0.25), Item.of('create:experience_nugget').withChance(0.75), Item.of('alexscaves:galena').withChance(0.12)], 'alexscaves:energized_galena_scarlet')
+  event.recipes.create.crushing([Item.of('alexscaves:raw_scarlet_neodymium').withChance(0.50), Item.of('alexscaves:raw_azure_neodymium').withChance(0.50), Item.of('alexscaves:raw_scarlet_neodymium').withChance(0.12), Item.of('alexscaves:raw_azure_neodymium').withChance(0.12), Item.of('create:experience_nugget').withChance(0.75), Item.of('alexscaves:galena').withChance(0.12)], 'alexscaves:energized_galena_neutral')
+  event.recipes.create.crushing(['3x iron_nugget', Item.of('create:crushed_raw_iron').withChance(0.2)], 'alexscaves:galena')
+  event.recipes.create.crushing([Item.of('bone_meal').withChance(0.5), Item.of('bone').withChance(0.25), Item.of('alexscaves:heavy_bone').withChance(0.25)], 'alexscaves:limestone')
+  event.recipes.create.crushing(['coal', Item.of('coal').withChance(0.25), Item.of('create:experience_nugget').withChance(0.75), Item.of('alexscaves:coprolith').withChance(0.12)], 'alexscaves:coprolith_coal_ore')
+  event.recipes.create.crushing(['6x redstone', Item.of('redstone').withChance(0.25), Item.of('create:experience_nugget').withChance(0.75), Item.of('alexscaves:guanostone').withChance(0.12)], 'alexscaves:guanostone_redstone_ore')
+  freeze('alexscaves:block_of_chocolate', 'alexscaves:block_of_frosted_chocolate')
+  event.recipes.create.deploying('alexscaves:block_of_frosted_chocolate', ['alexscaves:block_of_chocolate', 'garnished:frost'])
+  event.recipes.create.crushing(['kubejs:thorium', Item.of('kubejs:thorium').withChance(0.25), Item.of('create:experience_nugget').withChance(0.75), Item.of('alexscaves:radrock').withChance(0.12)], 'alexscaves:radrock_uranium_ore')
+  //call of yucutan
+  event.recipes.create.crushing(['call_of_yucutan:jade', Item.of('call_of_yucutan:jade').withChance(0.25), Item.of('create:experience_nugget').withChance(0.75), Item.of('cobblestone').withChance(0.12)], 'call_of_yucutan:jade_ore')
+  event.recipes.create.crushing(['2x call_of_yucutan:jade', Item.of('call_of_yucutan:jade').withChance(0.25), Item.of('create:experience_nugget').withChance(0.75), Item.of('cobbled_deepslate').withChance(0.12)], 'call_of_yucutan:deepslate_jade_ore')
+  //unusual end
+  event.recipes.create.crushing(['2x unusualend:prismalite_shard', Item.of('unusualend:prismalite_shard').withChance(0.25), Item.of('create:experience_nugget').withChance(0.75), Item.of('unusualend:gloopslate').withChance(0.12)], 'unusualend:prismalitic_gloopslate')
+  event.recipes.create.crushing(['2x unusualend:shiny_crystal', Item.of('unusualend:shiny_crystal').withChance(0.25), Item.of('create:experience_nugget').withChance(0.75), Item.of('unusualend:gloopstone').withChance(0.12)], 'unusualend:shiny_gloopstone')
 })

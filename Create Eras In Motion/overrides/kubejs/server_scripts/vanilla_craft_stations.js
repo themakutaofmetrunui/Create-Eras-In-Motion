@@ -266,6 +266,11 @@ ServerEvents.recipes(event => {
         'createloveandwar:redstone_circuit',
         'refinedstorage:basic_processor'
     )
+    event.replaceInput(
+        {id: 'createloveandwar:crafting/seeker_unit'},
+        'createloveandwar:redstone_circuit',
+        'create_dd:integrated_circuit'
+    )
     surround('createloveandwar:robot_dog_spawn_egg', 'bone', 'mekanism:robit')
     //create tfmg
     event.replaceInput(
@@ -1802,6 +1807,16 @@ ServerEvents.recipes(event => {
     blastsmelt('ad_astra:etrium_ingot', 'kubejs:dust_etrium')
     //confectionary
     event.campfireCooking('create_confectionery:gingerbread', 'create_confectionery:gingerdough', 0.35, 600)
+    event.replaceOutput(
+        {output: 'create_confectionery:candy_cane'},
+        'create_confectionery:candy_cane',
+        'alexscaves:candy_cane'
+    )
+    event.replaceInput(
+        {id: 'create_confectionery:music_disc_the_bright_side_recipe'},
+        'create_confectionery:candy_cane',
+        'alexscaves:candy_cane'
+    )
     //farmer's delight
     event.replaceInput(
         {output: 'farmersdelight:hot_cocoa'},
@@ -1819,5 +1834,123 @@ ServerEvents.recipes(event => {
         {input: '#endersdelightenderman_loot'},
         '#endersdelight:enderman_loot',
         'garnished:crushed_ender_pearl'
+    )
+    //alex cave
+    event.replaceInput(
+        {input: 'alexscaves:caramel'},
+        'alexscaves:caramel',
+        'create_confectionery:bar_of_caramel'
+    )
+    event.replaceOutput(
+        {id: 'create_confectionery:gingerbread_block_recipe'},
+        'create_confectionery:gingerbread_block',
+        'alexscaves:gingerbread_block'
+    )
+    event.replaceOutput(
+        {id: 'tfmg:cinderblock_from_concrete_stonecutting'},
+        'tfmg:cinderblock',
+        'alexscaves:cinder_brick'
+    )
+    const cut = ['alexscaves:gingerbread_stairs', 'alexscaves:gingerbread_slab', 'alexscaves:gingerbread_wall', 'alexscaves:gingerbread_bricks', 'alexscaves:gingerbread_brick_stairs', 'alexscaves:gingerbread_brick_slab', 'alexscaves:gingerbread_brick_wall', 'create_confectionery:gingerbread_block', 'create_confectionery:gingerbread_stairs', 'create_confectionery:gingerbread_slab', 'create_confectionery:gingerbreak_bricks', 'create_confectionery:gingerbread_brick_stairs', 'create_confectionery:gingerbread_brick_slab']
+    const frostcut = ['stairs', 'slab', 'wall', 'bricks', 'brick_stairs', 'brick_slab', 'brick_wall']
+    for (let i = 0; i < cut.length; i++) {
+        event.stonecutting(cut[i], 'alexscaves:gingerbread_block')
+    }
+    for (let i = 0; i < frostcut.length; i++) {
+        event.stonecutting('alexscaves:frosted_gingerbread_' + frostcut[i], 'alexscaves:frosted_gingerbread_block')
+    }
+    event.stonecutting('create_confectionery:chocolate_bricks', 'alexscaves:block_of_chocolate')
+    event.stonecutting('create_confectionery:chocolate_bricks_stairs', 'alexscaves:block_of_chocolate')
+    event.stonecutting('create_confectionery:chocolate_bricks_slab', 'alexscaves:block_of_chocolate')
+    event.shaped(
+        Item.of('alexscaves:block_of_chocolate', 1),
+        [
+            'AAA',
+            'AAA',
+            'AAA'
+        ],
+        {
+            A: 'create:bar_of_chocolate'
+        }
+    )
+    event.shapeless(
+        Item.of('alexscaves:sweetberry_ice_cream_scoop'),
+        [
+            'snowball',
+            'sweet_berries',
+            'sugar'
+        ]
+    )
+    event.shapeless(
+        Item.of('alexscaves:chocolate_ice_cream_scoop'),
+        [
+            'snowball',
+            'create:bar_of_chocolate',
+            'sugar'
+        ]
+    )
+    //thorium switches
+    event.replaceInput(
+        {input: '#forge:raw_materials/uranium'},
+        '#forge:raw_materials/uranium',
+        'mekanism:raw_uranium'
+    )
+    event.replaceInput(
+        {input: '#forge:nuggets/uranium'},
+        '#forge:nuggets/uranium',
+        'mekanism:nugget_uranium'
+    )
+    event.replaceInput(
+        {input: '#forge:storage_blocks/uranium'},
+        '#forge:storage_blocks/uranium',
+        'alexscaves:block_of_uranium'
+    )
+    event.replaceInput(
+        {input: 'alexscaves:sulfur_dust'},
+        'alexscaves:sulfur_dust',
+        'tfmg:sulfur_dust'
+    )
+    event.replaceOutput(
+        {output: 'alexscaves:uranium_shard'},
+        'alexscaves:uranium_shard',
+        'mekanism:nugget_uranium'
+    )
+    event.replaceOutput(
+        {id: 'mekanism:processing/uranium/storage_blocks/from_ingots'},
+        'mekanism:block_uranium',
+        'alexscaves:block_of_uranium'
+    )
+    event.replaceInput(
+        {input: 'mekanism:yellow_cake_uranium'},
+        'mekanism:yellow_cake_uranium',
+        'alexscaves:uranium'
+    )
+    event.replaceOutput(
+        {output: 'mekanism:yellow_cake_uranium'},
+        'mekanism:yellow_cake_uranium',
+        'alexscaves:uranium'
+    )
+    event.replaceOutput(
+        {output: 'alexscaves:sulfur_dust'},
+        'alexscaves:sulfur_dust',
+        'tfmg:sulfur_dust'
+    )
+    blastsmelt('kubejs:thorium', 'alexscaves:radrock_uranium_ore')
+    event.shaped(
+        Item.of('mekanism:block_uranium', 1),
+        [
+            'AAA',
+            'AAA',
+            'AAA'
+        ],
+        {
+            A: 'kubejs:thorium'
+        }
+    )
+    event.shapeless(
+        Item.of('kubejs:thorium', 9),
+        [
+            'mekanism:block_uranium'
+        ]
     )
 })

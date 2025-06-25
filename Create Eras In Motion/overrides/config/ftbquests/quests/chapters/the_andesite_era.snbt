@@ -600,7 +600,7 @@
 					xp_levels: 1
 				}
 			]
-			subtitle: "Craft your first airborne vehicle, the Gryodyne"
+			subtitle: "Craft your first airborne vehicle, the Gyrodyne"
 			tasks: [{
 				id: "5CDFEB88950563B2"
 				item: "immersive_aircraft:gyrodyne"

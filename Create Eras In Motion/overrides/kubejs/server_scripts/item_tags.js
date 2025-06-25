@@ -28,4 +28,19 @@ ServerEvents.tags('item', event => {
     event.add('created_dd:padded_rubber_slab', 'create_dd:padded_rubber_slab')
     event.add('created_dd:padded_mosaic_rubber', 'create_dd:padded_mosaic_rubber')
     event.add('forge:dyes/yellow', 'tfmg:sulfur_dust')
+    const types = ['_stairs', '_slab', '_wall']
+    for (let i = 0; i < types.length; i++) {
+        event.add('alexscaves:stone_types/galena', 'alexscaves:galena' + types[i])
+        event.add('alexscaves:stone_types/galena', 'alexscaves:galena_brick' + types[i])
+        event.add('alexscaves:stone_types/limestone', 'alexscaves:limestone' + types[i])
+        event.add('alexscaves:stone_types/limestone', 'alexscaves:smooth_limestone' + types[i])
+    }
+    event.add('alexscaves:stone_types/galena', 'alexscaves:packed_galena')
+    event.add('alexscaves:stone_types/galena', 'alexscaves:galena')
+    event.add('alexscaves:stone_types/galena', 'alexscaves:galena_pillar')
+    event.add('alexscaves:stone_types/limestone', 'alexscaves:limestone')
+    event.add('alexscaves:stone_types/limestone', 'alexscaves:limestone_chiseled')
+    event.add('alexscaves:stone_types/limestone', 'alexscaves:limestone_pillar')
+    event.add('alexscaves:stone_types/galena', 'alexscaves:galena_bricks')
+    event.add('alexscaves:stone_types/limestone', 'alexscaves:smooth_limestone')
 })

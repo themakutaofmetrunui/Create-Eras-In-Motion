@@ -177,7 +177,7 @@ ServerEvents.recipes(event => {
     event.recipes.mekanism.crushing('9x create:crushed_raw_iron', 'raw_iron_block')
     event.recipes.mekanism.crushing('9x create:crushed_raw_zinc', 'create:raw_zinc_block')
     event.recipes.mekanism.crushing('9x kubejs:crushed_raw_tungsten', 'createloveandwar:raw_tungsten_block')
-    event.recipes.mekanism.crushing('9x tfmg:sulfur_dust', 'createloveandwar:raw_sulphur_block')
+    event.recipes.mekanism.crushing('9x tfmg:sulfur_dust', 'alexscaves:sulfur')
     event.recipes.mekanism.crushing('9x kubejs:crushed_raw_lithium', 'kubejs:block_raw_lithium')
     event.recipes.mekanism.crushing('9x create:crushed_raw_nickel', 'kubejs:block_raw_nickel')
     const mat = ['calorite', 'desh', 'nickel', 'ostrum', 'tungsten', 'zinc', 'lithium']
@@ -228,6 +228,15 @@ ServerEvents.recipes(event => {
     event.recipes.mekanism.crushing('red_sand', 'terracotta')
     event.recipes.mekanism.crushing('kubejs:dirty_dust_etrium', 'kubejs:clump_etrium')
     event.recipes.mekanism.crushing('kubejs:dust_etrium', 'ad_astra:etrium_ingot')
+    event.recipes.mekanism.crushing('alexscaves:raw_azure_neodymium', 'alexscaves:energized_galena_azure')
+    event.recipes.mekanism.crushing('alexscaves:raw_scarlet_neodymium', 'alexscaves:energized_galena_scarlet')
+    event.recipes.mekanism.crushing('coal', 'alexscaves:coprolith_coal_ore')
+    event.recipes.mekanism.crushing('6x redstone', 'alexscaves:guanostone_redstone_ore')
+    event.recipes.mekanism.crushing('2x call_of_yucutan:jade', 'call_of_yucutan:deepslate_jade_ore')
+    event.recipes.mekanism.crushing('call_of_yucutan:jade', 'call_of_yucutan:jade_ore')
+    event.recipes.mekanism.crushing('2x unusualend:prismalite_shard', 'unusualend:prismalitic_gloopslate')
+    event.recipes.mekanism.crushing('2x unusualend:shiny_crystal', 'unusualend:shiny_gloopstone')
+    event.recipes.mekanism.crushing('kubejs:thorium', 'alexscaves:radrock_uranium_ore')
     //combining
     const material = ["steel", "brass", "tungsten", "netherite", "sturdy", "resin", "iron", "polymer", "duraplas"]
     event.recipes.mekanism.combining('create:andesite_alloy', 'create:zinc_nugget', 'andesite')
@@ -314,6 +323,15 @@ ServerEvents.recipes(event => {
         event.recipes.mekanism.enriching('kubejs:dust_' + mat[i], 'kubejs:dirty_dust_' + mat[i])
     }
     event.recipes.mekanism.enriching('kubejs:dust_etrium', 'kubejs:dirty_dust_etrium')
+    event.recipes.mekanism.enriching('2x alexscaves:raw_azure_neodymium', 'alexscaves:energized_galena_azure')
+    event.recipes.mekanism.enriching('2x alexscaves:raw_scarlet_neodymium', 'alexscaves:energized_galena_scarlet')
+    event.recipes.mekanism.enriching('2x coal', 'alexscaves:coprolith_coal_ore')
+    event.recipes.mekanism.enriching('12x redstone', 'alexscaves:guanostone_redstone_ore')
+    event.recipes.mekanism.enriching('2x call_of_yucutan:jade', 'call_of_yucutan:deepslate_jade_ore')
+    event.recipes.mekanism.enriching('2x call_of_yucutan:jade', 'call_of_yucutan:jade_ore')
+    event.recipes.mekanism.enriching('4x unusualend:prismalite_shard', 'unusualend:prismalitic_gloopslate')
+    event.recipes.mekanism.enriching('4x unusualend:shiny_crystal', 'unusualend:shiny_gloopstone')
+    event.recipes.mekanism.enriching('2x kubejs:thorium', 'alexscaves:radrock_uranium_ore')
     //sawing
     const logs = ['oak', 'spruce', 'birch', 'jungle', 'acacia', 'dark_oak', 'mangrove', 'cherry']
     for (let i = 0; i < logs.length; i++) {
@@ -456,4 +474,8 @@ ServerEvents.recipes(event => {
             "item":"mekanism:alloy_reinforced"
         }
     })
+    //oxidizing
+    event.custom({"type":"mekanism:oxidizing","input":{"ingredient":{"item":"kubejs:thorium"}},"output":{"amount":250,"gas":"kubejs:thorium_oxide"}})
+    //activating
+    event.custom({"type":"mekanism:activating","input":{"amount":1,"gas":"kubejs:thorium_oxide"},"output":{"amount":1,"gas":"mekanism:uranium_oxide"}})
 })

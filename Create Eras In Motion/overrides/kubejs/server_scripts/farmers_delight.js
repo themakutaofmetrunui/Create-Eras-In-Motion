@@ -65,4 +65,26 @@ ServerEvents.recipes(event => {
         200,
         'glass_bottle'
     )
+    event.recipes.farmersdelight.cooking(
+        ['alexscaves:cooked_dinosaur_chop', 'alexscaves:flytrap', 'alexscaves:heavy_bone'],
+        'alexscaves:seething_stew',
+        1,
+        200,
+        'bowl'
+    )
+    event.recipes.farmersdelight.cooking(
+        ['alexscaves:cooked_trilocaris_tail', 'alexscaves:cooked_trilocaris_tail', 'alexscaves:tree_star'],
+        'alexscaves:primordial_soup',
+        1,
+        200,
+        'bowl'
+    )
+    //call of yucutan
+    event.recipes.farmersdelight.cooking(
+        ['cocoa_beans', 'cocoa_beans', 'milk_bucket', 'call_of_yucutan:chili_pepper', 'call_of_yucutan:chili_pepper'],
+        'call_of_yucutan:xocolatl',
+        1,
+        200,
+        'bowl'
+    )
 })
