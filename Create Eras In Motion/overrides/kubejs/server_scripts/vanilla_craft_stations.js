@@ -1953,4 +1953,10 @@ ServerEvents.recipes(event => {
             'mekanism:block_uranium'
         ]
     )
+    //small ships
+    event.replaceOutput(
+        {id: 'smallships:bamboo_galley'},
+        'smallships:bamboo_cog',
+        'smallships:bamboo_galley'
+    )
 })

@@ -51,6 +51,41 @@ ServerEvents.recipes(event => {
         F: 'immersive_aircraft:engine',
         G: 'immersive_aircraft:propeller',
     })
+    //many planes
+    event.recipes.createMechanicalCrafting('man_of_many_planes:scarlet_biplane', [
+        '    A ',
+        '   AA ',
+        'A  BA ',
+        'CCCDEF',
+        'A  BA ',
+        '   AA ',
+        '    A ',
+    ], {
+        A: '#minecraft:wooden_slabs',
+        B: 'vintageimprovements:steel_wire',
+        C: 'tfmg:heavy_plate',
+        D: '#create:seats',
+        E: 'immersive_aircraft:biplane',
+        F: 'immersive_aircraft:propeller',
+    })
+    event.recipes.createMechanicalCrafting('man_of_many_planes:economy_plane', [
+        '     AB ',
+        '    CBB ',
+        'BB  DAE ',
+        'AAFAFGHA',
+        'BB  DAE ',
+        '    CBB ',
+        '     AB ',
+    ], {
+        A: 'createaddition:iron_wire',
+        B: 'immersive_aircraft:sail',
+        C: 'immersive_aircraft:propeller',
+        D: 'create:belt_connector',
+        E: 'tfmg:plastic_sheet',
+        F: 'immersive_aircraft:hull',
+        G: 'immersive_aircraft:engine',
+        H: '#create:seats'
+    })
     //create additions
     event.recipes.createMechanicalCrafting('createaddition:modular_accumulator', [
         'ABBBA',
@@ -132,13 +167,13 @@ ServerEvents.recipes(event => {
         F: 'mekanism:basic_control_circuit'
     })
     //ad astra
-    event.recipes.createMechanicalCrafting('ad_astra:nasa_workbench', [
+    event.recipes.createMechanicalCrafting('extendedcrafting:ultimate_table', [
         'ABCBA',
         ' DED ',
         ' DCD '
     ], {
         A: 'create:mechanical_arm',
-        B: 'mekanism:advanced_control_circuit',
+        B: 'mekanism:elite_control_circuit',
         C: 'ad_astra:desh_plate',
         D: 'tfmg:heavy_plate',
         E: 'tfmg:electric_casing'

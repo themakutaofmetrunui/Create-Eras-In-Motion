@@ -190,57 +190,6 @@ ServerEvents.recipes(event => {
     press('ad_astra:etrium_plate', 1, 'ad_astra:etrium_ingot', 100)
     press('ad_astra:etrium_plate', 9, 'ad_astra:etrium_block', 800)
     event.custom({
-    "type": "ad_astra:nasa_workbench",
-    "ingredients": [
-      {
-        "item": "ad_astra:rocket_nose_cone"
-      },
-      {
-        "item": "kubejs:basic_rocket_plating"
-      },
-      {
-        "item": "kubejs:basic_rocket_plating"
-      },
-      {
-        "item": "kubejs:basic_rocket_plating"
-      },
-      {
-        "item": "kubejs:basic_rocket_plating"
-      },
-      {
-        "item": "kubejs:basic_rocket_plating"
-      },
-      {
-        "item": "kubejs:basic_rocket_plating"
-      },
-      {
-        "item": "kubejs:advanced_rocket_plating"
-      },
-      {
-        "item": "ad_astra:desh_tank"
-      },
-      {
-        "item": "mekanism:basic_control_circuit"
-      },
-      {
-        "item": "kubejs:advanced_rocket_plating"
-      },
-      {
-        "item": "ad_astra:rocket_fin"
-      },
-      {
-        "item": "ad_astra:steel_engine"
-      },
-      {
-        "item": "ad_astra:rocket_fin"
-      }
-    ],
-    "result": {
-      "count": 1,
-      "id": "ad_astra:tier_1_rocket"
-    }
-    })
-    event.custom({
     "type": "ad_astra:refining",
     "cookingtime": 1,
     "energy": 30,
